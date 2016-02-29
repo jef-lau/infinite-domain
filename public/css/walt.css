@@ -9,25 +9,96 @@
 	color: #CC00AA;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
+
+/* Screen*/
+.waltDisplay {
+     max-width:400px;
+     height:90vh;
+     background: #F2F2F2;
+     margin: auto;
+     overflow: scroll;
+     border-radius: 6px;
 }
 
-.jumbotron p {
-     color: #6e6e6e;
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-.project a {
-     text-align: center;
+.middle {
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.project .details {
-     overflow: hidden;
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
 }
 
-.project .details .detailsImage {
-     width: 200px;
-     margin: 10px 10px 10px 0px;
-     float: left;
+#background {
+    background-color:#aaaaaa;
+}
+
+/* Timeline */
+#circle {
+    text-align: center;
+    width: 10px;
+    position: relative;
+    top: 5px;
+    display: block;
+    margin: auto;
+}
+
+.timeline {
+     background-image: url("../images/line.jpg");
+     background-repeat: repeat-y;
+     background-position: center; 
+}
+
+.stamp {
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    color: #aaaaaa;
+    padding-top: 25px;
+}
+
+/*  */
+#link {
+    cursor: pointer;
+}
+
+/* App Buttons and Modals */
+
+.app {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width:75px;
+    display: block;
+    margin: auto;
+}
+
+body .modal-dialog {
+    top:5vh;
+    max-width:400px;
+    max-height:90vh;
+    margin: auto;
+    overflow: scroll;
+    border-radius: 6px;
+}
+
+#hide {
+    position: absolute;
+    padding: 15px;
+    right: 150;
+    padding-right: 5%;
+    z-index: 5;
+    width:50px;    
+    height:10px;
+    border:1px solid #000;
+    background:white;
+
 }
