@@ -1,23 +1,12 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
-
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
-}
-
-
-/* Screen*/
+/* ############################# Screen Display #############################*/
 .waltDisplay {
-     max-width:400px;
-     height:90vh;
-     background: #F2F2F2;
-     margin: auto;
-     overflow: scroll;
-     border-radius: 6px;
+    max-width:400px;
+    height:90vh;
+    background: #F2F2F2;
+    margin: auto;
+    overflow: scroll;
+    border-radius: 6px;   
+
 }
 
 .outer {
@@ -42,7 +31,8 @@
     background-color:#aaaaaa;
 }
 
-/* Timeline */
+
+/* ############################# Timeline #############################*/
 #circle {
     text-align: center;
     width: 10px;
@@ -65,16 +55,14 @@
     padding-top: 25px;
 }
 
-/*  */
-#link {
+/* ############################# App Buttons and Modals #############################*/
+
+a img {
     cursor: pointer;
 }
 
-/* App Buttons and Modals */
-
 .app {
     padding-top: 15px;
-    padding-bottom: 15px;
     text-align: center;
     width:75px;
     display: block;
@@ -90,15 +78,65 @@ body .modal-dialog {
     border-radius: 6px;
 }
 
-#hide {
-    position: absolute;
-    padding: 15px;
-    right: 150;
-    padding-right: 5%;
-    z-index: 5;
-    width:50px;    
-    height:10px;
-    border:1px solid #000;
-    background:white;
+.appName {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #aaaaaa;
+}
 
+.fitInModal {
+    width: 100%;
+}
+
+
+/* ############################# Gallery App #############################*/
+.galleryIco {
+    text-align: center;
+}
+
+.galleryIco img {
+    padding: 5px;
+    max-width: 145px;
+}
+
+.galleryPadding img {
+    padding: 10px;
+}
+
+/* ############################# Gmail App #############################*/
+#gmail .modal-body {
+    width: 100%;
+    padding: 0;
+}
+
+.gmailBody {
+    padding: 15px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;    
+}
+
+/* ############################# Google Maps App #############################*/
+#viewMap .modal-body {
+    width: 100%;
+    padding: 0;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}
+#floating-panel {
+    /*position: absolute;*/
+
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
 }
