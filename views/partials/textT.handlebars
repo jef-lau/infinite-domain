@@ -1,11 +1,26 @@
 <!doctype html>
 
 <html>
-<a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text"></a>
+<a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="static" data-keyboard="true" id="sms"></a>
 <p class="appName">SMS</p>
 
+<!-- typing text -->
+<script>
+$(function(){
+    var options = {
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+    }
+    $("#sms").click(function(){
+        $(".textElement").typed(options);
+    });
+});
+</script>
+
+
+
 <!-- Modal -->
-<div id="text" class="modal fade" role="dialog">
+<div id="text" class="modal fade" role="dialog"  tabindex='-1'>
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -39,12 +54,13 @@
             <div class="received">
                 <p>hi friend
                     <div class="time">7:20 PM</div>
+
                 </p>
             </div>                             
         </div>
 
         <div class="textBox">
-            <p>hi friend. you are a great friend.<span>|</span></p>
+            <span class="textElement"></span>
             <i class="fa fa-send"></i> 
         </div>
                                          

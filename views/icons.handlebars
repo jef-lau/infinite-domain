@@ -13,6 +13,8 @@
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/typed.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,9 +32,10 @@
 				<div class="waltDisplay">
 					<!-- content of story goes here -->
 
-					<div class="stamp">17:28&nbsp;&nbsp;&nbsp;June 28&nbsp;&nbsp;&nbsp;San Francisco&nbsp;&nbsp;&nbsp;72ºF</div>
+					<!-- <div class="stamp">17:28&nbsp;&nbsp;&nbsp;June 28&nbsp;&nbsp;&nbsp;San Francisco&nbsp;&nbsp;&nbsp;72ºF</div> -->
+					{{>whatIsProjectWalt}}
 					<img src="/images/circle.png" id="circle">
-					<div class="timeline" style="height:150px"></div>
+					<div class="timeline" style="height:75px"></div>
 					{{> instaT}}
 					<div class="timeline" style="height:75px"></div>
 					{{> galleryT}}
@@ -50,8 +53,6 @@
 	</div>
 
 
-
-	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/walt.js"></script>
 </body>

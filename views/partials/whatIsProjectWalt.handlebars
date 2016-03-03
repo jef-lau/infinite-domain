@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html>
+<a data-toggle="modal" data-target="#whatis" data-backdrop="static" data-keyboard="true" id="waltLink">
+  <div class="stamp clickable">Project Walt</div>
+</a>
+
+<!-- typing text -->
+<script>
+$(function(){
+    var options = {
+        strings: [
+
+          "^4000 Project Walt is a narrative told through mobile applications. ^1000 <br/><br/>I am making this project with HTML, CSS, jquery, node.js, handlebars.js, and 3rd party apis. ^1000 <br/><br/>The goal is to tell a story through our most intimate possession, the mobile phone. ^1000 <br/><br/>The average mobile user checks their phone 25-74 times a day. ^1000 It is possible to understand human emotions and motives through people's daily interactions with mobile applications. ^1000 My goal is to create a cohesive story from these daily interactions. ^1000 <br/><br/>The narrative for Project Walt is still being developed..."
+
+          ],
+        typeSpeed: 0
+    }
+    $("#waltLink").click(function(){
+        $(".waltElement").typed(options);
+    });
+});
+</script>
+
+<!-- Modal -->
+<div id="whatis" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <p>
+            <span class="waltElement"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>  
+	
+</html>

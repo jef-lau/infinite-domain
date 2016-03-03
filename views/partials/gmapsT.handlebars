@@ -1,24 +1,36 @@
 <!doctype html>
 
 <html>
-<a href="javascript:refreshMap();"><img src="/images/icons/gmaps.png" class="app" data-toggle="modal" data-target="#viewMap"></a>
+<a href="javascript:refreshMap();"><img src="/images/icons/gmaps.png" class="app" data-toggle="modal" data-target="#viewMap" data-backdrop="static" data-keyboard="true" id="mapsButton"></a>
 <p class="appName">Google Maps</p>
 
 <!-- {{> googleMaps}}
 <script src="/js/googleMaps.js"></script>
 <div id="map"></div> -->
 
+<!-- typing text -->
+<script>
+$(function(){
+    var options = {
+        strings: ["University of California, San Diego"],
+        typeSpeed: 0
+    }
+    $("#mapsButton").click(function(){
+        $(".mapsElement").typed(options);
+    });
+});
+</script>
 
 
 <!-- Modal -->
-<div id="viewMap" class="modal fade" role="dialog">
+<div id="viewMap" class="modal fade" role="dialog" tabindex='-1'>
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
           <div class="mapHeader">
-          <p>University of California, San Diego<span>|</span></p>
+            <span class="mapsElement"></span>
           </div>
 
           {{> googleMaps}}
