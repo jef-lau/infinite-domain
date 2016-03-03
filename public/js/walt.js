@@ -12,6 +12,10 @@ function initializePage() {
 	$('.project a').click(addProjectDetails);
 
 	$('#colorBtn').click(randomizeColors);
+
+	$('#viewMap').on('shown.bs.modal', function (e) {
+              refreshMap();
+            })
 }
 
 /*

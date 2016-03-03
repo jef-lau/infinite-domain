@@ -1,8 +1,13 @@
 <!doctype html>
 
 <html>
-<a><img src="/images/icons/gmaps.png" class="app" data-toggle="modal" data-target="#viewMap"></a>
+<a href="javascript:refreshMap();"><img src="/images/icons/gmaps.png" class="app" data-toggle="modal" data-target="#viewMap"></a>
 <p class="appName">Google Maps</p>
+
+<!-- {{> googleMaps}}
+<script src="/js/googleMaps.js"></script>
+<div id="map"></div> -->
+
 
 
 <!-- Modal -->
@@ -12,7 +17,13 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
+          <div class="mapHeader">
+          <p>University of California, San Diego<span>|</span></p>
+          </div>
+
           {{> googleMaps}}
+          <script src="/js/googleMaps.js"></script>
+          <div id="map"></div>
 
       </div>
       <div class="modal-footer">
