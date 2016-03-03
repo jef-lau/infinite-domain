@@ -94,10 +94,19 @@ a img {
 body .modal-dialog {
     top:5vh;
     max-width:400px;
-    max-height:90vh;
     margin: auto;
-    overflow: scroll;
     border-radius: 6px;
+}
+
+@media (min-width: 1025px) {
+    body .modal-dialog {
+        top:5vh;
+        max-width:400px;
+        max-height:92vh;
+        margin: auto;
+        overflow: scroll;
+        border-radius: 6px;    
+    }
 }
 
 .appName {
