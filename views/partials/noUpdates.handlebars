@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+  <div class="row">
+      {{#each appSet1}}
+      
+        <div class="col-xs-3">
+          <div class="project" id="{{id}}">
+            <a href="#">
+              <img src="images/icons/{{image}}" class="app">
+              <p class="appName">{{name}}</p>
+            </a>
+          </div>
+        </div>
+      {{/each}}
+  </div>
+  <div class="row">
+      {{#each appSet2}}
+      
+        <div class="col-xs-3">
+          <div class="project" id="{{id}}">
+            <a href="#">
+              <img src="images/icons/{{image}}" class="app">
+              <p class="appName">{{name}}</p>
+            </a>
+          </div>
+        </div>
+      {{/each}}
+  </div>  
+
+
+	
+</html>

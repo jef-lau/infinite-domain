@@ -38,10 +38,12 @@
 
 .waltDisplay {
     max-width:400px;
+    min-width:250px;
+    width:100%;
     height:90vh;
     background: #F2F2F2;
     margin: auto;
-    overflow: scroll;
+    overflow-x: hidden;
     border-bottom-left-radius: 6px;   
     border-bottom-right-radius: 6px;   
 }
@@ -98,12 +100,25 @@ a img {
     cursor: pointer;
 }
 
+.appContainer {
+    text-align: center;    
+    vertical-align: top;
+    display: inline-block;
+    width: 21%;
+}
+
+
 .app {
-    padding-top: 15px;
+    max-width: 55px;
+    /*position: relative;*/
+}
+
+/* name of the app. underneath image */
+.appName {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    width:75px;
-    display: block;
-    margin: auto;
+    color: #aaaaaa;
+    font-size: 12px;
 }
 
 body .modal-dialog {
@@ -113,18 +128,23 @@ body .modal-dialog {
     border-radius: 6px;
 }
 
-.appName {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #aaaaaa;
-}
-
 .fitInModal {
     width: 100%;
 }
 
+/* apps displayed on the home screen */
+.appDisplay {
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px; 
+}
 
 /* ############################# Gallery App #############################*/
+#galleryImgs .modal-body {
+    width: 100%;
+    padding: 0;
+}
 
 .galleryIco {
     text-align:center;
@@ -144,6 +164,27 @@ body .modal-dialog {
     padding: 10px;
 }
 
+.galleryHeader{
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    background: #FFA63C;
+    color: #FFF;
+    font-size: 1.3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px; 
+    font-family: "Ubuntu", sans-serif;
+}
+
+.galleryHeader img{
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
 /* ############################# Gmail App #############################*/
 #gmail .modal-body {
     width: 100%;
@@ -158,7 +199,8 @@ body .modal-dialog {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 20px;    
+    line-height: 20px;
+    text-align: left;    
 }
 
 .clickable {
@@ -199,10 +241,12 @@ body .modal-dialog {
     border-style: solid;
     border-width: 1px; 
     z-index: 2;
+    text-align: left;
 
 }
 
 .mapHeader span{
+
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 200;
@@ -220,6 +264,7 @@ body .modal-dialog {
 }
 
 .txtHeader{
+    text-align: left;
     padding: 5px;
     width: 100%;
     height: 50px;
@@ -249,6 +294,7 @@ body .modal-dialog {
 }
 
 .received {
+    text-align: left;    
     max-width: 70%;
     color: #000; 
     font-family: "Ubuntu", sans-serif;
@@ -260,6 +306,7 @@ body .modal-dialog {
 }
 
 .time {
+    text-align: left;    
     font-size: 10px;
     color: #9b9b9b; 
     padding-left: 5px;
@@ -267,6 +314,7 @@ body .modal-dialog {
 }
 
 .sent {
+    text-align: left;    
     max-width: 70%;
     color: #000; 
     font-family: "Ubuntu", sans-serif;
@@ -282,6 +330,7 @@ body .modal-dialog {
 }
 
 .textBox{
+    text-align: left;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -307,7 +356,7 @@ body .modal-dialog {
     font-family: "Ubuntu", sans-serif;
     font-size: .7em;
     color: #000;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .textBox i{

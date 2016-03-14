@@ -4,18 +4,12 @@
 $(document).ready(function() {
 	initializePage();
 })
-
+// ############################# Testing out Ajax #############################
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('.project a').click(addProjectDetails);
-
-	$('#colorBtn').click(randomizeColors);
-
-	$('#viewMap').on('shown.bs.modal', function (e) {
-              refreshMap();
-            })
+	$('.appDisplay a').click(addProjectDetails);
 }
 
 /*
@@ -24,19 +18,80 @@ function initializePage() {
 function addProjectDetails(e) {
 	// Prevent following the link
 	e.preventDefault();
-
 	// Get the div ID, e.g., "project3"
 	var projectID = $(this).closest('.project').attr('id');
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
+	$.get("/project/" + idNumber, addProject);
+	console.log("URL: /project/" + idNumber);
 }
 
-/*
- * Make an AJAX call to retrieve a color palette for the site
- * and apply it
- */
-function randomizeColors(e) {
-	console.log("User clicked on color button");
+function addProject(result) {
+	console.log(result);
+	var idNumber = result['id'];
+	var projectHTML = result['summary'];
+	$("#div1").html(projectHTML);
 }
+
+// ############################# Testing out Ajax #############################
+
+// toasts for apps with no updates
+$(document).ready(function(){
+    $(".noupdates").click(function(){
+    	console.log("pressed");
+	toastr.options = {
+	  "closeButton": false,
+	  "debug": false,
+	  "newestOnTop": false,
+	  "progressBar": false,
+	  "positionClass": "toast-bottom-center",
+	  "preventDuplicates": false,
+	  "onclick": null,
+	  "showDuration": "300",
+	  "hideDuration": "1000",
+	  "timeOut": "2500",
+	  "extendedTimeOut": "1000",
+	  "showEasing": "swing",
+	  "hideEasing": "linear",
+	  "showMethod": "slideDown",
+	  "hideMethod": "slideUp"
+	};
+    	toastr["info"]("No new updates...");
+        // $("#div1").load("playgroundtest");
+    });
+});
+
+// loads text div inside playground
+$(document).ready(function(){
+    $("#buttontest").click(function(){
+    	console.log("pressed");
+        $("#div1").load("playgroundtest");
+    });
+});
+
+// load instagram
+$(document).ready(function(){
+    $("#instagramButton").click(function(){
+    	console.log("pressed");
+        $("#div1").load("instaT");
+    	history.pushState(null, null, 'playground');   
+    	console.log(history);
+    });
+});
+
+// /*
+//  * Function that is called when the document is ready.
+//  */
+// function initializePage() {
+// 	$('.project a').click(addProjectDetails);
+
+// 	$('#colorBtn').click(randomizeColors);
+
+// 	$('#viewMap').on('shown.bs.modal', function (e) {
+//               refreshMap();
+//             })
+// }
+
+

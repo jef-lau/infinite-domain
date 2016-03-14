@@ -1,0 +1,38 @@
+{
+	"appSet1": [			
+		{"name": "Instagram",
+		    "image": "instagram.png",
+		    "id": "project1"
+		},
+		{"name": "Gallery",
+		    "image": "gallery.png",
+		    "id": "project2"
+		},
+		{"name": "Google",
+		    "image": "google.png",
+		    "id": "project3"
+		},
+		{"name": "SMS",
+		    "image": "text.png",
+		    "id": "project4"
+		}					
+	],
+	"appSet2": [			
+		{"name": "Shazam",
+		    "image": "shazam.png",
+		    "id": "project5"
+		},
+		{"name": "Gmail",
+		    "image": "gmail.png",
+		    "id": "project6"
+		},
+		{"name": "Google Maps",
+		    "image": "gmaps.png",
+		    "id": "project7"
+		},
+		{"name": "Netflix",
+		    "image": "netflix.png",
+		    "id": "project8"
+		}					
+	]
+}

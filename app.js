@@ -9,9 +9,15 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+// final project, just to show what apps I have so far 3/3
 var icons = require('./routes/icons');
-// Example route
-// var user = require('./routes/user');
+// template starter
+var playground = require('./routes/playground');
+var playgroundtest = require('./routes/playgroundtest');
+
+//test
+var project = require('./routes/project');
+
 
 var app = express();
 
@@ -25,7 +31,7 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-app.use(express.cookieParser('Intro HCI secret key'));
+app.use(express.cookieParser('secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
@@ -38,6 +44,12 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/icons', icons.view);
+app.get('/playground', playground.view)
+app.get('/playgroundtest', playgroundtest.view)
+
+//test
+app.get('/project/:id', project.projectInfo);
+
 // Example route
 // app.get('/users', user.list);
 
