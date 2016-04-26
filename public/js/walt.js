@@ -4,7 +4,7 @@
 $(document).ready(function() {
 	initializePage();
 })
-// ############################# Testing out Ajax #############################
+// ############################# START Testing out Ajax #############################
 /*
  * Function that is called when the document is ready.
  */
@@ -31,11 +31,11 @@ function addProjectDetails(e) {
 function addProject(result) {
 	console.log(result);
 	var idNumber = result['id'];
-	var projectHTML = result['summary'];
-	$("#div1").html(projectHTML);
+	var projectHTML = result['summary']; // pulling in the summary from projects.json 
+	$("#div1").html(projectHTML); // replace div1
 }
 
-// ############################# Testing out Ajax #############################
+// ############################# END Testing out Ajax #############################
 
 // toasts for apps with no updates
 $(document).ready(function(){

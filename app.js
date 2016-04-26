@@ -14,7 +14,8 @@ var icons = require('./routes/icons');
 // template starter
 var playground = require('./routes/playground');
 var playgroundtest = require('./routes/playgroundtest');
-
+// part one
+var partone = require('./routes/partone');
 //test
 var project = require('./routes/project');
 
@@ -46,6 +47,7 @@ app.get('/', index.view);
 app.get('/icons', icons.view);
 app.get('/playground', playground.view)
 app.get('/playgroundtest', playgroundtest.view)
+app.get('/partone', partone.view)
 
 //test
 app.get('/project/:id', project.projectInfo);
