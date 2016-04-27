@@ -31,7 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', routes.index);
+app.get('/', routes.partone);
 app.get('/icons', routes.icons);
 app.get('/playground', routes.playground)
 app.get('/playgroundtest', routes.playgroundtest)
