@@ -14,7 +14,6 @@
 
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery.js"></script>	
@@ -31,31 +30,23 @@
 </head>
 
 
-<body id="background">
-	<div class="outer">
-		<div class="middle">
-			<div class="inner">
-				<div class="menuBar">3<span>:</span>52 PM</div>
-				<div class="waltDisplay">
-					<!-- content of story goes here -->
-					
-					<div class="appDisplay" id="div1">
-						<div class="splash">
-							<a id="auth-button"><img src="/images/fingerprint.png" style="width: 150px"></a>
-						</div>
-																						
-							<!-- <button type="button" class="btn btn-default" id="buttontest">Default</button> -->
+<body style="padding:100px">
+	<u>Timeline Stamp</u><br/>
+	<div class="stamp">Font = Alegreya<br/>Color = #aaaaaa</div>
+	<u>Instagram App</u><br/>
+	{{>instaT}}<br/>
 
-						</div>
-					</div>
+	<u>Gallery App</u><br/>
+	{{>galleryT}}<br/>
 
-				</div>
-			</div>
-		</div>
-	</div>
+	<u>Gmail App</u><br/>
+	{{>gmailT}}<br/>
 
+	<u>Google Maps App</u><br/>
+	{{>gmapsT}}<br/>
 
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/walt.js"></script>
+	<u>SMS App</u><br/>
+	{{>textT}}<br/>
+
 </body>
 </html>

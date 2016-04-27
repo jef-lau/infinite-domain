@@ -4,6 +4,7 @@
 $(document).ready(function() {
 	initializePage();
 })
+
 // ############################# START Testing out Ajax #############################
 /*
  * Function that is called when the document is ready.
@@ -18,22 +19,9 @@ function initializePage() {
 function addProjectDetails(e) {
 	// Prevent following the link
 	e.preventDefault();
-	// Get the div ID, e.g., "project3"
-	var projectID = $(this).closest('.project').attr('id');
-	// get rid of 'project' from the front of the id 'project3'
-	var idNumber = projectID.substr('project'.length);
-
-	console.log("User clicked on project " + idNumber);
-	$.get("/project/" + idNumber, addProject);
-	console.log("URL: /project/" + idNumber);
+	$("#div1").html(); // replace div1
 }
 
-function addProject(result) {
-	console.log(result);
-	var idNumber = result['id'];
-	var projectHTML = result['summary']; // pulling in the summary from projects.json 
-	$("#div1").html(projectHTML); // replace div1
-}
 
 // ############################# END Testing out Ajax #############################
 
@@ -70,6 +58,34 @@ $(document).ready(function(){
         $("#div1").load("playgroundtest");
     });
 });
+
+// ############################# Authorizing #############################
+$("#div1" ).on( "click", "#auth-button", function() {
+	console.log($( this ));
+	$("#div1").load("auth");  
+});
+
+// ############################# Fetches #############################
+
+
+
+function loadFetch1()  {
+	console.log($( this ));
+	$("#div1").load("fetch1");  
+}
+
+// ############################# Mint Template #############################
+// load between updates and overview
+$("#mintbody" ).on( "click", "#overview-button", function() {
+	console.log($( this ));
+	$("#mintbody").load("mintoverviewT");  
+});
+
+$("#mintbody" ).on( "click", "#updates-button", function() {
+	console.log($( this ));
+	$("#mintbody").load("mintupdatesT"); 
+});
+
 
 // load instagram
 $(document).ready(function(){
