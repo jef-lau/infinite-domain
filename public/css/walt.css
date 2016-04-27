@@ -208,6 +208,180 @@ body .modal-dialog {
     max-width: 400px; 
 }
 
+/* ############################# Notifications #############################*/
+.note-flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+.note-left {
+    padding-left: 5px;
+    width: 20%;
+}
+.note-flex-column {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+/* ############################# Phone Call #############################*/
+.incoming-call {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 30px;   
+    color: #FFF;
+    padding-right: 5px;
+}
+
+.incoming-photo {
+    padding-top: 25px;
+    max-width: 55px;
+}
+
+.incoming-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 30px;   
+    color: #FFF;
+    padding-right: 5px;  
+}
+
+.answer-buttons {
+    max-width: 100%;
+    padding: 5px;
+}
+
+.missed-call {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 30px;   
+    color: #000;
+    padding-right: 5px;      
+}
+
+.note-left-missed-call {
+    padding: 5px;
+    width: 10%;
+}
+
+.missed-incoming-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 20px;   
+    color: #000;
+    padding-right: 5px;  
+}
+
+/* ############################# Loading Dots #############################*/
+/*
+    CSS animated loading dots
+*/
+body
+{
+  background: #5A5C64;
+}
+ 
+ 
+  .loading_dots
+  {
+    display: inline-block;
+    font-size: .5em; /* set size here */
+    width: 2.35em;
+  }
+ 
+  .loading_dots span
+  {
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    display: inline-block;
+    height: 0.6em;
+    width:  0.6em;
+ 
+      -webkit-animation:  loading_dots 0.8s linear infinite;
+      -moz-animation:     loading_dots 0.8s linear infinite;
+      -ms-animation:      loading_dots 0.8s linear infinite;
+    animation:            loading_dots 0.8s linear infinite;
+  }
+    .loading_dots span:nth-child(2)
+    {
+        -webkit-animation-delay:  0.2s;
+        -moz-animation-delay:     0.2s;
+        -ms-animation-delay:      0.2s;
+      animation-delay:            0.2s;
+    }
+    .loading_dots span:nth-child(1)
+    {
+    -webkit-animation-delay:  0.4s;
+        -moz-animation-delay:     0.4s;
+        -ms-animation-delay:      0.4s;
+      animation-delay:            0.4s;
+    }
+ 
+/*
+  Define the animation for every efing vendor prefix
+*/
+  @-webkit-keyframes loading_dots
+  {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #E4E4E4;
+    }
+    100% {
+      background: transparent;
+    }
+  }
+  
+  @-moz-keyframes loading_dots
+  {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #FFF;
+    }
+    100% {
+      background: transparent;
+    }
+  }
+  @-ms-keyframes loading_dots
+  {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #FFF;
+    }
+    100% {
+      background: transparent;
+    }
+  }
+  @keyframes loading_dots
+  {
+    0% {
+      background: transparent;
+    }
+    50% {
+      background: #FFF;
+    }
+    100% {
+      background: transparent;
+    }
+  }
+
 /* ############################# Gallery App #############################*/
 #galleryImgs .modal-body {
     width: 100%;
@@ -353,19 +527,6 @@ body .modal-dialog {
 .mint-flex-full {
     width: 100%;
 }
-
-
-/*
-.gmailBody {   
-    padding: 15px;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;    
-}*/
 
 /* ############################# Text App #############################*/
 #text .modal-body {

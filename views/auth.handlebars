@@ -1,7 +1,12 @@
 <!doctype html>
 	<div style="padding-top: 30vh"></div>
 	<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw margin-bottom"></i><br/>
-	<div class="blink" style="padding-top: 5px"><span>Authorizing</span></div><br/>
+	<div style="padding-top: 5px">
+		<div id="content-1">Authenticating</div>
+		<div id="content-2">Authenticating</div>
+		<div id="content-3">Fetching New Data</div>
+		<div id="content-4">Fetching New Data</div>	
+	</div><br/>
 	<div class="col-xs-12 col-sm-12 progress-container">
 	    <div class="progress progress-striped active" >
 	        <div class="progress-bar progress-bar-success" style="width:0%" id="pb"></div>
@@ -9,15 +14,32 @@
 	</div>
 
 	<script>
+		// loop thru strings
+		var divs = $('div[id^="content-"]').hide(),
+		    i = 0;
+
+		(function cycle() { 
+
+		    divs.eq(i).fadeIn(300)
+		              .delay(800)
+		              .fadeOut(300, cycle);
+
+		    i = ++i % divs.length;
+
+		})();	
+
+		// change progress bar to black
 		$('#pb').css({
 		    'background-image': 'none',
 		    'background-color': 'black'
 		});	
 		$(".progress-bar").animate({
 		    width: "100%"
-		}, 5000);	
+		}, 5000);
+
+		// load fetch1 page in 5 seconds	
 		$(function(){
-		    setTimeout(loadFetch1,5000);
+		    setTimeout(loadFetch1,5000);//5000 = 5 seconds load time
 		});
 	</script>
 

@@ -14,6 +14,7 @@
 
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery.js"></script>	
@@ -34,12 +35,140 @@
 	<div class="outer">
 		<div class="middle">
 			<div class="inner">
-				<div class="menuBar">3<span>:</span>52 PM</div>
+				<div class="menuBar">11<span>:</span>00 PM</div>
 				<div class="waltDisplay">
 					<!-- content of story goes here -->
+					
 					<div class="appDisplay" id="div1">
-						<button type="button" class="btn btn-default" id="buttontest">Default</button>
-						{{>noUpdates}}
+
+
+
+
+
+<!doctype html>
+
+<div class="fetch">
+	<div style="padding-top: 35vh"></div>
+		SUBJECT WALT_0628
+	<div style="padding-top: 35vh"></div>		
+</div>
+
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:10vh"></div>
+
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+        	<div class="note-left">
+        		<div style="text-align: left;flex-grow: 1;"><div class="blink"><span><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></span></div></div>
+        	</div>
+            <div class="note-flex-column">
+            	<div style="text-align: left;flex-grow: 2" class="blink"><span><b>Alarm</b></span></div> 
+            	<div style="text-align: left;"><div class="blink"><span><button type="button" class="btn btn-danger " style="padding-right:40px;padding-left:40px">Dismiss</button></span></div></div>
+            </div>
+          	<div class="note-flex-column">
+            	<div style="text-align: right;flex-grow: 2"><div class="blink"><span><font color="#00000">7:30 AM</font></span></div></div>  
+            	<div style="text-align: right;"><div class="blink"><span><button type="button" class="btn btn-default" style="padding-right:40px;padding-left:40px">Snooze</button></span></div></div>
+            </div>            
+           
+        </div>
+    </li>
+</ul> 
+
+<div class="timeline" style="height:30px"></div>
+<div class="stamp">7<span>:</span>40<span>:</span>47 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><button type="button" class="btn btn-default active" style="padding-right:40px;padding-left:40px">Snooze</button></div>
+
+<div class="timeline" style="height:33px"></div>
+<div class="stamp">7<span>:</span>51<span>:</span>17 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><i><button type="button" class="btn btn-default active" style="padding-right:40px;padding-left:40px">Snooze</button></i></div>
+
+<div class="timeline" style="height:42px"></div>
+<div class="stamp">8<span>:</span>05<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><i><button type="button" class="btn btn-danger active" style="padding-right:40px;padding-left:40px">Dismiss</button></i></div>
+
+
+<div class="timeline" style="height:90px"></div>
+<div class="stamp">8<span>:</span>35<span>:</span>52 AM</div>
+<div class="timeline" style="height:7px"></div>
+{{> p1gmail-1}}
+
+<div class="timeline" style="height:25px"></div>
+<div class="stamp">8<span>:</span>40<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+{{> mintT}}
+
+<div class="timeline" style="height:25px"></div>
+<div class="stamp">8<span>:</span>48<span>:</span>45 AM</div>
+<div class="timeline" style="height:7px"></div>
+
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item" style="background:#619B1E;padding: 4px">
+        <div class="note-flex-container">
+        	<div class="note-left">
+        		<div style="text-align: left;flex-grow: 1;">
+        			<img class="incoming-photo" src="/images/ppl/arthur-ico.jpg">
+        		</div>
+        	</div>
+
+            <div class="note-flex-column incoming-name">
+            	<div style="text-align: left;flex-grow: 5;padding-top: 25px;font-size:1.3em">Mom</div> 
+            	<div style="text-align: left;flex-grow: 5"><i class="fa fa-home" aria-hidden="true"></i> 415-518-5753</div>
+            </div>
+
+          	<div class="note-flex-column">
+            	<div style="text-align: right;flex-grow: 2" class="incoming-call">
+					Incoming Call
+	        		<div class="loading_dots">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>            		
+            	</div>  
+            </div>            
+        </div>
+
+        	<img src="/images/phone.jpg" class="answer-buttons"><br/>
+
+    </li>
+</ul> 
+
+<div class="timeline" style="height:24px"></div>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+        <div class="note-flex-container">
+        	<div class="note-left-missed-call">
+        		<div style="text-align: left;flex-grow: 1;">
+        			<img style="width: 25px;" src="/images/missedcall.png">
+        		</div>
+        	</div>
+
+            <div class="note-flex-column missed-incoming-name">
+            	<div style="text-align: left;flex-grow: 5">Missed Call</div> 
+            	<div style="text-align: left;flex-grow: 5;font-size: .8em !important;"> Mom</div>
+            </div>
+
+          	<div class="note-flex-column">
+            	<div style="text-align: right;flex-grow: 2;" class="missed-call">
+					8:50 AM        		
+            	</div>  
+            </div>            
+        </div>
+    </li>
+</ul> 
+
+<div class="timeline" style="height:30px"></div>
+<div class="stamp">9<span>:</span>10<span>:</span>48 AM</div>
+<div class="timeline" style="height:7px"></div>
+{{> fbMessengerT}} {{> fbMessengerT}}
+
+
+
+
+
 					</div>
 
 				</div>
@@ -47,8 +176,8 @@
 		</div>
 	</div>
 
-
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/walt.js"></script>
+	
 </body>
 </html>

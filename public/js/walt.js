@@ -11,6 +11,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.appDisplay a').click(addProjectDetails);
+	$('.model-body a').click(addProjectDetails);
 }
 
 /*
@@ -20,6 +21,7 @@ function addProjectDetails(e) {
 	// Prevent following the link
 	e.preventDefault();
 	$("#div1").html(); // replace div1
+	$("#mintbody").html();
 }
 
 
@@ -59,6 +61,8 @@ $(document).ready(function(){
     });
 });
 
+
+
 // ############################# Authorizing #############################
 $("#div1" ).on( "click", "#auth-button", function() {
 	console.log($( this ));
@@ -67,25 +71,30 @@ $("#div1" ).on( "click", "#auth-button", function() {
 
 // ############################# Fetches #############################
 
-
-
 function loadFetch1()  {
 	console.log($( this ));
 	$("#div1").load("fetch1");  
 }
 
+// ############################# Walt #############################
+// load first page of data logs
+$("#div1" ).on( "click", "#walt-button", function() {
+	console.log($( this ));
+	$("#div1").load("walt");  
+});
+
+
 // ############################# Mint Template #############################
 // load between updates and overview
-$("#mintbody" ).on( "click", "#overview-button", function() {
+$("#mintbody").on( "click", "#overview-button", function() {
 	console.log($( this ));
 	$("#mintbody").load("mintoverviewT");  
 });
 
-$("#mintbody" ).on( "click", "#updates-button", function() {
+$("#mintbody").on( "click", "#updates-button", function() {
 	console.log($( this ));
 	$("#mintbody").load("mintupdatesT"); 
 });
-
 
 // load instagram
 $(document).ready(function(){

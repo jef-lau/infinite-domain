@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+<div class="appContainer">
+    <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+    <p class="appName">SMS</p>
+</div>  
+
+<!-- typing text -->
+<script>
+$(function(){
+    var options = {
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0
+    }
+    $("#sms").click(function(){
+        $(".textElement").typed(options);
+    });
+});
+</script>
+
+
+
+<!-- Modal -->
+<div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="txtHeader">
+            <i class="fa fa-comments"></i> <img src="/images/ppl/arthur-ico.jpg">Arthur C
+        </div>
+        <div class="textContainer">
+            <div class="received">
+                <p>hi friend
+                    <div class="time">7:20 PM</div>
+                </p>
+            </div>
+            <div class="sent">
+                <p>hi friend
+                    <div class="time">7:20 PM</div>
+                </p>
+            </div>
+            <div class="received">
+                <p>hi friend
+                    <div class="time">7:20 PM</div>
+                </p>
+            </div>
+            <div class="sent">
+                <p>hi friend
+                    <div class="time">7:20 PM</div>
+                </p>
+            </div> 
+            <div class="received">
+                <p>hi friend
+                    <div class="time">7:20 PM</div>
+
+                </p>
+            </div>                             
+        </div>
+
+        <div class="textBox">
+            <span class="textElement"></span>
+            <i class="fa fa-send"></i> 
+        </div>
+                                         
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+      </div>
+    </div>
+  </div>
+</div>  
+	
+</html>

@@ -1,67 +1,55 @@
 <!doctype html>
 
-<html>
-<head>
-	<title>Project Walt</title>	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/css/walt.css" rel="stylesheet">
-	<link href="/css/font-awesome.css" rel="stylesheet">
-	<link href="/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/css/toastr.css" rel="stylesheet"/>
+<div class="fetch">
+	<div style="padding-top: 35vh"></div>
+		SUBJECT WALT_0628
+	<div style="padding-top: 5vh"></div>		
+</div>
 
-	<!-- Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:40vh"></div>
 
-	<!-- Javascript -->
-	<script src="https://code.jquery.com/jquery.js"></script>	
-	<script src="/js/toastr.js"></script>
-	<script src="/js/typed.js"></script>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+        	<div class="note-left">
+        		<div style="text-align: left;flex-grow: 1;"><div class="blink"><span><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></span></div></div>
+        	</div>
+            <div class="note-flex-column">
+            	<div style="text-align: left;flex-grow: 2" class="blink"><span><b>Alarm</b></span></div> 
+            	<div style="text-align: left;"><div class="blink"><span><button type="button" class="btn btn-danger " style="padding-right:40px;padding-left:40px">Dismiss</button></span></div></div>
+            </div>
+          	<div class="note-flex-column">
+            	<div style="text-align: right;flex-grow: 2"><div class="blink"><span><font color="#00000">7:30 AM</font></span></div></div>  
+            	<div style="text-align: right;"><div class="blink"><span><button type="button" class="btn btn-default" style="padding-right:40px;padding-left:40px">Snooze</button></span></div></div>
+            </div>            
+           
+        </div>
+    </li>
+</ul> 
 
+<div class="timeline" style="height:30px"></div>
+<div class="stamp">7<span>:</span>40<span>:</span>47 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><button type="button" class="btn btn-default active" style="padding-right:40px;padding-left:40px">Snooze</button></div>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
-</head>
+<div class="timeline" style="height:33px"></div>
+<div class="stamp">7<span>:</span>51<span>:</span>17 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><i><button type="button" class="btn btn-default active" style="padding-right:40px;padding-left:40px">Snooze</button></i></div>
 
-
-<body id="background">
-	<div class="outer">
-		<div class="middle">
-			<div class="inner">
-				<div class="menuBar">3<span>:</span>52 PM</div>
-					<div class="waltDisplay">
-						<!-- content of story goes here -->
-						
-						<div class="appDisplay" id="div1">
-
-							<img src="/images/circle.png" id="circle">
-							<div class="timeline" style="height:75px"></div>
-							<div class="stamp">8<span>:</span>35<span>:</span>52 AM</div>
-							<div class="timeline" style="height:7px"></div>
-							{{> p1gmail-1}}
-
-							<div class="timeline" style="height:25px"></div>
-							<div class="stamp">8<span>:</span>40<span>:</span>12 AM</div>
-							<div class="timeline" style="height:7px"></div>
-							{{> mintT}}
-							
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="timeline" style="height:42px"></div>
+<div class="stamp">8<span>:</span>05<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><i><button type="button" class="btn btn-danger active" style="padding-right:40px;padding-left:40px">Dismiss</button></i></div>
 
 
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/walt.js"></script>
-</body>
-</html>
+<div class="timeline" style="height:90px"></div>
+<div class="stamp">8<span>:</span>35<span>:</span>52 AM</div>
+<div class="timeline" style="height:7px"></div>
+{{> p1gmail-1}}
+
+<div class="timeline" style="height:25px"></div>
+<div class="stamp">8<span>:</span>40<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+{{> mintT}}
