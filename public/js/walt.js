@@ -69,6 +69,118 @@ $("#div1" ).on( "click", "#auth-button", function() {
 	$("#div1").load("auth");  
 });
 
+// ############################# Pages #############################
+// ############################# Page 1 #############################
+$("#div1" ).on( "click", "#page1", function() {
+	console.log($( this ));
+	$("#div1").load("page1");
+});
+$("#div1" ).on( "click", "#page1_2", function() {
+	console.log($( this ));
+	$("#append_page1_2").load('page1_2');
+});
+$("#div1" ).on( "click", "#page1_3", function() {
+	console.log($( this ));
+	$("#append_page1_3").load('page1_3');
+});
+$("#div1" ).on( "click", "#page1_4", function() {
+	console.log($( this ));
+	$("#append_page1_4").load('page1_4');
+});
+$("#div1" ).on( "click", "#refresh1", function() {
+	console.log($( this ));
+	$("#div1").load('refresh1');
+});
+
+// ############################# Page 2 #############################
+function page2()  {
+	console.log($( this ));
+	$("#div1").load("page2");  
+}
+$("#div1" ).on( "click", "#page2_2", function() {
+	console.log($("append_page2 clicked"));
+	$("#append_page2").load('page2_2');
+});
+$("#div1" ).on( "click", "#page2_3", function() {
+	console.log($("append_page2 clicked"));
+	$("#append_page2_2").load('page2_3');
+});
+$("#div1" ).on( "click", "#page2_4", function() {
+	console.log($( this ));
+	$("#append_page2_3").load('page2_4');
+});
+
+// ############################# Page 3 #############################
+$("#div1" ).on( "click", "#page3", function() {
+	console.log($(this));
+	$("#div1").load('page3');
+});
+$("#div1" ).on( "click", "#page3_2", function() {
+	console.log($(this));
+	$("#append_page3").load('page3_2');
+});
+
+// ############################# Page 4 #############################
+$("#div1" ).on( "click", "#page4", function() {
+	console.log($(this));
+	$("#div1").load('page4');
+});
+
+
+
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+// $("#div1" ).on( "click", "#page1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load("page1");
+// });
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {

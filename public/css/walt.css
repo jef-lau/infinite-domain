@@ -32,6 +32,27 @@
   animation: blink 1s infinite;
 }
 
+/* navBar function is currently inactive until further investigation */
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 20px;   
+    text-align: center;
+    color: #FFF;
+    max-width: 400px;
+    height: 7vh;
+    background: #000;
+    margin: auto;
+    border-bottom-left-radius: 6px;   
+    border-bottom-right-radius: 6px; 
+}
+
 .menuBar @keyframes blink{
   to{opacity: .0;}
 }
@@ -45,7 +66,7 @@
     margin: auto;
     overflow-x: hidden;
     border-bottom-left-radius: 6px;   
-    border-bottom-right-radius: 6px;   
+    border-bottom-right-radius: 6px;     
 }
 
 .outer {
@@ -72,6 +93,10 @@
 
 .disable-mouse {
     cursor:not-allowed;
+}
+
+#nextArrow {
+    color: #AAAAAA;
 }
 
 /* ############################# Splash #############################*/
@@ -148,7 +173,7 @@
 .fetch-flex-container {
     display: -webkit-flex;
     display: flex;
-    width: 400px;
+    max-width: 400px;
     /*background-color: #aaaaaa;*/
 }
 
@@ -216,7 +241,7 @@ body .modal-dialog {
 .note-flex-container {
     display: -webkit-flex;
     display: flex;
-    width: 100%;
+    max-width: 400px;
 }
 .note-left {
     padding-left: 5px;
@@ -516,11 +541,11 @@ body
 .mint-flex-container {
     display: -webkit-flex;
     display: flex;
-    width: 400px;
+    max-width: 400px;
 }
 
 .mint-flex-item {
-    width: 45%;
+    width: 55%;
 }
 
 .mint-category {
@@ -530,6 +555,46 @@ body
 
 .mint-flex-full {
     width: 100%;
+}
+
+.tabs {
+  /**
+   * Setting display to flex makes this container lay
+   * out its children using flexbox, the exact same
+   * as in the above "Stepper input" example.
+   */
+    display: -webkit-flex;
+    display: flex;
+    max-width: 400px;
+    background-color: #22C678;
+    border-bottom: 1px solid #D7DBDD;
+
+    align-items: flex-end; 
+    justify-content: space-between;     
+}
+
+.tabs a {
+    text-decoration: none;
+}
+
+.tab {    
+    padding-right: 50px; 
+    padding-left: 50px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #74DBAD;
+    font-size: 1.1em;
+    font-weight: 300;
+    border-bottom: 4px solid transparent;
+
+}
+
+
+
+.tab.is-tab-selected {
+    color: #FEFEFE;
+    border-bottom-color: #249D7D;
 }
 
 /* ############################# Text App #############################*/
@@ -679,7 +744,6 @@ body
     50% { opacity:0; }
     100% { opacity:1; }
 }
-
 
 /* ############################# What is Walt #############################*/
 #whatis .modal-body {

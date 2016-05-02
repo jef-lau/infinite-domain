@@ -43,6 +43,21 @@ app.get('/fetch1', routes.fetch1)
 app.get('/auth', routes.auth)
 app.get('/walt', routes.walt)
 
+// Pages
+app.get('/page1', routes.page1)
+app.get('/page1_2', routes.page1_2)
+app.get('/page1_3', routes.page1_3)
+app.get('/page1_4', routes.page1_4)
+app.get('/refresh1', routes.refresh1)
+app.get('/page2', routes.page2)
+app.get('/page2_2', routes.page2_2)
+app.get('/page2_3', routes.page2_3)
+app.get('/page2_4', routes.page2_4)
+app.get('/page3', routes.page3)
+app.get('/page3_2', routes.page3_2)
+app.get('/page4', routes.page4)
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
