@@ -1,7 +1,7 @@
 <!doctype html>
 
-<div class="timeline" style="height:21px"></div>
-<div class="stamp">8<span>:</span>55<span>:</span>13 AM</div>
+<div class="timeline" style="height:90px"></div>
+<div class="stamp">8<span>:</span>31<span>:</span>13 AM</div>
 <div class="timeline" style="height:7px"></div>
 
 <!doctype html>
@@ -13,9 +13,33 @@ $(document).ready(function(){
 function initialise()
 {
     $("#btn1").click(function(){
-        $( "div.refresh01" ).replaceWith( "<div class=\"received\"><p>Can't talk right now. It's a little tense in the office. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div>" );
+        $( "div.refresh01" ).replaceWith( "<div class=\"sent\"><p>Sorry if you don’t feel comfortable talking about it..<div class=\"time\">8:31 AM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
         initialise();
-    });
+    });  
+    $("#btn2").click(function(){
+        $( "div.refresh02" ).replaceWith( "<div class=\"received\"><p>Hi-ya Walt! Yea, she got let go this morning. I saw her leave Rob’s office, packed her things and left.<div class=\"time\">8:33 AM</div></p></div><div class=\"refresh03\"><button class=\"buttonRefresh\" id=\"btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });    
+    $("#btn3").click(function(){
+        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We had a company meeting that we acquired a new startup called infinite domain. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn4").click(function(){
+        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn5").click(function(){
+        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>They must be expensive if they are cutting so many people. I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn6").click(function(){
+        $( "div.refresh06" ).replaceWith( "<div class=\"received\"><p>Oh shit, Rob's here. Can’t talk.<div class=\"time\">8:39 AM</div></p></div><div class=\"refresh07\"><button class=\"buttonRefresh\" id=\"btn7\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn7").click(function(){
+        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll hit you up after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:40 AM</div></p></div>" );
+        initialise();
+    });                  
     
 /* Use below as template
 <div class=\"received\"><p>Can't talk right now. It's a little tense in the office right now. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>
@@ -38,12 +62,12 @@ function initialise()
 
       <div class="modal-body">
         <div class="txtHeader">
-            <i class="fa fa-comments"></i> <img src="/images/ppl/arthur-ico.jpg">Arthur C
+            <i class="fa fa-comments"></i> <img src="/images/ppl/dana.jpg">Dana Song
         </div>
         <div class="textContainer">
             <div class="sent">
-                <p>Hey, do you know what's happened? I got fired for "misconduct". What is this shit??
-                    <div class="time">7:20 PM</div>
+                <p>Hey Dana, do you know if Elaina got fired?
+                    <div class="time">8:31 AM</div>
                 </p>
             </div>
             <div class="refresh01"><button class="buttonRefresh" id="btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                        
@@ -54,9 +78,6 @@ function initialise()
             <span class="textElement"></span>
             <i class="fa fa-send"></i> 
         </div>
-
-
-
 
       </div>
       <div class="modal-footer">
