@@ -507,6 +507,18 @@ body
     text-align: left;       
 }
 
+.gmail-compose {
+    padding: 10px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: left; 
+    color:#9b9b9b;      
+}
+
 .gmailSubtext {
     padding-left: 24px;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;

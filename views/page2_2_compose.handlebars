@@ -1,11 +1,25 @@
 <!doctype html>
 
+
+<script>
+    $(function() {
+        var options = {
+          strings: ["^1000Hey Elaina, ^1000\n\nI do not have your number and your work email is my only way of contacting you. ^1000\n\n What happened?^1500 How did they figure it out?^500 We were so careful.^1000 Did you tell Robert? ^2000 Did you get me fired?^1500\n\nThis is probably not the safest way to communicate. ^1500 Please send me your number. ^1000 I can't afford to lose this job.^2000\n\n-Walt"],
+          typeSpeed: 0, contentType: 'text'
+        }
+        $("#compose-elaina").click(function() {
+          $(".element").typed(options);
+        });
+    });
+</script>
+
+
 <div class="timeline" style="height:25px"></div>
-<div class="stamp">8<span>:</span>40<span>:</span>12 AM</div>
+<div class="stamp">8<span>:</span>12<span>:</span>12 AM</div>
 <div class="timeline" style="height:7px"></div>
 
 <div class="appContainer">
-  <a><img src="/images/icons/gmail.png" class="app" data-toggle="modal" data-target="#gmail2" data-backdrop="true" data-keyboard="true"></a>
+  <a><img src="/images/icons/gmail.png" class="app" data-toggle="modal" data-target="#gmail2" data-backdrop="true" data-keyboard="true" id="compose-elaina"></a>
   <p class="appName">Gmail</p>
 </div>
 
@@ -20,65 +34,34 @@
 
       <div class="modal-body">
 
-        <img src="/images/gmail-header.jpg" class="fitInModal disable-mouse">
-
-        <!-- <img src="/images/p1gmail-1.jpg" class="fitInModal clickable" data-toggle="collapse" data-target="#inbox1"> -->
-
-
-        <div class="clickable gmailButton firedEmail" data-toggle="collapse" data-target="#inbox1">
-            <div class="gmail-flex-container">
-                <div class="gmail-checkbox"><input type="checkbox" value=""></div>
-
-                <div class="gmail-flex-item gmailHeader" style="text-align: left" id="firedHeader">Lifestyle Columnist application at San Diego</div>
-                <div class="gmail-flex-item-right gmailTime">7:49 am</div>  
-            </div>  
-            <div class="gmail-flex-container">
-                <div class="gmail-flex-item gmailSubtext">Internet</div>
-                <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
-            </div>  
-            <hr/>
-        </div>
-
-        
-
-        <div id="inbox1" class="collapse">
-            <div class="gmailBody">
-                Hi Walt,<br/><br/>
-                Thank you for your application to San Diego Weekly. Unfortunately, we are not able to offer you the Lifestyle Columnist position at this time, as we are looking for someone with more experience in publication for this role.<br/><br/>
-                Please do not hesitate to keep in touch and reach out if we have another role you think could be a fit for in the future.<br/><br/>
-                Best,<br/><br/>
-                Deborah Bleiweiss<br/>
-                <i>Lifestyle Editor</i><br/><br/>
-                <div style="font-size:12px">
-                    d: 619.210.1736<br/>
-                    o: 619.753.8200<br/>
-                    f: 619.753.8202
-                </div>
-
-            </div>
-        </div>                                   
-
+        <img src="/images/gmailcompose.jpg" class="fitInModal disable-mouse">
+            <div class="gmailButton">
+                <div class="gmail-flex-container">
+                    <div class="gmail-flex-item-right gmail-compose">To:</div>
+                    <div class="gmail-flex-item" style="text-align:left;padding-top:15px;">
+                        <button type="button" class="btn btn-success btn-xs" >Elaina Jodi</button>                       
+                    </div>  
+                </div>   
+                <hr/>
+                <div class="gmail-flex-container">
+                    <div class="gmail-flex-item-right gmail-compose">Cc/Bcc:</div>  
+                </div>   
+                <hr/>   
+                <div class="gmail-flex-container">
+                    <div class="gmail-flex-item-right gmail-compose">Subject:</div>
+                    <div class="gmail-flex-item" style="text-align:left;padding-top:15px;">Emergency!</div>  
+                </div>   
+                <hr/>        
+                <div style="text-align: left;padding:15px"><span class="element" style="white-space:pre-line"></span></div>
+            </div>                                           
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="page2_3" value="true">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="page2_3" value="true">Send</button>
       </div>
     </div>
   </div>
 </div>
+<script src="typed.js"></script>
 
-<script>
-$(document).ready(function(){
-    unBold();
-});
-
-function unBold() {
-    $(".firedEmail").click(function() {
-        $('#firedHeader').addClass('removeBold');
-        unBold();
-    }); 
-
-}
-
-</script>
 
 <div id="append_page2_2"></div>

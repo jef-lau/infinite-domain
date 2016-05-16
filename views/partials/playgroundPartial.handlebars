@@ -1,106 +1,23 @@
 <!doctype html>
 
-<div class="timeline" style="height:90px"></div>
-<div class="stamp">8<span>:</span>07<span>:</span>52 AM</div>
-<div class="timeline" style="height:7px"></div>
-<div class="appContainer">
-  <a><img src="/images/icons/gmail.png" class="app" data-toggle="modal" data-target="#gmail" data-backdrop="true" data-keyboard="true"></a>
-  <p class="appName">Gmail</p>
-</div>
-
-
-
-<!-- Modal -->
-<div id="gmail" class="modal fade gmail" role="dialog"  tabindex='-1'>
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-
-      <div class="modal-body">
-
-        <img src="/images/gmail-header.jpg" class="fitInModal disable-mouse">
-
-        <!-- <img src="/images/p1gmail-1.jpg" class="fitInModal clickable" data-toggle="collapse" data-target="#inbox1"> -->
-
-
-        <div class="clickable gmailButton firedEmail" data-toggle="collapse" data-target="#inbox1">
-            <div class="gmail-flex-container">
-                <div class="gmail-checkbox"><input type="checkbox" value=""></div>
-
-                <div class="gmail-flex-item gmailHeader" style="text-align: left" id="firedHeader">ZenTech Termination Notice</div>
-                <div class="gmail-flex-item-right gmailTime">7:49 am</div>  
-            </div>  
-            <div class="gmail-flex-container">
-                <div class="gmail-flex-item gmailSubtext">Hello Walter, Upon further investigations, we are lead to...</div>
-                <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
-            </div>  
-            <hr/>
-        </div>
-
-        
-
-        <div id="inbox1" class="collapse">
-            <div class="gmailBody">
-                <div class="gmail-flex-container">
-                    <div class="gmail-flex-item-img"><img src="/images/ppl/deblei-ico.jpg" style="width:50px"></div>
-                    <div class="gmail-flex-item">
-                        <b>Deborah Bleiweiss</b><br/>
-                        <div class="gmail-sender">to Walt<br/>
-                        Feb 15</div>
-                    </div>
-
-                </div>
-                <br/>
-
-                Hello Walter,<br/><br/>
-
-                Upon further investigations, we are lead to believe of your ongoing affairs with Elaina Jodi. This email confirms that your employment with ZenTech is terminated effective immediately. Please do not bother coming into the office this morning. We have packed your items and will schedule a deliver during the next 1-2 business days.<br/><br/>
-
-                Unfortunately, we cannot offer you a severance package for violating Part IV, Section B of the employee policy handbook.<br/><br/>
-                <div class="gmail-quote">"… Employees are prohibited to engage in sexual activity in the workplace. The company may periodically evaluate an employee’s performance and set out an investigation if deemed necessary. … Anyone violating this policy may be subject to disciplinary action, up to and including termination with no benefits."</div><br/>
-
-                Additionally, your final paycheck will be deposited into your account on your regular payday.<br/><br/>
-
-                You will need to keep the company informed of your contact information so we are able to provide you with your W2 form and other important documents.<br/><br/>
-
-                Please let us know if you have any questions.<br/><br/>
-
-                Regards,<br/><br/>
-
-                Deborah Bleiweiss<br/>
-                <i>Assistant Director Human Resources</i><br/><br/>
-                
-                <div style="font-size:12px">
-                    d: 619.210.1736<br/>
-                    o: 619.753.8200<br/>
-                    f: 619.753.8202
-                </div>
-
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:50px"></div>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+          <div class="note-left">
+            <div style="text-align: left;flex-grow: 1;"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></div>
+          </div>
+            <div class="note-flex-column">
+              <div style="text-align: left;flex-grow: 2" ><b>Alarm</b></div> 
+              <div style="text-align: left;"><button type="button" class="btn btn-danger" style="padding-right:40px;padding-left:40px" id="page1_2">Dismiss</button></div>
             </div>
-        </div>                                   
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="page2_2" value="true">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-$(document).ready(function(){
-    unBold();
-});
-
-function unBold() {
-    $(".firedEmail").click(function() {
-        $('#firedHeader').addClass('removeBold');
-        unBold();
-    }); 
-
-}
-
-</script>
-
-<div id="append_page2"></div>
+            <div class="note-flex-column">
+              <div style="text-align: right;flex-grow: 2"><font color="#00000">7:30 AM</font></div>  
+              <div style="text-align: right;"><button type="button" class="btn btn-default" style="padding-right:40px;padding-left:40px" id="page1_2">Snooze</button></div>
+            </div>            
+           
+        </div>
+    </li>
+</ul> 
+<div id="append_page1_2"></div>
