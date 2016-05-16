@@ -1,5 +1,24 @@
 <!doctype html>
 
+<!doctype html>
+<script>
+$(document).ready(function(){
+    initialise();  
+});
+
+function initialise()
+{
+    $("#btn1").click(function(){
+        $( "div.refresh01" ).replaceWith( "<div class=\"received\"><p>Can't talk right now. It's a little tense in the office. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div>" );
+        initialise();
+    });
+    
+/* Use below as template
+<div class=\"received\"><p>Can't talk right now. It's a little tense in the office right now. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>
+*/    
+}
+</script>
+
 <div class="timeline" style="height:25px"></div>
 <div class="stamp">8<span>:</span>48<span>:</span>45 AM</div>
 <div class="timeline" style="height:7px"></div>
@@ -9,21 +28,6 @@
     <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
     <p class="appName">SMS</p>
 </div>  
-
-<!-- typing text -->
-<script>
-$(function(){
-    var options = {
-        strings: ["First sentence.", "Second sentence."],
-        typeSpeed: 0
-    }
-    $("#sms").click(function(){
-        $(".textElement").typed(options);
-    });
-});
-</script>
-
-
 
 <!-- Modal -->
 <div id="text" class="modal fade" role="dialog"  tabindex='-1'>
@@ -37,39 +41,22 @@ $(function(){
             <i class="fa fa-comments"></i> <img src="/images/ppl/arthur-ico.jpg">Arthur C
         </div>
         <div class="textContainer">
-            <div class="received">
-                <p>hi friend
-                    <div class="time">7:20 PM</div>
-                </p>
-            </div>
             <div class="sent">
-                <p>hi friend
+                <p>Hey, do you know what's happened? I got fired for "misconduct". What is this shit??
                     <div class="time">7:20 PM</div>
                 </p>
             </div>
-            <div class="received">
-                <p>hi friend
-                    <div class="time">7:20 PM</div>
-                </p>
-            </div>
-            <div class="sent">
-                <p>hi friend
-                    <div class="time">7:20 PM</div>
-                </p>
-            </div> 
-            <div class="received">
-                <p>hi friend
-                    <div class="time">7:20 PM</div>
+            <div class="refresh01"><button class="buttonRefresh" id="btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                        
 
-                </p>
-            </div>                             
         </div>
 
         <div class="textBox">
             <span class="textElement"></span>
             <i class="fa fa-send"></i> 
         </div>
-                                         
+
+
+
 
       </div>
       <div class="modal-footer">

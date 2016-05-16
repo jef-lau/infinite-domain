@@ -87,16 +87,20 @@ $("#div1" ).on( "click", "#page1_4", function() {
 	console.log($( this ));
 	$("#append_page1_4").load('page1_4');
 });
-$("#div1" ).on( "click", "#refresh1", function() {
-	console.log($( this ));
-	$("#div1").load('refresh1');
-});
+// $("#div1" ).on( "click", "#refresh1", function() {
+// 	console.log($( this ));
+// 	$("#div1").load('refresh1');
+// });
 
 // ############################# Page 2 #############################
-function page2()  {
+// function page2()  {
+// 	console.log($( this ));
+// 	$("#div1").load("page2");  
+// }
+$("#div1" ).on( "click", "#page2", function() {
 	console.log($( this ));
-	$("#div1").load("page2");  
-}
+	$("#div1").load('page2');
+});
 $("#div1" ).on( "click", "#page2_2", function() {
 	console.log($("append_page2 clicked"));
 	$("#append_page2").load('page2_2');
@@ -118,6 +122,14 @@ $("#div1" ).on( "click", "#page3", function() {
 $("#div1" ).on( "click", "#page3_2", function() {
 	console.log($(this));
 	$("#append_page3").load('page3_2');
+});
+$("#div1" ).on( "click", "#page3_3", function() {
+	console.log($(this));
+	$("#append_page3_2").load('page3_3');
+});
+$("#div1" ).on( "click", "#page3_4", function() {
+	console.log($(this));
+	$("#append_page3_3").load('page3_4');
 });
 
 // ############################# Page 4 #############################

@@ -55,6 +55,8 @@ app.get('/page2_3', routes.page2_3)
 app.get('/page2_4', routes.page2_4)
 app.get('/page3', routes.page3)
 app.get('/page3_2', routes.page3_2)
+app.get('/page3_3', routes.page3_3)
+app.get('/page3_4', routes.page3_4)
 app.get('/page4', routes.page4)
 
 

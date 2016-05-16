@@ -1,0 +1,47 @@
+<!doctype html>
+
+<div class="timeline" style="height:25px"></div>
+<div class="stamp">8<span>:</span>40<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+
+
+<div class="appContainer">
+  <a><img src="/images/icons/messenger.png" class="app" data-toggle="modal" data-target="#messenger" data-backdrop="true" data-keyboard="true"></a>
+  <p class="appName">Messenger</p>
+</div>
+
+<!-- Modal -->
+<div id="messenger" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body" id="messengerbody">
+        <!-- facebook messenger -->                 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="3_4_next">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<div class="3_4_reboot"></div>
+  
+
+<script>
+$(document).ready(function(){
+    initialise();  
+});
+
+function initialise()
+{
+    $("#3_4_next").click(function(){
+        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page4\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\">" );
+        initialise();
+    });
+       
+}
+</script>

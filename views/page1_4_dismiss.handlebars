@@ -1,0 +1,23 @@
+<!doctype html>
+
+<script>
+$(document).ready(function(){
+    initialise();  
+});
+
+function initialise()
+{
+    $("#btn1ddd").click(function(){
+        console.log("dismiss pressed");
+        $( "div.page1Next").replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page2\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\"></div>" );
+        initialise();
+    });   
+}
+</script>
+
+<div class="timeline" style="height:42px"></div>
+<div class="stamp">7<span>:</span>45<span>:</span>12 AM</div>
+<div class="timeline" style="height:7px"></div>
+<div class="stamp"><i><button type="button" class="btn btn-danger" style="padding-right:40px;padding-left:40px" id="btn1ddd">Dismiss</button></i></div>
+
+<div class="page1Next"></button></div>  

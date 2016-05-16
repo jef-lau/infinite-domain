@@ -54,19 +54,19 @@ exports.walt = function(req, res){
 // ############################# Pages #############################
 exports.page1 = function(req, res){
    //some methods
-   res.render('page1', { title: 'Express' });
+   res.render('page1_alarm', { title: 'Express' });
 };
 exports.page1_2 = function(req, res){
    //some methods
-   res.render('page1_2', { title: 'Express' });
+   res.render('page1_2_snooze', { title: 'Express' });
 };
 exports.page1_3 = function(req, res){
    //some methods
-   res.render('page1_3', { title: 'Express' });
+   res.render('page1_3_snooze', { title: 'Express' });
 };
 exports.page1_4 = function(req, res){
    //some methods
-   res.render('page1_4', { title: 'Express' });
+   res.render('page1_4_dismiss', { title: 'Express' });
 };
 exports.refresh1 = function(req, res){
    //some methods
@@ -74,27 +74,35 @@ exports.refresh1 = function(req, res){
 };
 exports.page2 = function(req, res){
    //some methods
-   res.render('page2', { title: 'Express' });
+   res.render('page2_gmail', { title: 'Express' });
 };
 exports.page2_2 = function(req, res){
    //some methods
-   res.render('page2_2', { title: 'Express' });
+   res.render('page2_2_compose', { title: 'Express' });
 };
 exports.page2_3 = function(req, res){
    //some methods
-   res.render('page2_3', { title: 'Express' });
+   res.render('page2_3_auto', { title: 'Express' });
 };
 exports.page2_4 = function(req, res){
    //some methods
-   res.render('page2_4', { title: 'Express' });
+   res.render('page2_4_next', { title: 'Express' });
 };
 exports.page3 = function(req, res){
    //some methods
-   res.render('page3', { title: 'Express' });
+   res.render('page3_sms', { title: 'Express' });
 };
 exports.page3_2 = function(req, res){
    //some methods
-   res.render('page3_2', { title: 'Express' });
+   res.render('page3_2_audio', { title: 'Express' });
+};
+exports.page3_3 = function(req, res){
+   //some methods
+   res.render('page3_3_mint', { title: 'Express' });
+};
+exports.page3_4 = function(req, res){
+   //some methods
+   res.render('page3_4_fb', { title: 'Express' });
 };
 exports.page4 = function(req, res){
    //some methods
