@@ -312,6 +312,39 @@ body .modal-dialog {
     padding-right: 5px;  
 }
 
+/* ############################# Push Notifications #############################*/
+
+.mint-left{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;   
+    color: #000;
+    padding-top: 10px;
+    padding-left: 25px;      
+    width: 80%;
+}
+
+.mint-right{
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: .9em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;   
+    color: #000;  
+    width: 20%;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.no-decorations, .no-decorations:hover, .no-decorations:active, .no-decorations:visited {
+    text-decoration:none;
+}
 /* ############################# Loading Dots #############################*/
 /*
     CSS animated loading dots
@@ -812,6 +845,159 @@ body
     width: 100%;
 }
 
+/* ############################# Facebook Messenger #############################*/
+.messenger .modal-body {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 2.2em;
+}
+
+.fbHeader{
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    background: #FFF;
+    color: #000;
+    font-size: 1.3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 20px; 
+    border-bottom: 1px solid;
+    border-color: #D4D4D4;
+}
+
+.fb-left-arrow {
+    text-align: left;
+    font-size: 1em; 
+    color: #D4D4D4;
+    padding-top: 10px;
+    padding-left: 5px;      
+    width: 5%;    
+}
+
+.fb-left{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;   
+    color: #000;
+    padding-top: 5px;
+    padding-left: 5px;      
+    width: 80%;
+}
+
+.fb-right{
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 1.2em; 
+    color: #D4D4D4;  
+    width: 20%;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.fb-textContainer {
+    background-color: #FFF;
+    padding: 10px;
+    min-height:60vh;
+}
+
+.fb-received {
+    padding: 10px;
+    text-align: left;    
+    max-width: 70%;
+    color: #000; 
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 200; 
+    box-shadow: 0px 1px 1px #888888; 
+    background-color: #E9E9E9;
+    border-radius: 18px;
+    float: left; 
+    margin:5px;
+}
+
+.fb-sent {
+    padding: 10px;
+    text-align: left;    
+    max-width: 70%;
+    color: #FFF; 
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 200; 
+    box-shadow: 0px 1px 1px #888888; 
+    background-color: #1787FB;
+    border-radius: 18px;
+    float: right; 
+    margin:5px;
+}
+
+.fb-time {
+    text-align: center;    
+    font-size: .8em;
+    color: #D4D4D4; 
+    padding: 5px;
+}
+/*.txtHeader img{
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+
+
+.textContainer p {
+    padding:5px;
+}
+
+
+
+
+
+
+
+.textBox{
+    text-align: left;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    width: 99%;
+    height: 2em;
+    background: #FFF;
+    color: #FFF;
+    font-size: 1.6em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 20px; 
+    box-shadow: 0px 1px 5px #888888;   
+    border-style: solid;
+    border-width: 1px; 
+    z-index: 2;
+}
+
+.textBox span{
+    padding: 2px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: .7em;
+    color: #000;
+    overflow: hidden;  
+}
+
+.textBox i{
+    position: absolute;
+    right: 0px;
+    margin-top: 9px;
+    color:#bfbfbf;
+    padding-right: 9px;
+}*/
 /* ############################# Typing Integrations #############################*/
 /* code for animated blinking cursor */
 .typed-cursor{

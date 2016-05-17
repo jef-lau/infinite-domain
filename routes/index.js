@@ -94,7 +94,7 @@ exports.page3 = function(req, res){
 };
 exports.page3_2 = function(req, res){
    //some methods
-   res.render('page3_2_audio', { title: 'Express' });
+   res.render('page3_2_mint', { title: 'Express' });
 };
 exports.page3_3 = function(req, res){
    //some methods
