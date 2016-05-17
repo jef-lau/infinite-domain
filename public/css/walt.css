@@ -943,61 +943,7 @@ body
     color: #D4D4D4; 
     padding: 5px;
 }
-/*.txtHeader img{
-    height: 40px;
-    padding-right: 15px;
-    padding-left: 10px;
-}
 
-
-
-.textContainer p {
-    padding:5px;
-}
-
-
-
-
-
-
-
-.textBox{
-    text-align: left;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: fixed;
-    width: 99%;
-    height: 2em;
-    background: #FFF;
-    color: #FFF;
-    font-size: 1.6em;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 100;
-    line-height: 20px; 
-    box-shadow: 0px 1px 5px #888888;   
-    border-style: solid;
-    border-width: 1px; 
-    z-index: 2;
-}
-
-.textBox span{
-    padding: 2px;
-    font-family: "Ubuntu", sans-serif;
-    font-size: .7em;
-    color: #000;
-    overflow: hidden;  
-}
-
-.textBox i{
-    position: absolute;
-    right: 0px;
-    margin-top: 9px;
-    color:#bfbfbf;
-    padding-right: 9px;
-}*/
 /* ############################# Typing Integrations #############################*/
 /* code for animated blinking cursor */
 .typed-cursor{

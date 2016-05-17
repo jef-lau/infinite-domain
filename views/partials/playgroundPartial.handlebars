@@ -1,45 +1,7 @@
 <!doctype html>
-<script>
-$(document).ready(function(){
-    initialise();  
-});
 
-function initialise()
-{
-    $("#btn1").click(function(){
-        $( "div.refresh01" ).replaceWith( "<div class=\"sent\"><p>Sorry if you don’t feel comfortable talking about it..<div class=\"time\">8:31 AM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#btn2").click(function(){
-        $( "div.refresh02" ).replaceWith( "<div class=\"received\"><p>Hi-ya Walt! Yea, she got let go this morning. I saw her leave Rob’s office, packed her things and left.<div class=\"time\">8:33 AM</div></p></div><div class=\"refresh03\"><button class=\"buttonRefresh\" id=\"btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });    
-    $("#btn3").click(function(){
-        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We had a company meeting that we acquired a new startup called infinite domain. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#btn4").click(function(){
-        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#btn5").click(function(){
-        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>They must be expensive if they are cutting so many people. I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#btn6").click(function(){
-        $( "div.refresh06" ).replaceWith( "<div class=\"received\"><p>Oh shit, Rob's here. Can’t talk.<div class=\"time\">8:39 AM</div></p></div><div class=\"refresh07\"><button class=\"buttonRefresh\" id=\"btn7\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#btn7").click(function(){
-        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll hit you up after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:40 AM</div></p></div>" );
-        initialise();
-    });                  
-    
-/* Use below as template
-<div class=\"received\"><p>Can't talk right now. It's a little tense in the office right now. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>
-*/    
-}
-</script>
+
+            
 
 <div class="timeline" style="height:42px"></div>
 <div class="stamp">8<span>:</span>51<span>:</span>12 AM</div>
@@ -61,14 +23,14 @@ function initialise()
       <div class="modal-body">
         <div class="fbHeader">
             <div class="note-flex-container">
-                <div class="fb-left-arrow">
+                <div class="fb-left-arrow disable-mouse">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
                 </div>
-                <div class="fb-left">
-                    Dana Song
+                <div class="fb-left disable-mouse">
+                    Stacy Leung
                     <div style="text-align: left;font-size: .6em !important;"><img src="/images/fb-icon.png" style="width:10px;position: relative;bottom: 1px;"><font color="#157EFB"> MESSENGER</font><font color="#D4D4D4"> • ACTIVE NOW</font></div>
                 </div>
-                <div class="fb-right">
+                <div class="fb-right disable-mouse">
                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                 </div>                    
             </div>            
@@ -76,24 +38,13 @@ function initialise()
         <div class="fb-textContainer">
             <div class="fb-time">8:51 AM</div>
             <div class="fb-sent">
-                Hey Dana, do you know if Elaina got fired?
-            </div>            
-
-            <div class="fb-received">
-                Hey Dana, do you know if Elaina got fired?
+                Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png">
             </div>
-            <div class="refresh01"><button class="buttonRefresh" id="btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>             
-
+            <div class="fb-refresh01"><button class="buttonRefresh" id="fb-btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                    
         </div>
-
-        <div class="textBox">
-            <span class="textElement"></span>
-            <i class="fa fa-send"></i> 
-        </div>
-
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="page3_2">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="3_4_next">Close</button>
       </div>
     </div>
   </div>
@@ -101,8 +52,8 @@ function initialise()
 
 
 <div class="3_4_reboot"></div>
-  
-<!-- 
+
+
 <script>
 $(document).ready(function(){
     initialise();  
@@ -114,6 +65,18 @@ function initialise()
         $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page4\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\">" );
         initialise();
     });
+    $("#fb-btn1").click(function(){
+        $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#fb-btn2").click(function(){
+        $( "div.fb-refresh02" ).replaceWith( "<div class=\"fb-sent\">I just want to see if I can borrow some money. I get my severance check in 2 weeks, so I can pay you back then.</div><div class=\"fb-refresh03\"><button class=\"buttonRefresh\" id=\"fb-btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });     
+    $("#fb-btn3").click(function(){
+        $( "div.fb-refresh03" ).replaceWith( "<div class=\"fb-sent\">It's always awkward asking for money, haha. Let me know if you can help me out <img class=\"emoji\" src=\"/images/emoji/heartemoji.png\"></div>" );
+        initialise();
+    });    
        
 }
-</script> -->
+</script>
