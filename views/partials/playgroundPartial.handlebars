@@ -1,59 +1,10 @@
 <!doctype html>
 
-
-            
-
-<div class="timeline" style="height:42px"></div>
-<div class="stamp">8<span>:</span>51<span>:</span>12 AM</div>
+<div class="timeline" style="height:90px"></div>
+<div class="stamp">8<span>:</span>31<span>:</span>13 AM</div>
 <div class="timeline" style="height:7px"></div>
 
-
-<div class="appContainer">
-  <a><img src="/images/icons/messenger.png" class="app" data-toggle="modal" data-target="#messenger" data-backdrop="true" data-keyboard="true"></a>
-  <p class="appName">Messenger</p>
-</div>
-
-<!-- Modal -->
-<div id="messenger" class="modal fade messenger" role="dialog"  tabindex='-1'>
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-
-      <div class="modal-body">
-        <div class="fbHeader">
-            <div class="note-flex-container">
-                <div class="fb-left-arrow disable-mouse">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </div>
-                <div class="fb-left disable-mouse">
-                    Stacy Leung
-                    <div style="text-align: left;font-size: .6em !important;"><img src="/images/fb-icon.png" style="width:10px;position: relative;bottom: 1px;"><font color="#157EFB"> MESSENGER</font><font color="#D4D4D4"> • ACTIVE NOW</font></div>
-                </div>
-                <div class="fb-right disable-mouse">
-                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                </div>                    
-            </div>            
-        </div>
-        <div class="fb-textContainer">
-            <div class="fb-time">8:51 AM</div>
-            <div class="fb-sent">
-                Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png">
-            </div>
-            <div class="fb-refresh01"><button class="buttonRefresh" id="fb-btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                    
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="3_4_next">Close</button>
-      </div>
-    </div>
-  </div>
-</div>  
-
-
-<div class="3_4_reboot"></div>
-
-
+<!doctype html>
 <script>
 $(document).ready(function(){
     initialise();  
@@ -61,22 +12,78 @@ $(document).ready(function(){
 
 function initialise()
 {
-    $("#3_4_next").click(function(){
-        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page4\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\">" );
-        initialise();
-    });
-    $("#fb-btn1").click(function(){
-        $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+    $("#btn1").click(function(){
+        $( "div.refresh01" ).replaceWith( "<div class=\"sent\"><p>Her email says she doesn't work at ZenTech anymore.<div class=\"time\">8:31 AM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
         initialise();
     });  
-    $("#fb-btn2").click(function(){
-        $( "div.fb-refresh02" ).replaceWith( "<div class=\"fb-sent\">I just want to see if I can borrow some money. I get my severance check in 2 weeks, so I can pay you back then.</div><div class=\"fb-refresh03\"><button class=\"buttonRefresh\" id=\"fb-btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });     
-    $("#fb-btn3").click(function(){
-        $( "div.fb-refresh03" ).replaceWith( "<div class=\"fb-sent\">It's always awkward asking for money, haha. Let me know if you can help me out <img class=\"emoji\" src=\"/images/emoji/heartemoji.png\"></div>" );
+    $("#btn2").click(function(){
+        $( "div.refresh02" ).replaceWith( "<div class=\"received\"><p>Hi-ya Walt! Yea, she got let go this morning. I saw her leave Rob’s office, packed her things and left.<div class=\"time\">8:33 AM</div></p></div><div class=\"refresh03\"><button class=\"buttonRefresh\" id=\"btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
         initialise();
     });    
-       
+    $("#btn3").click(function(){
+        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We had a company-wide meeting about acquiring a new startup called infinite domain. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn4").click(function(){
+        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them. You probably shouldn't be telling me all this.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn5").click(function(){
+        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>Lol, no one is going to know. They must be expensive tho, if they are firing so many people. I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn6").click(function(){
+        $( "div.refresh06" ).replaceWith( "<div class=\"received\"><p>Oh shit, Rob's here. Can’t talk.<div class=\"time\">8:38 AM</div></p></div><div class=\"refresh07\"><button class=\"buttonRefresh\" id=\"btn7\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn7").click(function(){
+        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll hit you up after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:38 AM</div></p></div>" );
+        initialise();
+    });                  
+    
+/* Use below as template
+<div class=\"received\"><p>Can't talk right now. It's a little tense in the office right now. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>
+*/    
 }
 </script>
+
+<html>
+<div class="appContainer">
+    <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+    <p class="appName">SMS</p>
+</div>  
+
+<!-- Modal -->
+<div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="txtHeader">
+            <i class="fa fa-comments"></i> <img src="/images/ppl/dana.jpg">Dana Song
+        </div>
+        <div class="textContainer">
+            <div class="sent">
+                <p>Hey Dana, do you know what happened to Elaina?
+                    <div class="time">8:31 AM</div>
+                </p>
+            </div>
+            <div class="refresh01"><button class="buttonRefresh" id="btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                        
+        </div>
+<!-- 
+        <div class="textBox">
+            <span class="textElement"></span>
+            <i class="fa fa-send"></i> 
+        </div> -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="page3_1">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div id="append_page3_1"></div>

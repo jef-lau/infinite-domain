@@ -92,6 +92,10 @@ exports.page3 = function(req, res){
    //some methods
    res.render('page3_sms', { title: 'Express' });
 };
+exports.page3_1 = function(req, res){
+   //some methods
+   res.render('page3_1_gsearch', { title: 'Express' });
+};
 exports.page3_2 = function(req, res){
    //some methods
    res.render('page3_2_mint', { title: 'Express' });

@@ -29,7 +29,7 @@
 }
 
 .menuBar span{
-  animation: blink 1s infinite;
+  animation: blink 10s infinite;
 }
 
 /* navBar function is currently inactive until further investigation */
@@ -609,6 +609,70 @@ body
     padding-top: 7px;
     padding-left: 7px;
 }
+
+/* ############################# Google Search App #############################*/
+#search .modal-body {
+    width: 100%;
+    padding: 0;
+    min-height:60vh; 
+}
+
+.search-header{
+    background-color: #4385F5;
+    padding: 18px;
+}
+
+.search-header h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    font-height: 20px;
+    color: #FFF;
+    text-align: left;
+}
+
+.search-header h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #FFF; 
+    text-align: left;
+    line-height: 160%;
+}
+
+.search-flex-left{
+    width: 20%;
+}
+
+.search-flex-right{
+    width: 80%;
+    text-align: left;    
+}
+
+.search-flex-right h1{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+.search-flex-right h2{
+    font-family: 'Roboto', sans-serif;    
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+    font-size: .9em;
+    line-height: 15px;
+    color:#b2b2b2;
+}
+
+.search-flex-right u{
+    color:#005999;
+    text-decoration: none;
+}
+
 
 /* ############################# Google Maps App #############################*/
 #viewMap .modal-body {

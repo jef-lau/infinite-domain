@@ -119,6 +119,10 @@ $("#div1" ).on( "click", "#page3", function() {
 	console.log($(this));
 	$("#div1").load('page3');
 });
+$("#div1" ).on( "click", "#page3_1", function() {
+	console.log($(this));
+	$("#append_page3_1").load('page3_1');
+});
 $("#div1" ).on( "click", "#page3_2", function() {
 	console.log($(this));
 	$("#append_page3").load('page3_2');
