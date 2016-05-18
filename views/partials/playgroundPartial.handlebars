@@ -1,11 +1,89 @@
 <!doctype html>
 
-<div class="fetch">
-    <div style="padding-top: 15vh"></div>
-    <img src="/images/walt.png" style="width: 150px"><br/>
-    <div style="padding-top: 15px"></div>
-    SUBJECT WALT_0628
-    <div style="padding-top: 5vh"></div>
-    <button class="next-button" id="page1"><div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true" id="nextArrow"></i></span></div></button>
+<div class="timeline" style="height:90px"></div>
+<div class="stamp">8<span>:</span>31<span>:</span>13 AM</div>
+<div class="timeline" style="height:7px"></div>
 
+<!doctype html>
+<script>
+$(document).ready(function(){
+    initialise();  
+});
+
+function initialise()
+{
+    $("#btn1").click(function(){
+        $( "div.refresh01" ).replaceWith( "<div class=\"sent\"><p>Her email says she doesn't work at ZenTech anymore.<div class=\"time\">8:31 AM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn2").click(function(){
+        $( "div.refresh02" ).replaceWith( "<div class=\"received\"><p>Hi-ya Walt! Yea, she got let go this morning. I saw her leave Rob’s office, packed her things and left.<div class=\"time\">8:33 AM</div></p></div><div class=\"refresh03\"><button class=\"buttonRefresh\" id=\"btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });    
+    $("#btn3").click(function(){
+        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We had a company-wide meeting about acquiring a new startup called infinite domain. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn4").click(function(){
+        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them. You probably shouldn't be telling me all this.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn5").click(function(){
+        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>Lol, no one is going to know. They must be expensive tho, if they are firing so many people. I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn6").click(function(){
+        $( "div.refresh06" ).replaceWith( "<div class=\"received\"><p>Oh shit, Rob's here. Can’t talk.<div class=\"time\">8:38 AM</div></p></div><div class=\"refresh07\"><button class=\"buttonRefresh\" id=\"btn7\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        initialise();
+    });  
+    $("#btn7").click(function(){
+        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll hit you up after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:38 AM</div></p></div>" );
+        initialise();
+    });                  
+    
+/* Use below as template
+<div class=\"received\"><p>Can't talk right now. It's a little tense in the office right now. I'll hit you up when things settle down...<div class=\"time\">7:20 PM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>
+*/    
+}
+</script>
+
+<html>
+<div class="appContainer">
+    <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+    <p class="appName">SMS</p>
 </div>  
+
+<!-- Modal -->
+<div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="txtHeader">
+            <i class="fa fa-comments"></i> <img src="/images/ppl/dana.jpg">Dana Song
+        </div>
+        <div class="textContainer">
+            <div class="sent">
+                <p>Hey Dana, do you know what happened to Elaina?
+                    <div class="time">8:31 AM</div>
+                </p>
+            </div>
+            <div class="refresh01"><button class="buttonRefresh" id="btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                        
+        </div>
+<!-- 
+        <div class="textBox">
+            <span class="textElement"></span>
+            <i class="fa fa-send"></i> 
+        </div> -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="page3_1">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div id="append_page3_1"></div>
