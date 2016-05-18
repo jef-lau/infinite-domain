@@ -1,5 +1,29 @@
 <!doctype html>
 
+<script>
+
+$(document).ready(function(){
+    initialise();  
+});
+
+function initialise()
+{
+    $("#search-btn1").click(function(){
+        $( "div.search-refresh01" ).replaceWith( "<div class=\"search-refresh02 refresh\"><button class=\"buttonRefresh\" id=\"search-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>        <div class=\"note-flex-container\"><div class=\"search-flex-left\"><input type=\"checkbox\" value=\"\"></div><div class=\"search-flex-right\"><h1>Searched for <u>\"infinite domain\"</u></h1><h2>8:41am</h2></div></div><hr/>");
+        initialise();
+    });  
+    $("#search-btn2").click(function(){
+        $( "div.search-refresh02" ).replaceWith( "<div class=\"note-flex-container\"><div class=\"search-flex-left\"><input type=\"checkbox\" value=\"\"></div><div class=\"search-flex-right\"><h1>Searched for <u>\"infinite domain zentech\"</u></h1><h2>8:41am</h2></div></div><hr/>" );
+        initialise();
+    });     
+    // $("#search-btn3").click(function(){
+    //     $( "div.search-refresh03" ).replaceWith( "        <div class=\"note-flex-container\"><div class=\"search-flex-left\"><input type=\"checkbox\"></div><div class=\"search-flex-right\"><h1>Visited <u>\"Amazon's private labels could hit Millennials' sweet spot\"</u></h1><h2>7:35pm</h2></div></div><hr/>" );
+    //     initialise();
+    // });  
+       
+}
+</script>
+
 <div class="timeline" style="height:54px"></div>
 <div class="stamp">8<span>:</span>40<span>:</span>13 AM</div>
 <div class="timeline" style="height:7px"></div>
@@ -26,19 +50,23 @@
             <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
         </div>
         <div style="padding-top:15px;"></div>
-        <img src="/images/search-card.jpg" class="fitInModal" style="padding:5px;">
+        <img src="/images/search-card.jpg" style="padding:5px;width:95%">
         <div style="padding-bottom:15px;"></div>
+        
+        <div class="search-refresh01 refresh"><button class="buttonRefresh" id="search-btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
 
-        <div class="note-flex-container">
-            <div class="search-flex-left">
-                <input type="checkbox" value="">
+
+<!--         <div class=\"note-flex-container\">
+            <div class=\"search-flex-left\">
+                <input type=\"checkbox">
             </div>
-            <div class="search-flex-right">
-                <h1>Visited <u>"Amazon's private labels could hit Millennials' sweet spot"</u></h1>
+            <div class=\"search-flex-right\">
+                <h1>Visited <u>\"Amazon's private labels could hit Millennials' sweet spot\"</u></h1>
                 <h2>7:35pm</h2>
             </div>
         </div>
-        <hr/>
+        <hr/> 
+
 
         <div class="note-flex-container">
             <div class="search-flex-left">
@@ -46,12 +74,12 @@
             </div>
             <div class="search-flex-right">
                 <h1>Searched for <u>"infinite domain"</u></h1>
-                <h2>7:35pm</h2>
+                <h2>8:40am</h2>
             </div>
         </div>
         <hr/>
-       
-     
+       -->
+
 
       </div>
       <div class="modal-footer">

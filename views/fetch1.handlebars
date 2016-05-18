@@ -1,31 +1,53 @@
 <!doctype html>
 
-	<div class="fetch">
-		<i class="fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
-		<p>SUCCESS! DATA UP-TO-DATE</p><br/>
-		<p>DATA_LAST_FETCHED = 2016-02-15_11.00.36PM</p>
-		<div class="fetch-flex-container">
-		  <div class="fetch-flex-item">GPS:</div>
-		  <div class="fetch-flex-item">22.4124 44.7882</div>
-		  <div class="fetch-flex-item">on</div>  
-		</div>
-		<div class="fetch-flex-container">
-		  <div class="fetch-flex-item">BLUETOOTH:</div>
-		  <div class="fetch-flex-item">N/A</div>
-		  <div class="fetch-flex-item">off</div>  
-		</div>
-		<div class="fetch-flex-container">
-		  <div class="fetch-flex-item">WIFI:</div>
-		  <div class="fetch-flex-item">N/A</div>
-		  <div class="fetch-flex-item">on</div>  
-		</div>
-		<div class="fetch-flex-container">
-		  <div class="fetch-flex-item">MOBILE DATA:</div>
-		  <div class="fetch-flex-item">LTE</div>
-		  <div class="fetch-flex-item">on</div>  
-		</div>	
-	</div>	
-	<br/>
-	<button type="button" class="btn btn-default" id="walt-button">View WALT_0628 Logs</button>
+    <div class="fetch">
+        <i class="fa fa-check-circle-o fa-2x" aria-hidden="true"></i>
+        <p>SUCCESS! DATA UP-TO-DATE</p><br/>
+        <p>DATA_LAST_FETCHED = 2016-02-15_11.00.36PM</p>
+        <div class="fetch-flex-container">
+          <div class="fetch-flex-item">GPS:</div>
+          <div class="fetch-flex-item"><u data-toggle="modal" data-target="#viewMap" data-backdrop="true" data-keyboard="true" id="mapsButton">32.860579 -117.2243106</u></div>
+          <div class="fetch-flex-item">on</div>  
+        </div>
+        <div class="fetch-flex-container">
+          <div class="fetch-flex-item">BLUETOOTH:</div>
+          <div class="fetch-flex-item">N/A</div>
+          <div class="fetch-flex-item">off</div>  
+        </div>
+        <div class="fetch-flex-container">
+          <div class="fetch-flex-item">WIFI:</div>
+          <div class="fetch-flex-item">N/A</div>
+          <div class="fetch-flex-item">on</div>  
+        </div>
+        <div class="fetch-flex-container">
+          <div class="fetch-flex-item">MOBILE DATA:</div>
+          <div class="fetch-flex-item">LTE</div>
+          <div class="fetch-flex-item">on</div>  
+        </div>  
+    </div>  
+    <br/>
+    <button type="button" class="btn btn-default" id="walt-button">View WALT_0628 Logs</button>
 
+<!-- Modal -->
+<div id="viewMap" class="modal fade" role="dialog" tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+
+            <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXGElCF7JDZ2OkOK4fT8UKbHgAe0jnKbM&callback=initMap">
+            </script>
+          
+          <div id="map"></div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
 </html>
+<script src="/js/googleMaps.js"></script>

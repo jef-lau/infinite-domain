@@ -61,8 +61,6 @@ $(document).ready(function(){
     });
 });
 
-
-
 // ############################# Authorizing #############################
 $("#div1" ).on( "click", "#auth-button", function() {
 	console.log($( this ));
@@ -141,61 +139,6 @@ $("#div1" ).on( "click", "#page4", function() {
 	console.log($(this));
 	$("#div1").load('page4');
 });
-
-
-
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
-// $("#div1" ).on( "click", "#page1", function() {
-// 	console.log($( this ));
-// 	$("#div1").load("page1");
-// });
 
 // ############################# Fetches #############################
 

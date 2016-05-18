@@ -1,25 +1,32 @@
 var map;
 var marker;
-var ucsd_cicc = {lat:32.885078, lng:-117.241314};
-var test = {lat:32.8850091, lng:-117.243509};
+var home = {lat:32.860579, lng:-117.2243106};
 function initMap() {
 
   // Create a map object and specify the DOM element for display.
   map = new google.maps.Map(document.getElementById('map'), {
-    center: ucsd_cicc,
-    zoom: 14
+    center: home,
+    zoom: 15
   });
 
   marker = new google.maps.Marker({
-      position: ucsd_cicc,
+      position: home,
       map: map,
-      title: 'UCSD CICC'
+      title: 'HOME'
   });
 }
 
 function refreshMap(){
   google.maps.event.trigger(map, 'resize');
   map.setCenter(marker.getPosition());
-  // console.log("pressed");
+  console.log("pressed");
 
+}
+
+$('#mapsButton').on('click',initialize);
+
+function initialize() {
+  google.maps.event.trigger(map, 'resize');
+  map.setCenter(marker.getPosition());
+  console.log("pressed");
 }
