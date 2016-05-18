@@ -685,6 +685,9 @@ body
     padding-bottom: 25px;
 }
 
+#div1 {
+    overflow-y: scroll;
+}
 
 /* ############################# Google Maps App #############################*/
 #viewMap .modal-body {

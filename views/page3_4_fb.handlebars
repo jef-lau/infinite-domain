@@ -1,8 +1,5 @@
 <!doctype html>
 
-
-            
-
 <div class="timeline" style="height:42px"></div>
 <div class="stamp">8<span>:</span>51<span>:</span>12 AM</div>
 <div class="timeline" style="height:7px"></div>
@@ -60,11 +57,16 @@ $(document).ready(function(){
     initialise();  
 });
 
+
+
+
+
 function initialise()
 {
     $("#3_4_next").click(function(){
         $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page4\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\">" );
         initialise();
+        scrollToBottom();
     });
     $("#fb-btn1").click(function(){
         $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );

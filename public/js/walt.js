@@ -72,18 +72,22 @@ $("#div1" ).on( "click", "#auth-button", function() {
 $("#div1" ).on( "click", "#page1", function() {
 	console.log($( this ));
 	$("#div1").load("page1");
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page1_2", function() {
 	console.log($( this ));
 	$("#append_page1_2").load('page1_2');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page1_3", function() {
 	console.log($( this ));
 	$("#append_page1_3").load('page1_3');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page1_4", function() {
 	console.log($( this ));
 	$("#append_page1_4").load('page1_4');
+	scrollToBottom();
 });
 // $("#div1" ).on( "click", "#refresh1", function() {
 // 	console.log($( this ));
@@ -98,46 +102,56 @@ $("#div1" ).on( "click", "#page1_4", function() {
 $("#div1" ).on( "click", "#page2", function() {
 	console.log($( this ));
 	$("#div1").load('page2');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page2_2", function() {
 	console.log($("append_page2 clicked"));
 	$("#append_page2").load('page2_2');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page2_3", function() {
 	console.log($("append_page2 clicked"));
 	$("#append_page2_2").load('page2_3');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page2_4", function() {
 	console.log($( this ));
 	$("#append_page2_3").load('page2_4');
+	scrollToBottom();
 });
 
 // ############################# Page 3 #############################
 $("#div1" ).on( "click", "#page3", function() {
 	console.log($(this));
 	$("#div1").load('page3');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page3_1", function() {
 	console.log($(this));
 	$("#append_page3_1").load('page3_1');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page3_2", function() {
 	console.log($(this));
 	$("#append_page3").load('page3_2');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page3_3", function() {
 	console.log($(this));
 	$("#append_page3_2").load('page3_3');
+	scrollToBottom();
 });
 $("#div1" ).on( "click", "#page3_4", function() {
 	console.log($(this));
 	$("#append_page3_3").load('page3_4');
+	scrollToBottom();
 });
 
 // ############################# Page 4 #############################
 $("#div1" ).on( "click", "#page4", function() {
 	console.log($(this));
 	$("#div1").load('page4');
+	scrollToBottom();
 });
 
 // ############################# Fetches #############################
@@ -189,5 +203,10 @@ $(document).ready(function(){
 //               refreshMap();
 //             })
 // }
-
+// ############################# Scroll To Bottom #############################
+function scrollToBottom(){
+	setTimeout(function(){
+    	$('div').scrollTop(1E10);
+    }, 100);
+}
 
