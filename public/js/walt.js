@@ -206,7 +206,7 @@ $(document).ready(function(){
 // ############################# Scroll To Bottom #############################
 function scrollToBottom(){
 	setTimeout(function(){
-    	$('div').scrollTop(1E10);
-    }, 100);
+    	$('div').animate({scrollTop: 1E10});
+    }, 300);
 }
 
