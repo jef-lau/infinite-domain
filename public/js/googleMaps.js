@@ -1,11 +1,11 @@
 var map;
 var marker;
 var home = {lat:32.860579, lng:-117.2243106};
+var centerHome = {lat:32.8705718, lng:-117.2329398}; 
 function initMap() {
-
   // Create a map object and specify the DOM element for display.
   map = new google.maps.Map(document.getElementById('map'), {
-    center: home,
+    center: centerHome,
     zoom: 15
   });
 
@@ -17,16 +17,11 @@ function initMap() {
 }
 
 function refreshMap(){
-  google.maps.event.trigger(map, 'resize');
-  map.setCenter(marker.getPosition());
-  console.log("pressed");
 
-}
-
-$('#mapsButton').on('click',initialize);
-
-function initialize() {
-  google.maps.event.trigger(map, 'resize');
-  map.setCenter(marker.getPosition());
+setTimeout(function(){
+        google.maps.event.trigger(map, 'resize');
+    }, 1000);
   console.log("pressed");
 }
+
+$('#mapsButton').on('click',refreshMap);
