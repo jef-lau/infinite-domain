@@ -64,7 +64,7 @@ $(document).ready(function(){
 function initialise()
 {
     $("#3_4_next").click(function(){
-        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div><a id=\"page4\" class=\"clickable\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></a><div style=\"padding-bottom: 50px\">" );
+        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div>  <button class=\"next-button\" id=\"page4\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></button>  <div style=\"padding-bottom: 50px\">" );
         initialise();
         scrollToBottom();
     });

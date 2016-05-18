@@ -110,6 +110,10 @@
           justify-content: center;
 }
 
+.next-button {
+    width: 55%;
+}
+
 /* ############################# Auth #############################*/
 .blink {
     color: #000;
