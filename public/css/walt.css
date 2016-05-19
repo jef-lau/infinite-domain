@@ -243,6 +243,14 @@ body .modal-dialog {
     overflow:auto;
 }
 
+.modal-content{
+    overflow: hidden;    
+}
+
+.modal-body{
+    overflow: auto;
+}
+
 /* ############################# Notifications #############################*/
 .note-flex-container {
     display: -webkit-flex;
