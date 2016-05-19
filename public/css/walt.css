@@ -243,9 +243,8 @@ body .modal-dialog {
     overflow:auto;
 }
 
-.modal {
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
+.modal-open {
+    overflow: hidden;
 }
 
 /* ############################# Notifications #############################*/
