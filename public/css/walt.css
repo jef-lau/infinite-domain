@@ -5,7 +5,7 @@
         max-width:400px;
         max-height:92vh;
         margin: auto;
-        overflow: hidden;
+        overflow: scroll;
         border-radius: 6px;    
     }
 }
@@ -64,7 +64,7 @@
     height:90vh;
     background: #F2F2F2;
     margin: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     border-bottom-left-radius: 6px;   
     border-bottom-right-radius: 6px;     
 }
@@ -238,8 +238,10 @@ body .modal-dialog {
     padding-top: 25px;
     text-align: center;
     width: 100%;
+    height: 100%;
     max-width: 400px;
-    overflow:hidden;
+    overflow:auto;
+    padding-right: 20px;
 }
 
 /* ############################# Notifications #############################*/
