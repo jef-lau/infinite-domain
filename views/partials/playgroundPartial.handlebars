@@ -1,86 +1,42 @@
 <!doctype html>
 
-<div class="timeline" style="height:42px"></div>
-<div class="stamp">8<span>:</span>51<span>:</span>12 AM</div>
-<div class="timeline" style="height:7px"></div>
-
-
-<div class="appContainer">
-  <a><img src="/images/icons/messenger.png" class="app" data-toggle="modal" data-target="#messenger" data-backdrop="true" data-keyboard="true"></a>
-  <p class="appName">Messenger</p>
-</div>
-
-<!-- Modal -->
-<div id="messenger" class="modal fade messenger" role="dialog"  tabindex='-1'>
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-
-      <div class="modal-body">
-        <div class="fbHeader">
-            <div class="note-flex-container">
-                <div class="fb-left-arrow disable-mouse">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </div>
-                <div class="fb-left disable-mouse">
-                    Stacy Leung
-                    <div style="text-align: left;font-size: .6em !important;"><img src="/images/fb-icon.png" style="width:10px;position: relative;bottom: 1px;"><font color="#157EFB"> MESSENGER</font><font color="#D4D4D4"> • ACTIVE NOW</font></div>
-                </div>
-                <div class="fb-right disable-mouse">
-                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                </div>                    
-            </div>            
-        </div>
-        <div class="fb-textContainer">
-            <div class="fb-time">8:51 AM</div>
-            <div class="fb-sent">
-                Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png">
-            </div>
-            <div class="fb-refresh01"><button class="buttonRefresh" id="fb-btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
-        </div>
-        <div style="padding-bottom:50px"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" id="3_4_next">Close</button>
-      </div>
-    </div>
-  </div>
-</div>  
-
-
-<div class="3_4_reboot"></div>
-
+<audio loop id="myAudio">
+  <source src="/src/alarm.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <script>
+var x = document.getElementById("myAudio"); 
 
-$(document).ready(function(){
-    initialise();  
-});
+function playAudio() { 
+    x.play(); 
+} 
 
+function pauseAudio() { 
+    x.pause(); 
+} 
 
-
-
-
-function initialise()
-{
-    $("#3_4_next").click(function(){
-        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div>  <button class=\"next-button\" id=\"page4\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></button>  <div style=\"padding-bottom: 50px\">" );
-        initialise();
-        scrollToBottom();
-    });
-    $("#fb-btn1").click(function(){
-        $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#fb-btn2").click(function(){
-        $( "div.fb-refresh02" ).replaceWith( "<div class=\"fb-sent\">I just want to see if I can borrow some money. I have a credit card bill due in 5 days. I get my severance check in 2 weeks, so I can pay you back then.</div><div class=\"fb-refresh03\"><button class=\"buttonRefresh\" id=\"fb-btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });     
-    $("#fb-btn3").click(function(){
-        $( "div.fb-refresh03" ).replaceWith( "<div class=\"fb-sent\">It's always awkward asking for money, haha. Just need some extra help while I pick myself up. Let me know if you can help me out <img class=\"emoji\" src=\"/images/emoji/heartemoji.png\"></div>" );
-        initialise();
-    });  
-       
-}
+playAudio();
 </script>
+
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:50px"></div>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+          <div class="note-left">
+            <div style="text-align: left;flex-grow: 1;"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></div>
+          </div>
+            <div class="note-flex-column">
+              <div style="text-align: left;flex-grow: 2" ><b>Alarm</b></div> 
+              <div style="text-align: left;"><button type="button" class="btn btn-danger" style="padding-right:40px;padding-left:40px" id="page1_2">Dismiss</button></div>
+            </div>
+            <div class="note-flex-column">
+              <div style="text-align: right;flex-grow: 2"><font color="#00000">7:30 AM</font></div>  
+              <div style="text-align: right;"><button type="button" class="btn btn-default" style="padding-right:40px;padding-left:40px" id="page1_2">Snooze</button></div>
+            </div>            
+           
+        </div>
+    </li>
+</ul> 
+<div id="append_page1_2"></div>
