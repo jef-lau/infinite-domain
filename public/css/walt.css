@@ -241,7 +241,6 @@ body .modal-dialog {
     height: 100%;
     max-width: 400px;
     overflow:auto;
-    padding-right: 20px;
 }
 
 /* ############################# Notifications #############################*/
