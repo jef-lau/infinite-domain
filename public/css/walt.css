@@ -245,6 +245,7 @@ body .modal-dialog {
 
 .modal {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* ############################# Notifications #############################*/
