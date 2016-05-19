@@ -244,8 +244,7 @@ body .modal-dialog {
 }
 
 .modal {
-    overflow-y: hidden !important;
-    overflow-x: hidden !important;
+    overflow: auto;
 }
 
 /* ############################# Notifications #############################*/
