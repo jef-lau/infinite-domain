@@ -249,6 +249,7 @@ body .modal-dialog {
 
 .modal-body{
     overflow: auto;
+    max-height: 200px;
 }
 
 /* ############################# Notifications #############################*/
