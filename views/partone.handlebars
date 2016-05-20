@@ -52,9 +52,54 @@
 					<!-- content of story goes here -->
 					
 					<div class="appDisplay" id="div1">
-						<div class="splash">
-							<a class="start-button clickable" id="auth-button"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>
+						<div style="padding-bottom:20vh"></div>
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown_title">Select Subject
+							<span class="caret"></span></button>
+							<ul ID="divNewNotifications" class="dropdown-menu">
+								<li class="clickable"><a id="update-dropdown">Walt G. Lee [2/3]</a></li>
+								<li class="disabled"><a>Larry L. Ebert [3/3 MAX]</a></li>
+								<li class="disabled"><a>Anthony S. Williams [3/3 MAX]</a></li>
+								<li class="disabled"><a>Janice C. Davis [3/3 MAX]</a></li>
+								<li class="disabled"><a>Keisha A. Regner [3/3 MAX]</a></li>
+								<li class="disabled"><a>Roberta B. Bower [3/3 MAX]</a></li>
+								<li class="disabled"><a>Genji Lung [3/3 MAX]</a></li>
+								<li class="disabled"><a>Xiao Hong Yu [3/3 MAX]</a></li>
+								<li class="disabled"><a>Lundy Couet [3/3 MAX]</a></li>
+								<li class="disabled"><a>Jeffrey C. Wilcox [3/3 MAX]</a></li>
+								<li class="disabled"><a>Abigail Maiden [3/3 MAX]</a></li>
+								<li class="disabled"><a>Ben Gawler [3/3 MAX]</a></li>
+								<li class="disabled"><a>Nadine Schiffer [3/3 MAX]</a></li>
+								<li class="disabled"><a>Elaina K. Jodi [3/3 MAX]</a></li>
+								<li class="disabled"><a>Gaetan Sevilla Mercado [3/3 MAX]</a></li>
+								<li class="disabled"><a>Kasumi Hirota [3/3 MAX]</a></li>
+								<li class="disabled"><a>Stacy C. Leung [3/3 MAX]</a></li>
+								<li class="disabled"><a>Lorene J. Krol [3/3 MAX]</a></li>
+								<li class="disabled"><a>Fang Chu [3/3 MAX]</a></li>
+								<li class="disabled"><a>Dorothy Acevedo Varela [3/3 MAX]</a></li>
+							</ul>
 						</div>
+						<div class="subject-selected"></div>
+						<script>
+
+						$(document).ready(function(){
+						    initialise();  
+						});
+
+						function initialise()
+						{
+						    $("#update-dropdown").click(function(){
+						        $( "div.subject-selected" ).replaceWith( "<a class=\"start-button clickable\" id=\"auth-button\"><i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i></a>  <div style=\"padding-bottom: 50px\">" );
+						        initialise();
+						        scrollToBottom();
+						    });
+						}
+						</script>
+
+
+						
+
+							
 					</div>
 
 				</div>

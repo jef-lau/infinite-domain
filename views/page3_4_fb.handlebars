@@ -1,9 +1,41 @@
 <!doctype html>
 
-<div class="timeline" style="height:42px"></div>
+<div class="timeline" style="height:48px"></div>
 <div class="stamp">8<span>:</span>51<span>:</span>12 AM</div>
 <div class="timeline" style="height:7px"></div>
 
+<script>
+
+$(document).ready(function(){
+    initialise();  
+});
+
+
+function initialise()
+{
+    $("#3_4_next").click(function(){
+        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top:50px;\"></div><button class=\"next-button\" id=\"page4\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></button><div style=\"padding-bottom:50px;\"></div>" );
+        scrollToBottom();
+        initialise();
+    });
+    $("#fb-btn1").click(function(){
+        $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
+        initialise();
+    });  
+    $("#fb-btn2").click(function(){
+        $( "div.fb-refresh02" ).replaceWith( "<div class=\"fb-sent\">I just wanted to see if I can borrow some money. I have a credit card bill due in 5 days. I get my severance check in 2 weeks, so I can pay you back then.</div><div class=\"fb-refresh03\"><button class=\"buttonRefresh\" id=\"fb-btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
+        initialise();
+    });     
+    $("#fb-btn3").click(function(){
+        $( "div.fb-refresh03" ).replaceWith( "<div class=\"fb-sent\">It's always awkward asking for money, haha. Just need some extra help while I pick myself up. Let me know if you can help me out<img class=\"emoji\" src=\"/images/emoji/heartemoji.png\"></div>");
+        scrollToBottom();
+        initialise();
+    });  
+       
+}
+</script>
 
 <div class="appContainer">
   <a><img src="/images/icons/messenger.png" class="app" data-toggle="modal" data-target="#messenger" data-backdrop="true" data-keyboard="true"></a>
@@ -35,7 +67,7 @@
         <div class="fb-textContainer">
             <div class="fb-time">8:51 AM</div>
             <div class="fb-sent">
-                Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png">
+                <p>Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png"></p>
             </div>
             <div class="fb-refresh01"><button class="buttonRefresh" id="fb-btn1"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>                    
         </div>
@@ -51,35 +83,3 @@
 <div class="3_4_reboot"></div>
 
 
-<script>
-
-$(document).ready(function(){
-    initialise();  
-});
-
-
-
-
-
-function initialise()
-{
-    $("#3_4_next").click(function(){
-        $( "div.3_4_reboot" ).replaceWith( "<div style=\"padding-top: 50px\"></div>  <button class=\"next-button\" id=\"page4\"><div class=\"blink\"><span><i class=\"fa fa-angle-double-right fa-2x\" aria-hidden=\"true\"></i></span></div></button>  <div style=\"padding-bottom: 50px\">" );
-        initialise();
-        scrollToBottom();
-    });
-    $("#fb-btn1").click(function(){
-        $( "div.fb-refresh01" ).replaceWith( "<div class=\"fb-sent\">I should of told you sooner but I didn't want to ruin valentine's day...</div><div class=\"fb-refresh02\"><button class=\"buttonRefresh\" id=\"fb-btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });  
-    $("#fb-btn2").click(function(){
-        $( "div.fb-refresh02" ).replaceWith( "<div class=\"fb-sent\">I just want to see if I can borrow some money. I have a credit card bill due in 5 days. I get my severance check in 2 weeks, so I can pay you back then.</div><div class=\"fb-refresh03\"><button class=\"buttonRefresh\" id=\"fb-btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
-        initialise();
-    });     
-    $("#fb-btn3").click(function(){
-        $( "div.fb-refresh03" ).replaceWith( "<div class=\"fb-sent\">It's always awkward asking for money, haha. Just need some extra help while I pick myself up. Let me know if you can help me out <img class=\"emoji\" src=\"/images/emoji/heartemoji.png\"></div><div style=\"padding-bottom: 30px;\"></div>" );
-        initialise();
-    });  
-       
-}
-</script>

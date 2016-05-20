@@ -4,7 +4,6 @@
 <div class="stamp">8<span>:</span>31<span>:</span>13 AM</div>
 <div class="timeline" style="height:7px"></div>
 
-<!doctype html>
 <script>
 $(document).ready(function(){
     initialise();  
@@ -14,30 +13,37 @@ function initialise()
 {
     $("#btn1").click(function(){
         $( "div.refresh01" ).replaceWith( "<div class=\"sent\"><p>Her email says she doesn't work at ZenTech anymore.<div class=\"time\">8:31 AM</div></p></div><div class=\"refresh02\"><button class=\"buttonRefresh\" id=\"btn2\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });  
     $("#btn2").click(function(){
         $( "div.refresh02" ).replaceWith( "<div class=\"received\"><p>Hi-ya Walt! Yea, she got let go this morning. I saw her leave Rob’s office, packed her things and left.<div class=\"time\">8:33 AM</div></p></div><div class=\"refresh03\"><button class=\"buttonRefresh\" id=\"btn3\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });    
     $("#btn3").click(function(){
-        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We had a company-wide meeting about acquiring a new startup called infinite domain. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        $( "div.refresh03" ).replaceWith( "<div class=\"received\"><p>The office is kind of tense right now. We got acquired by this company named infinite domain last week. Just found out about it today. Does that name sound familiar to you?<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh04\"><button class=\"buttonRefresh\" id=\"btn4\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });  
     $("#btn4").click(function(){
-        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them. You probably shouldn't be telling me all this.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        $( "div.refresh04" ).replaceWith( "<div class=\"sent\"><p>Hm, no I never heard of them.<div class=\"time\">8:34 AM</div></p></div><div class=\"refresh05\"><button class=\"buttonRefresh\" id=\"btn5\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });  
     $("#btn5").click(function(){
-        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>Lol, no one is going to know. They must be expensive tho, if they are firing so many people. I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        $( "div.refresh05" ).replaceWith( "<div class=\"received\"><p>I think they might be responsible for letting everyone go... I miss you by the way!<div class=\"time\">8:37 AM</div></p></div><div class=\"refresh06\"><button class=\"buttonRefresh\" id=\"btn6\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });  
     $("#btn6").click(function(){
         $( "div.refresh06" ).replaceWith( "<div class=\"received\"><p>Oh shit, Rob's here. Can’t talk.<div class=\"time\">8:38 AM</div></p></div><div class=\"refresh07\"><button class=\"buttonRefresh\" id=\"btn7\"><i class=\"fa fa-refresh fa-spin\" aria-hidden=\"true\"></i></button></div>" );
+        scrollToBottom();
         initialise();
     });  
     $("#btn7").click(function(){
-        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll hit you up after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:38 AM</div></p></div>" );
+        $( "div.refresh07" ).replaceWith( "<div class=\"received\"><p>I’ll text you after work! <img class=\"emoji\" src=\"/images/emoji/smileemoji.png\"><div class=\"time\">8:38 AM</div></p></div>" );
+        scrollToBottom();
         initialise();
     });                  
     

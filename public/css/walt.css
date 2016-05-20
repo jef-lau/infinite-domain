@@ -114,6 +114,13 @@
     width: 55%;
 }
 
+.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+
 /* ############################# Auth #############################*/
 .blink {
     color: #000;
@@ -694,6 +701,22 @@ body
     padding-bottom: 25px;
 }
 
+.search-collapse {
+    font-family: 'Roboto', sans-serif;
+    color: #7f7f7f;
+    padding: 0;
+    margin: 0;
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.search-flex-container {
+    padding-top: 7px;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 400px;
+}
+
 /* ############################# Google Maps App #############################*/
 #viewMap .modal-body {
     width: 100%;
@@ -986,6 +1009,7 @@ body
 }
 
 .fb-textContainer {
+    overflow: hidden;
     background-color: #FFF;
     padding: 10px;
     min-height:60vh;
@@ -1026,6 +1050,17 @@ body
     font-size: .8em;
     color: #D4D4D4; 
     padding: 5px;
+}
+
+.fb-bumper {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 /* ############################# Typing Integrations #############################*/
@@ -1074,7 +1109,7 @@ body
 
 .start-button {
     position: relative;
-    color: #000;
+    color: #4B4B4B;
     text-decoration: none;
     background-color: #F2F2F2;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;

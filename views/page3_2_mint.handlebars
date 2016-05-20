@@ -4,7 +4,7 @@
 <div class="stamp">8<span>:</span>43<span>:</span>07 AM</div>
 <div class="timeline" style="height:7px"></div>
 
-<a id="page3_3" class="no-decorations clickable">
+<a class="no-decorations clickable" data-toggle="modal" data-target="#mint" data-backdrop="true" data-keyboard="true">
   <ul class="list-group" style="margin:5px;">
       <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
           <div class="note-flex-container">
@@ -27,4 +27,21 @@
   </ul> 
 </a>
 
-<div id="append_page3_2"></div>
+<!-- Modal -->
+<div id="mint" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body" id="mintbody">
+        {{>mint-updatesT}}                    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="page3_4">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+<script src="/js/walt.js"></script>
+<div id="append_page3_3"></div>
