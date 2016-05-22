@@ -126,6 +126,13 @@
   animation: blink 1s infinite;
 }
 
+.secure-walt {
+    color: orange;
+}
+
+.secure-r5 {
+    color: #00aeff;
+}
 /* ############################# Splash #############################*/
 .splash {
     height: 60vh;
