@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Project Walt</title>	
+	<title>Infinite Domain</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -57,8 +57,8 @@
 							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown_title">Select Subject
 							<span class="caret"></span></button>
 							<ul ID="divNewNotifications" class="dropdown-menu">
-								<li class="clickable"><a id="update-dropdown">Walt G. Lee [2/3]</a></li>
-								<li class="disabled"><a>Larry L. Ebert [3/3 MAX]</a></li>
+								<li class="clickable"><a id="update-dropdown">Walt G. Lee [1]</a></li>
+<!-- 								<li class="disabled"><a>Larry L. Ebert [3/3 MAX]</a></li>
 								<li class="disabled"><a>Anthony S. Williams [3/3 MAX]</a></li>
 								<li class="disabled"><a>Janice C. Davis [3/3 MAX]</a></li>
 								<li class="disabled"><a>Keisha A. Regner [3/3 MAX]</a></li>
@@ -76,7 +76,7 @@
 								<li class="disabled"><a>Stacy C. Leung [3/3 MAX]</a></li>
 								<li class="disabled"><a>Lorene J. Krol [3/3 MAX]</a></li>
 								<li class="disabled"><a>Fang Chu [3/3 MAX]</a></li>
-								<li class="disabled"><a>Dorothy Acevedo Varela [3/3 MAX]</a></li>
+								<li class="disabled"><a>Dorothy Acevedo Varela [3/3 MAX]</a></li> -->
 							</ul>
 						</div>
 						<div class="subject-selected"></div>
@@ -89,7 +89,7 @@
 						function initialise()
 						{
 						    $("#update-dropdown").click(function(){
-						        $( "div.subject-selected" ).replaceWith( "<a class=\"start-button clickable\" id=\"auth-button\"><i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i></a>  <div style=\"padding-bottom: 50px\">" );
+						        $( "div.subject-selected" ).replaceWith( "<div style=\"padding-bottom: 30px\"></div>  <a class=\"start-button clickable\" id=\"auth-button\"><i class=\"fa fa-play-circle-o\" aria-hidden=\"true\"></i></a>  <div style=\"padding-bottom: 50px\"></div>" );
 						        initialise();
 						        scrollToBottom();
 						    });

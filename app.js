@@ -34,7 +34,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.partone);
 app.get('/icons', routes.icons);
 app.get('/playground', routes.playground)
-app.get('/playgroundtest', routes.playgroundtest)
+app.get('/playground_quest', routes.playground_quest)
 app.get('/partone', routes.partone)
 app.get('/reference', routes.reference)
 app.get('/mintoverviewT', routes.mintoverviewT)
@@ -59,6 +59,10 @@ app.get('/page3_2', routes.page3_2)
 app.get('/page3_3', routes.page3_3)
 app.get('/page3_4', routes.page3_4)
 app.get('/page4', routes.page4)
+
+// Quest
+app.get('/MIICWwIBAAKBg', routes.quest2_1)
+app.get('/quest3_1', routes.quest3_1)
 
 
 

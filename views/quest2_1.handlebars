@@ -15,6 +15,7 @@
 	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 
 	<!-- Javascript -->
 	<script src="https://code.jquery.com/jquery.js"></script>	
@@ -42,17 +43,51 @@
     <![endif]-->        
 </head>
 
+<script>
+    $(function() {
+        var options = {
+          strings: ["lPVVzdTWieUIQSupr+bTOGCmYBuwS1YwtLNEb4T7kfDnBGLZ73JsLGWzKiaX9u9dYZuAo+i55vprt6v5e+pPxK9a490JemFpkR8WtqAWOHlwxvsUu/mPTyRdb0FyU6CsP50Kc5tJifGlKznYVKzzVi2vE9MCAfKG257Zji8hf2M=","FTu5TjAziNoZBsTrltQYCHoJcY9tyCOC+v+WMBnQSkg5Afu3jloLt3p5ooVQp23BMXq8C3i/dyzAjZDPruCAhrovZt/D72Tj8JVDFSwS8bRHs/04zwFeFLjUoqkHdcFb4NbfTh935OydgMuWJFkBsATsqqzy9IgggHVIvP8chJA=","Wbkm1Md982cTlCTJqquCluvj85FalYkCiDABTy8mR5sdmLEkqmaEpU13b8MsBRQfPO5Vwwaluc35JmbiltVfKBqNJ2AM0H6IA/83WSuD5JFP0SmrVqRspsXOeBgyzC1sKBa05JSU2McrSt6iyjdTLd2mNSn7lJtIQPhbyAZ75HE=","S/yJ4kCSCRPM6qlUEVWTQYbnfN61fgcq1sLwn1Jr5bjtqFr8RylLbU+fBC8aveG0z1436zcyIozUlJjrL/+U1S8dj1qwLBwC9/x1+XSlR8bGfyICwlVGPAHz+pWLHwbT6N620pl12rFhVTlIZuFfn9iQcQvJBADHk/42uuDPlL0=","lyku6NZj+j7MlaqNIA8Sdk8lGjt4mjTBsAN72Q8rQYFTbc1W6Talp8Jc6X3uau3j10M5TXFvxLx4+8zCG3yBcRz/GxK8uTbfuVRdR+NFOhSOAeaUevAOI2iXyYbP09QIwCEQSuzCe/0UTne1vwC8LfueZOSGAclTEdi2dZJymEg=","eDhbSBbZlQYR+kh13Z6RhpcLHZQwqavHEUafRtvJe7st+cTnbb6zqqFxXxY8ffa+8SJrTSQ1FmG7y+4jr+Qi/5Mlz4yubHoAv1kwqe9ZKrRBUWxL3jrva/vN5wWb2vt4IfBaGL4qNiZb62x6J8rrxtb/Zofxjw4xdS3/a/k+l8U=",""],
+          		typeSpeed: -5000, 
+          		backSpeed: -5000,
+          		contentType: 'text',
+                backDelay: 0,
+                loop: false,
+                loopCount: false,
+        }
 
-<body id="background">
+          $(".element").typed(options);
+
+    });
+
+
+</script>
+
+<body id="secure-background">
 	<div class="outer">
 		<div class="middle">
 			<div class="inner">
 				<div class="menuBar">Infinite<span><i class="fa fa-eye" aria-hidden="true" style="font-size:.8em;padding-left:2px;padding-right:2px;"></i></span>Domain</div>
-				<div class="waltDisplay">
+				<div class="secureDisplay">
 					<!-- content of story goes here -->
 					
 					<div class="appDisplay" id="div1">
-						{{>playgroundPartial}}							
+
+						<div class="secureText">
+							<center>Decrypting Key</center></br>
+							<span class="element wordwrap" style="white-space:pre-line"></span>
+						</div>
+
+						<script>
+							setTimeout(function(){
+								$("#div1").load("quest3_1"); 
+								console.log("finished decryption");
+							}, 10000);
+						</script>
+
+
+						
+
+							
 					</div>
 
 				</div>
@@ -60,9 +95,7 @@
 		</div>
 	</div>
 
-
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/walt.js"></script>
 </body>
 </html>
-

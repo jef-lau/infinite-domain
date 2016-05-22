@@ -61,7 +61,7 @@
     max-width:400px;
     min-width:250px;
     width:100%;
-    height:90vh;
+    height:95vh;
     background: #F2F2F2;
     margin: auto;
     overflow: hidden;
@@ -97,6 +97,33 @@
 
 #nextArrow {
     color: #AAAAAA;
+}
+
+/* ############################# Secure Chat Display #############################*/
+.secureDisplay {
+    max-width:400px;
+    min-width:250px;
+    width:100%;
+    height:95vh;
+    background: #000;
+    margin: auto;
+    overflow: hidden;
+    border-bottom-left-radius: 6px;   
+    border-bottom-right-radius: 6px;     
+}
+
+#secure-background {
+    background-color:#000;
+}
+
+.secureText{
+    color: #FFF;
+    text-align: left;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+.secureText center{
+  animation: blink 1s infinite;
 }
 
 /* ############################# Splash #############################*/
@@ -627,6 +654,14 @@ body
     padding-left: 7px;
 }
 
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
 /* ############################# Google Search App #############################*/
 #search .modal-body {
     width: 100%;
@@ -1108,15 +1143,15 @@ body
 /* ############################# Push Button #############################*/
 
 .start-button {
-    position: relative;
+    /*position: relative;*/
     color: #4B4B4B;
     text-decoration: none;
     background-color: #F2F2F2;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 700;
     font-size: 3em;
-    display: block;
-    padding: 4px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;

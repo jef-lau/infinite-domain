@@ -1,12 +1,13 @@
 var map;
 var marker;
-var home = {lat:32.860579, lng:-117.2243106};
-var centerHome = {lat:32.8705718, lng:-117.2329398}; 
+var home = {lat:32.860888, lng:-117.225074};
+var centerHome = {lat:32.8619718, lng:-117.2259398}; 
 function initMap() {
   // Create a map object and specify the DOM element for display.
   map = new google.maps.Map(document.getElementById('map'), {
     center: centerHome,
-    zoom: 15
+    zoom: 18,
+    mapTypeId: google.maps.MapTypeId.HYBRID
   });
 
   marker = new google.maps.Marker({

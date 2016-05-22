@@ -76,7 +76,6 @@ $("#div1" ).on( "click", "#page1", function() {
 });
 $("#div1" ).on( "click", "#page1_2", function() {
 	console.log($( this ));
-	playAudio();
 	$("#append_page1_2").load('page1_2');
 	scrollToBottom();
 });
@@ -218,3 +217,6 @@ $('.dropdown-toggle').dropdown();
 $('#divNewNotifications li').on('click', function() {
 	$('#dropdown_title').html($(this).find('#update-dropdown').html());
 });
+
+// ############################# Quest #############################
+

@@ -14,9 +14,9 @@ exports.playground = function(req, res){
    //some methods
    res.render('playground', { title: 'Express' });
 };
-exports.playgroundtest = function(req, res){
+exports.playground_quest = function(req, res){
    //some methods
-   res.render('playgroundtest', { title: 'Express' });
+   res.render('playground_quest', { title: 'Express' });
 };
 exports.project = function(req, res){
    //some methods
@@ -111,4 +111,14 @@ exports.page3_4 = function(req, res){
 exports.page4 = function(req, res){
    //some methods
    res.render('page4', { title: 'Express' });
+};
+
+// ############################# Quest Start #############################
+exports.quest2_1 = function(req, res){
+   //some methods
+   res.render('quest2_1', { title: 'Express' });
+};
+exports.quest3_1 = function(req, res){
+   //some methods
+   res.render('quest3_1_chat', { title: 'Express' });
 };
