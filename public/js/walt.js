@@ -211,6 +211,13 @@ function scrollToBottom(){
     }, 300);
 }
 
+function sScrollToBottom(num){
+	setTimeout(function(){
+		$('div').animate({ scrollTop: $('div').height()+500}, 1000);
+    	// $('div').animate({scrollTop: 1E10});
+    }, num);
+}
+
 // ############################# Dropdown splash page #############################
 $('.dropdown-toggle').dropdown();
 
