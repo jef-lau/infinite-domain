@@ -122,7 +122,7 @@
     font-family: 'Source Code Pro', sans-serif;
 }
 
-.secureText center{
+.secureText #decrypt{
   animation: blink 1s infinite;
 }
 
@@ -714,6 +714,7 @@ body
 }
 
 .search-flex-right h1{
+    display: inline;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
@@ -732,6 +733,28 @@ body
     color:#b2b2b2;
 }
 
+.search-flex-right h3 {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 400;    
+    color:#660099;
+}
+
+.search-flex-right h4 {
+    display: inline;
+    font-family: 'Roboto', sans-serif;    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 15px;   
+    color:#006621;
+}
+
 .search-flex-right u{
     color:#005999;
     text-decoration: none;
@@ -740,7 +763,7 @@ body
 .refresh {
     width: 95%;
     margin: 0 auto; 
-    padding-bottom: 25px;
+    /*padding-bottom: 25px;*/
 }
 
 .search-collapse {
@@ -758,6 +781,7 @@ body
     display: flex;
     max-width: 400px;
 }
+
 
 /* ############################# Google Maps App #############################*/
 #viewMap .modal-body {

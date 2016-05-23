@@ -1,130 +1,328 @@
 <!doctype html>
+
 <script>
 
-function startChat() { 
-    setTimeout(function(){
-        window.location.href = "./MIICWwIBAAKBg";
-        // $("#background").load("partone");
-    }, 300);    
-    
-} 
+    // google search
+    function loadSearch1() {
+        $("#first-search").delay(10).fadeIn();
+        $("#search-btn1").remove();
+    }
 
+    function loadSearch2() {
+        $("#second-search").delay(10).fadeIn();
+        $("#search-btn2").remove();
+    }
+
+    function loadSearch3() {
+        $("#3-search").delay(10).fadeIn();
+        $("#search-btn3").remove();
+    }    
+
+    function loadSearch4() {
+        $("#4-search").delay(10).fadeIn();
+        $("#search-btn4").remove();
+    }
+
+    function loadSearch5() {
+        $("#5-search").delay(10).fadeIn();
+        $("#search-btn5").remove();
+    }
+
+    function loadSearch6() {
+        $("#6-search").delay(10).fadeIn();
+        $("#search-btn6").remove();
+    }     
+
+    function loadSearch7() {
+        $("#7-search").delay(10).fadeIn();
+        $("#search-btn7").remove();
+    }
+
+    function loadSearch8() {
+        $("#8-search").delay(10).fadeIn();
+        $("#search-btn8").remove();
+    }     
+
+    // facebook messenger
+    function loadFB1() {
+        $("#fbmessage-1").delay(10).fadeIn();
+        $("#fb-btn1").remove();
+        scrollToBottom();
+    }
+    function loadFB2() {
+        $("#fbmessage-2").delay(10).fadeIn();
+        $("#fb-btn2").remove();
+        scrollToBottom();
+    }    
+    function loadFB3() {
+        $("#fbmessage-3").delay(10).fadeIn();
+        $("#fb-btn3").remove();
+        scrollToBottom();
+    }   
+
+function loadPage4_1() { 
+    $("#append_page4_1").delay(500).fadeIn();
+    scrollToBottom();      
+} 
 </script>
 
-<div class="timeline" style="height:24px"></div>
-<div class="stamp">3<span>:</span>02<span>:</span>45 PM</div>
+<div class="timeline" style="height:72px"></div>
+<div class="stamp">9<span>:</span>03<span>:</span>27 AM</div>
 <div class="timeline" style="height:7px"></div>
 
 <html>
 <div class="appContainer">
-  <a><img src="/images/icons/gmail.png" class="app" data-toggle="modal" data-target="#gmail3" data-backdrop="true" data-keyboard="true"></a>
-  <p class="appName">Gmail</p>
-</div>
-
-
+    <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search" data-backdrop="true" data-keyboard="true"></a>
+    <p class="appName">Google</p>
+</div>  
 
 <!-- Modal -->
-<div id="gmail3" class="modal fade gmail" role="dialog"  tabindex='-1'>
+<div id="search" class="modal fade" role="dialog"  tabindex='-1'>
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
 
-        <div class="modal-body">
+      <div class="modal-body">
 
-            <img src="/images/gmail-header.jpg" class="fitInModal disable-mouse">
+        <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+        <!-- div class to introduce app -->
+        <div class="search-header">
+            <h1>Web & App Activity</h1>
+            <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
+        </div>
+        <div style="padding-top:15px;"></div>
+        <img src="/images/search-card.jpg" style="padding:5px;width:95%">
+        <div style="padding-bottom:15px;"></div>  
 
-            <!-- autoresponse email -->
-            <div class="clickable gmailButton anon-email" data-toggle="collapse" data-target="#inbox1">
-                <hr/>
-                <div class="gmail-flex-container">
-                    <div class="gmail-checkbox"><input type="checkbox" value=""></div>
+        <div class="refresh"><button class="buttonRefresh" id="search-btn1" onclick="loadSearch1()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
 
-                    <div class="gmail-flex-item gmailHeader" style="text-align: left" id="anon">Let's talk</div>
-                    <div class="gmail-flex-item-right gmailTime">3:02 pm</div>  
-                </div>  
-                <div class="gmail-flex-container">
-                    <div class="gmail-flex-item gmailSubtext">https://infinitedoma.in/MIGeMA0GCSqGSIb3DQEB ...</div>                                         
-                    <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
-                </div>  
-                <hr/>
+        <!-- eighth search -->
+        <div id="8-search" style="display:none;">
+        
+            <div id="search7" class="collapse search-collapse">
+                No results found for <b>infinite domain zentech</b>
             </div>
-
-            <div id="inbox1" class="collapse">
-                <div class="gmailBody">
-                    {{>gmailAnon}}
-
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search7" class="clickable">"development jobs with little experience"</u></h1>
+                    <h2>8:41am</h2>
                 </div>
-            </div>              
-
-            <!-- autoresponse email -->
-            <div class="clickable gmailButton autoresponse-email" data-toggle="collapse" data-target="#inbox2">
-                <hr/>
-                <div class="gmail-flex-container">
-                    <div class="gmail-checkbox"><input type="checkbox" value=""></div>
-
-                    <div class="gmail-flex-item gmailHeader removeBold" style="text-align: left" id="autoresponse">[Automated Response] RE: Coffee?</div>
-                    <div class="gmail-flex-item-right gmailTime">8:15 am</div>  
-                </div>  
-                <div class="gmail-flex-container">
-                    <div class="gmail-flex-item gmailSubtext">Hello, Thank you for contacting ZenTech. We regret to i...</div>
-                    <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
-                </div>  
-                <hr/>
             </div>
-
-            <div id="inbox2" class="collapse">
-                <div class="gmailBody">
-                    {{>gmailAuto}}
-
-                </div>
-            </div>  
-
-            <!-- fired email -->
-            <div class="clickable gmailButton" data-toggle="collapse" data-target="#inbox3">
-                <hr/>
-                <div class="gmail-flex-container">
-                    <div class="gmail-checkbox"><input type="checkbox" value=""></div>
-
-                    <div class="gmail-flex-item gmailHeader removeBold" style="text-align: left" >ZenTech Termination Notice</div>
-                    <div class="gmail-flex-item-right gmailTime">7:49 am</div>  
-                </div>  
-                <div class="gmail-flex-container">
-                    <div class="gmail-flex-item gmailSubtext">Hello Walter, As discussed last Friday, this email confirms...</div>
-                    <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
-                </div>  
-                <hr/>
-            </div>
-
-            <div id="inbox3" class="collapse">
-                <div class="gmailBody">
-                    {{>gmailFired}}
-
-                </div>
-            </div>                                
-
+            <hr/>
         </div>
 
+        <!-- seventh search -->
+        <div id="7-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn8" onclick="loadSearch8()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search6" class="clickable">san diego jobs "jr developer" - craigslist</h3></h1>
+
+                    <div id="search6" class="collapse search-collapse">
+                        <h4>craigslist.com</h4>
+                    </div>
+
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div> 
+
+        <!-- sixth search -->
+        <div id="6-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn7" onclick="loadSearch7()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+        
+            
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search5" class="clickable">Web Developer - Freelance</h3></h1>
+
+                        <div id="search5" class="collapse search-collapse">
+                            <h4>craigslist.com</h4>
+                        </div>
+
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+        <!-- fifth search -->
+        <div id="5-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn6" onclick="loadSearch6()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search8" class="clickable">Part Time Graphic Design / Web Design (Oceanside)</u></h3>
+
+                    <div id="search8" class="collapse search-collapse">
+                        <h4>craigslist.com</h4>
+                    </div>
+
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div> 
+
+        <!-- fourth search -->
+        <div id="4-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn5" onclick="loadSearch5()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+        
+            
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search4" class="clickable">san diego web/html/info design - craigslist</h3></h1>
+
+                    <div id="search4" class="collapse search-collapse">
+                        <h4>craigslist.com</h4>
+                    </div>
+
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+        <!-- third search -->
+        <div id="3-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn4" onclick="loadSearch4()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div id="search3" class="collapse search-collapse">
+                About 2,620,000 results (0.38 seconds) <b>web developer san diego</b>
+            </div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search3" class="clickable">"web developer san diego"</u></h1>
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div> 
+
+        <!-- second search -->
+        <div id="second-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn3" onclick="loadSearch3()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div id="search1" class="collapse search-collapse">
+                About 3,360 results (0.74 seconds) for <b>zentech layoffs</b>
+            </div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search1" class="clickable">"zentech layoffs"</u></h1>
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+        <!-- first search -->
+        <div id="first-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn2" onclick="loadSearch2()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div id="search2" class="collapse search-collapse">
+                About 256,000 results (0.35 seconds) for <b>zentech</b>
+            </div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search2" class="clickable">"zentech"</u></h1>
+                    <h2>8:41am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div>   
+
+
+
+      </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" value="true">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage4_1()">Close</button>
       </div>
     </div>
   </div>
 </div>
- 
-<script>
-$(document).ready(function(){
-    unBold();
-});
 
-function unBold() {
-    $(".anon-email").click(function() {
-        $('#anon').addClass('removeBold');
-        unBold();
-    });     
-}
+<!-- ############################# START Facebook Messenger START ############################# -->
 
-</script>
+<div id="append_page4_1" style="display:none;">
+    <div class="timeline" style="height:60px"></div>
+    <div class="stamp">9<span>:</span>13<span>:</span>52 AM</div>
+    <div class="timeline" style="height:7px"></div>
 
-<div id="append_page2_3"></div>
-    
+    <div class="appContainer">
+      <a><img src="/images/icons/messenger.png" class="app" data-toggle="modal" data-target="#messenger" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Messenger</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="messenger" class="modal fade messenger" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="fbHeader">
+                <div class="note-flex-container">
+                    <div class="fb-left-arrow disable-mouse">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="fb-left disable-mouse">
+                        Stacy Leung
+                        <div style="text-align: left;font-size: .6em !important;"><img src="/images/fb-icon.png" style="width:10px;position: relative;bottom: 1px;"><font color="#157EFB"> MESSENGER</font><font color="#D4D4D4"> • ACTIVE NOW</font></div>
+                    </div>
+                    <div class="fb-right disable-mouse">
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                    </div>                    
+                </div>            
+            </div>
+            <div class="fb-textContainer">
+
+                <!-- messages -->
+                <div id="fbmessage-1" style="display:none;">
+                    <div class="fb-time">8:51 AM</div>
+                    <div class="fb-sent">
+                        <p>Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png"></p>
+                    </div>
+                    <button class="buttonRefresh" id="fb-btn2" onclick="loadFB2();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
+                </div>
+
+                <div id="fbmessage-2" style="display:none;">
+                    <div class="fb-sent">
+                        <p>Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png"></p>
+                    </div>
+                    <button class="buttonRefresh" id="fb-btn3" onclick="loadFB3();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
+                </div>
+
+                <div id="fbmessage-3" style="display:none;">
+                    <div class="fb-sent">
+                        <p>Hey babe, I kind of got myself into a mess right now. I got fired last Friday <img class="emoji" src="/images/emoji/mehemoji.png"></p>
+                    </div>
+                    <!-- <button class="buttonRefresh" id="fb-btn4" onclick="loadFB4();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button>  -->
+                </div>                                
+
+                <button class="buttonRefresh" id="fb-btn1" onclick="loadFB1();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="3_4_next">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+</div>
+
+<!-- ############################# END Facebook Messenger END ############################# -->

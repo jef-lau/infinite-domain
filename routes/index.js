@@ -122,3 +122,7 @@ exports.quest3_1 = function(req, res){
    //some methods
    res.render('quest3_1_chat', { title: 'Express' });
 };
+exports.quest4_1 = function(req, res){
+   //some methods
+   res.render('quest4_1_refresh', { title: 'Express' });
+};
