@@ -1082,6 +1082,7 @@ body
 }
 
 .fb-received {
+    clear:both;
     padding: 10px;
     text-align: left;    
     max-width: 70%;
@@ -1097,6 +1098,7 @@ body
 }
 
 .fb-sent {
+    clear:both;
     padding: 10px;
     text-align: left;    
     max-width: 70%;
@@ -1111,7 +1113,8 @@ body
     margin:5px;
 }
 
-.fb-time {
+.fb-time {    
+    clear:both;
     text-align: center;    
     font-size: .8em;
     color: #D4D4D4; 
@@ -1127,6 +1130,18 @@ body
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.fb-offline {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: .8em;    
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;     
+    color: #D4D4D4;
+    clear:both;
 }
 
 /* ############################# Typing Integrations #############################*/
