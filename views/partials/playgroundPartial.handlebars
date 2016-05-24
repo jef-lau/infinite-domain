@@ -164,6 +164,16 @@ function loadPage4_2() {
     $("#append_page4_2").delay(500).fadeIn();
     scrollToBottom();      
 } 
+
+function loadPage4_3() { 
+    $("#append_page4_3").delay(500).fadeIn();
+    scrollToBottom();      
+} 
+
+function loadPage4_4() { 
+    $("#append_page4_4").delay(500).fadeIn();
+    scrollToBottom();      
+} 
 </script>
 
 <!-- ############################# START Google Search START ############################# -->
@@ -441,7 +451,7 @@ function loadPage4_2() {
 
                 <div id="fbmessage-4" style="display:none;">
                     <div class="fb-received">
-                        i’ll pay you back for last night’s movie
+                        i’ll pay you back for the movie last night
                     </div>
                     <button class="buttonRefresh" id="fb-btn5" onclick="loadFB5();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
                 </div>
@@ -463,7 +473,7 @@ function loadPage4_2() {
 
                 <div id="fbmessage-7" style="display:none;">
                     <div class="fb-sent">
-                        Let’s talk this over.
+                        Let’s talk this through.
                     </div>
                     <button class="buttonRefresh" id="fb-btn8" onclick="loadFB8();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
                 </div>
@@ -513,7 +523,7 @@ function loadPage4_2() {
 
                 <div id="fbmessage-14" style="display:none;">
                     <div class="fb-received">
-                        i want to try something different
+                        i won't be young forever. i want to try something different
                     </div>
                     <button class="buttonRefresh" id="fb-btn15" onclick="loadFB15();"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button> 
                 </div>
@@ -589,5 +599,248 @@ function loadPage4_2() {
 
 <!-- ############################# END Facebook Messenger END ############################# -->
 
+<!-- ############################# START Fitbit START ############################# -->
 <div id="append_page4_2" style="display:none;">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+    <div class="timeline" style="height:78px"></div>
+    <div class="stamp">9<span>:</span>26<span>:</span>45 AM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <a class="no-decorations clickable" data-toggle="modal" data-target="#fitbit" data-backdrop="true" data-keyboard="true">
+      <ul class="list-group" style="margin:5px;">
+          <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+              <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                  <div style="text-align: left;flex-grow: 1;">
+                    <img style="width: 50px;" src="/images/icons/fitbit.png">
+                  </div>
+                </div>
+
+                  <div class="mint-left">
+                    <div style="font-size: .9em">Woah there! Abnormal spike in heart rate.</div>
+                    <div style="text-align: left;font-size: .8em !important;">Try a deep breathing exercise?</div>
+                    <div style="text-align: left;font-size: .8em !important;">Current Heart Rate: <font color="#4DBFBF">118 bpm</font></div>
+                  </div>
+
+                  <div class="mint-right">
+                      9:26 AM
+                  </div>            
+              </div>
+          </li>
+      </ul> 
+    </a>
+
+    <!-- Modal -->
+    <div id="fitbit" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <div class="fitbit-header">
+                <img src="/images/fitbitlogo.png">
+            </div>
+            <div class="fitbit-today">
+                <h1>Today</h1>
+            </div>
+
+            <div style="padding-bottom:15px"></div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-watch.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">Charge HR</div>
+                    <div class="fitbit-sub">Synced today, 9:26 AM</div>
+
+                </div>
+            </div>
+            <hr/>  
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-bpm.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">118 <h1>bpm</h1> <button data-toggle="modal" data-target="#fitbit-breathe" data-backdrop="true" data-keyboard="true"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button></div>
+                    <div class="fitbit-sub">100 bpm resting</div>            
+                </div>
+            </div>
+            <hr/>  
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-steps.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">273 <h1>steps</h1></div>
+                    <div class="fitbit-sub"><img src="/images/fitbit-progress.png"></div>  
+               
+
+
+                </div>
+            </div>
+            <hr/>            
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-miles.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">.1 <h1>miles</h1></div>
+                    <div class="fitbit-sub"><img src="/images/fitbit-progress.png"></div>            
+                    
+
+                </div>
+            </div>
+            <hr/>  
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-calories.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">8 <h1>calories burned</h1></div>
+                    <div class="fitbit-sub"><img src="/images/fitbit-progress.png"></div>            
+
+                </div>
+            </div>
+            <hr/>  
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><img src="/images/fitbit-sleep.png" class="fitbit-img"></div>
+                <div class="search-flex-right">
+                    <div class="fitbit-bold">5 <h1>hr</h1> 26 <h1>min</h1></div>
+                    <div class="fitbit-sub">0x Awake / 6x Restless</div>            
+
+                </div>
+            </div>
+            <hr/>  
+                         
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage4_3()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+    <div id="fitbit-breathe" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="fitbit-header">
+                <img src="/images/fitbitlogo.png">
+            </div>
+            <div class="fitbit-today">
+                <h1>Sync Breathing</h1>
+            </div>
+
+            <div class="fitbit-sub" style="padding-top: 25px;padding-bottom:25px">
+                You seem to be extra tense today.<br/><br/>
+                Take a couple minutes and sync your breathing to the animation below to reduce stress and promote a general feeling of peace.
+            </div>
+            <img src="/images/fitbit-breathe.gif">
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="scrollToBottom()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+</div>
+<!-- ############################# END Fitbit END ############################# -->
+
+<!-- ############################# START Texts Drug Dealer START ############################# -->
+<div id="append_page4_3" style="display:none;">
+    <div class="timeline" style="height:30px"></div>
+    <div class="stamp">9<span>:</span>31<span>:</span>13 AM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <script>
+
+    function loadSMS1() {
+        $("#sms01").delay(10).fadeIn();
+        $(".smsrefresh1").remove();
+        scrollToBottom();
+    }
+
+    function loadSMS2() {
+        $("#sms02").delay(10).fadeIn();
+        $(".smsrefresh2").remove();
+        scrollToBottom();
+    }
+
+    function loadSMS3() {
+        $("#sms03").delay(10).fadeIn();
+        $(".smsrefresh3").remove();
+        scrollToBottom();
+    }
+    </script>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+        <p class="appName">SMS</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="txtHeader">
+                <i class="fa fa-comments"></i> <img src="/images/ppl/arthur-ico.jpg">Ben A
+            </div>
+            <div class="textContainer">
+            
+                <div id="sms01" style="display:none;">
+                    <div class="sent">
+                        <p>Hey man, can I pick up 2 grams from you?
+                            <div class="time">9:31 AM</div>
+                        </p>
+                    </div>
+                    <button class="buttonRefresh smsrefresh2" onclick="loadSMS2()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button>
+                </div>
+
+                <div id="sms02" style="display:none;">
+                    <div class="received">
+                        <p>yo, for sure. of course man! ill be over in a lil bit <img class="emoji" src="/images/emoji/grinemoji.png">
+                            <div class="time">9:36 AM</div>
+                        </p>
+                    </div>
+                    <button class="buttonRefresh smsrefresh3" onclick="loadSMS3()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button>
+                </div>
+
+                <div id="sms03" style="display:none;">
+                    <div class="received">
+                        <p><img class="emoji" src="/images/emoji/weedemoji1.png"><img class="emoji" src="/images/emoji/weedemoji2.png"><img class="emoji" src="/images/emoji/weedemoji3.png">
+                            <div class="time">9:36 AM</div>
+                        </p>
+                    </div>
+                </div>            
+
+                <button class="buttonRefresh smsrefresh1" onclick="loadSMS1()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button>                        
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage4_4()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+</div>
+<!-- ############################# END Texts Drug Dealer END ############################# -->
+
+<div id="append_page4_4" style="display:none;">
+    <div style="padding-top:50px;"></div>
+    <button class="next-button" id="page5">
+        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
+    </button>
+    <div style="padding-bottom:50px;"></div>
 </div>

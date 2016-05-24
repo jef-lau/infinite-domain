@@ -154,6 +154,13 @@ $("#div1" ).on( "click", "#page4", function() {
 	scrollToBottom();
 });
 
+// ############################# Page 4 #############################
+$("#div1" ).on( "click", "#page5", function() {
+	console.log($(this));
+	$("#div1").load('page5');
+	scrollToBottom();
+});
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {
