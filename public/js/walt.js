@@ -154,10 +154,17 @@ $("#div1" ).on( "click", "#page4", function() {
 	scrollToBottom();
 });
 
-// ############################# Page 4 #############################
+// ############################# Page 5 #############################
 $("#div1" ).on( "click", "#page5", function() {
 	console.log($(this));
 	$("#div1").load('page5');
+	scrollToBottom();
+});
+
+// ############################# Page 6 #############################
+$("#div1" ).on( "click", "#page6", function() {
+	console.log($(this));
+	$("#div1").load('page6');
 	scrollToBottom();
 });
 
@@ -213,7 +220,7 @@ $(document).ready(function(){
 // ############################# Scroll To Bottom #############################
 function scrollToBottom(){
 	setTimeout(function(){
-		$('div').animate({ scrollTop: 1E10}, 1000);
+		$('div').animate({ scrollTop: 1E10}, 10);
     	// $('div').animate({scrollTop: 1E10});
     }, 300);
 }

@@ -1317,3 +1317,66 @@ body
 .fitbit-sub img {
     width: 90%;
 }
+
+/* ############################# Voice #############################*/
+#voice .modal-body {
+    width: 100%;
+    padding: 0;
+    min-height:60vh; 
+}
+
+.voice-header{
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    background: #dadada;
+    border-bottom: 1px solid grey;
+}
+
+.voice-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;   
+    text-align: left;    
+    padding-top: 12px;
+    padding-left: 25px;
+    margin:0;
+    float:left;
+}
+
+.voice-header .fa-bars{
+    padding-top: 12px;
+    font-size: 1.3em;
+    float:left;
+    padding-left: 5px;
+}
+
+.voice-header .fa-envelope-o{
+    padding-top: 12px;
+    font-size: 1.3em;
+    float:right;
+    padding-right: 5px;
+}
+
+.voice-img {
+    max-width: 55px;
+}
+
+.fitbit-bold h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #475261;
+    font-weight: 100;
+    font-size: .8em;
+    padding-top:4px;
+    text-align: right;
+    margin:0;
+    float:right;
+    padding-right: 15px;
+}
+
+#myAudio {
+    width: 97%;
+}

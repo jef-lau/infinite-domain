@@ -116,6 +116,10 @@ exports.page5 = function(req, res){
    //some methods
    res.render('page5', { title: 'Express' });
 };
+exports.page6 = function(req, res){
+   //some methods
+   res.render('page6', { title: 'Express' });
+};
 
 // ############################# Quest Start #############################
 exports.quest2_1 = function(req, res){

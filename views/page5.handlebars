@@ -1,1 +1,147 @@
-page 5
+<!doctype html>
+<script>
+function loadPage5_1() { 
+    $("#append_page5_1").delay(50).fadeIn();
+    scrollToBottom();      
+} 
+
+function loadPage5_2() { 
+    $("#append_page5_2").delay(50).fadeIn();
+    scrollToBottom();      
+} 
+
+function loadPage5_3() { 
+    $("#append_page5_3").delay(50).fadeIn();
+    scrollToBottom();      
+} 
+</script>
+
+<!-- ############################# START Call START ############################# -->
+
+<div class="timeline" style="height:60px"></div>
+<div class="stamp">9<span>:</span>41<span>:</span>56 AM</div>
+<div class="timeline" style="height:7px"></div>
+
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item" style="background:#619B1E;padding: 4px">
+        <div class="note-flex-container">
+          <div class="note-left">
+            <div style="text-align: left;flex-grow: 1;">
+              <img class="incoming-photo" src="/images/ppl/mom.jpg">
+            </div>
+          </div>
+
+            <div class="note-flex-column incoming-name">
+              <div style="text-align: left;flex-grow: 5;padding-top: 25px;font-size:1.3em">Mom</div> 
+              <div style="text-align: left;flex-grow: 5"><i class="fa fa-home" aria-hidden="true"></i> 415-518-5753</div>
+            </div>
+
+            <div class="note-flex-column">
+              <div style="text-align: right;flex-grow: 2" class="incoming-call">
+          Incoming Call
+              <div class="loading_dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>                
+              </div>  
+            </div>            
+        </div>
+
+        <img src="/images/phone.jpg" class="answer-buttons clickable" onclick="loadPage5_1();"><br/>
+
+    </li>
+</ul> 
+<!-- ############################# END Call END ############################# -->
+
+<!-- ############################# START Missed Call START ############################# -->
+<div id="append_page5_1" style="display:none;">
+    <div class="timeline" style="height:24px"></div>
+    <ul class="list-group" style="margin:5px;">
+        <li class="list-group-item clickable" style="background:#dbdbdb;padding: 4px" onclick="loadPage5_2();">
+            <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                    <div style="text-align: left;flex-grow: 1;">
+                        <img style="width: 25px;" src="/images/missedcall.png">
+                    </div>
+                </div>
+
+                <div class="note-flex-column missed-incoming-name">
+                    <div style="text-align: left;flex-grow: 5">Missed Call</div> 
+                    <div style="text-align: left;flex-grow: 5;font-size: .8em !important;"> Mom</div>
+                </div>
+
+                <div class="note-flex-column">
+                    <div style="text-align: right;flex-grow: 2;" class="missed-call">
+                        8:57 AM             
+                    </div>  
+                </div>            
+            </div>
+        </li>
+    </ul> 
+</div>
+<!-- ############################# END Missed Call END ############################# -->
+<!-- ############################# START Google Voice START ############################# -->
+<div id="append_page5_2" style="display:none;">
+
+    <div class="timeline" style="height:36px"></div>
+    <div class="stamp">9<span>:</span>47<span>:</span>11 AM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+      <a><img src="/images/icons/gvoice.png" class="app" data-toggle="modal" data-target="#voice" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Voice</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="voice" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <div class="voice-header disable-mouse">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <h1>Voicemail</h1>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>
+            <div class="clickable" data-toggle="collapse" data-target="#voicemail1">
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><img src="/images/ppl/mom.jpg" class="voice-img"></div>
+                    <div class="search-flex-right">
+                        <div class="fitbit-bold">Mom <h2>9:47 AM</h2></div>
+                        <div class="fitbit-sub"><i class="fa fa-envelope-square" aria-hidden="true"></i>1 new voicemail</div>  
+                    </div>
+                </div>
+                <hr/>   
+            </div>
+
+            <div id="voicemail1" class="collapse">
+                <audio controls id="myAudio">
+                  <source src="/src/alarm.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+                <br/>
+                ^voicemail in progress
+            </div>      
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage5_3();"">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+</div>
+<!-- ############################# END Google Voice END ############################# -->
+
+<div id="append_page5_3" style="display:none;">
+    <div style="padding-top:50px;"></div>
+    <button class="next-button" id="page6">
+        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
+    </button>
+    <div style="padding-bottom:50px;"></div>
+</div>
