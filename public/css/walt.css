@@ -1462,8 +1462,12 @@ body
 }
 
 .insta-item-stats-container{
-    width: 70%;
+    width: 20%;
     height: 50%;
+}
+
+.insta-item-stats-container-2{
+    width: 30%;
 }
 
 .insta-item-stats-items {
@@ -1478,10 +1482,12 @@ body
 }
 
 .follow {
-    margin-left: auto;
+    max-width: 260px;
+    float: right;
     position: relative;
-    top: -25px;
-    padding-right: 10px;
+    margin-top:-65px;
+    padding-right: 15px;
+    padding-top: 25px;
 }
 
 .insta-item-stats-container img {
