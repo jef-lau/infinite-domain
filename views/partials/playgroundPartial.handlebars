@@ -1,147 +1,572 @@
 <!doctype html>
+
 <script>
-function loadPage5_1() { 
-    $("#append_page5_1").delay(50).fadeIn();
-    scrollToBottom();      
-} 
 
-function loadPage5_2() { 
-    $("#append_page5_2").delay(50).fadeIn();
-    scrollToBottom();      
-} 
+    // google search
+    function loadSearch1() {
+        $("#first-search").delay(10).fadeIn();
+        $("#search-btn1").remove();
+    }
 
-function loadPage5_3() { 
-    $("#append_page5_3").delay(50).fadeIn();
-    scrollToBottom();      
-} 
+    function loadSearch2() {
+        $("#second-search").delay(10).fadeIn();
+        $("#search-btn2").remove();
+    }
+
+    function loadSearch3() {
+        $("#3-search").delay(10).fadeIn();
+        $("#search-btn3").remove();
+    }    
+
+    function loadSearch4() {
+        $("#4-search").delay(10).fadeIn();
+        $("#search-btn4").remove();
+    }   
+
+    function loadSearch5() {
+        $("#5-search").delay(10).fadeIn();
+        $("#search-btn5").remove();
+    }  
+
+    function loadPage6_1() { 
+        $("#append_page6_1").delay(100).fadeIn();
+        scrollToBottom();      
+    } 
+
+    function loadPage6_2() { 
+        $("#append_page6_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }     
 </script>
+<!-- ############################# START Google Search START ############################# -->
 
-<!-- ############################# START Call START ############################# -->
-
-<div class="timeline" style="height:60px"></div>
-<div class="stamp">9<span>:</span>41<span>:</span>56 AM</div>
+<div class="timeline" style="height:96px"></div>
+<div class="stamp">11<span>:</span>13<span>:</span>37 AM</div>
 <div class="timeline" style="height:7px"></div>
 
-<ul class="list-group" style="margin:5px;">
-    <li class="list-group-item" style="background:#619B1E;padding: 4px">
-        <div class="note-flex-container">
-          <div class="note-left">
-            <div style="text-align: left;flex-grow: 1;">
-              <img class="incoming-photo" src="/images/ppl/mom.jpg">
-            </div>
-          </div>
+<html>
+<div class="appContainer">
+    <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search" data-backdrop="true" data-keyboard="true"></a>
+    <p class="appName">Google</p>
+</div>  
 
-            <div class="note-flex-column incoming-name">
-              <div style="text-align: left;flex-grow: 5;padding-top: 25px;font-size:1.3em">Mom</div> 
-              <div style="text-align: left;flex-grow: 5"><i class="fa fa-home" aria-hidden="true"></i> 415-518-5753</div>
-            </div>
+<!-- Modal -->
+<div id="search" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
 
-            <div class="note-flex-column">
-              <div style="text-align: right;flex-grow: 2" class="incoming-call">
-          Incoming Call
-              <div class="loading_dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>                
-              </div>  
-            </div>            
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+        <!-- div class to introduce app -->
+        <div class="search-header">
+            <h1>Web & App Activity</h1>
+            <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
+        </div>
+        <div style="padding-top:15px;"></div>
+        <img src="/images/search-card.jpg" style="padding:5px;width:95%">
+        <div style="padding-bottom:15px;"></div>  
+
+        <div class="refresh"><button class="buttonRefresh" id="search-btn1" onclick="loadSearch1()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+
+        <!-- fifth search -->
+        <div id="5-search" style="display:none;">
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search8" class="clickable">I AmA Bankruptcy Lawyer and Student Loans are Killing Millennials and the Middle Class. AMA!</u></h3>
+
+                    <div id="search8" class="collapse search-collapse">
+                        <h4>reddit.com</h4>
+                    </div>
+
+                    <h2>11:28am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div> 
+
+        <!-- fourth search -->
+        <div id="4-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn5" onclick="loadSearch5()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+        
+            
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search4" class="clickable">I Asked an Expert What Would Happen if I Just Stopped Paying My Student Loans | VICE | United States</h3></h1>
+
+                    <div id="search4" class="collapse search-collapse">
+                        <h4>vice.com</h4>
+                    </div>
+
+                    <h2>11:22am</h2>
+                </div>
+            </div>
+            <hr/>
         </div>
 
-        <img src="/images/phone.jpg" class="answer-buttons clickable" onclick="loadPage5_1();"><br/>
+        <!-- third search -->
+        <div id="3-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn4" onclick="loadSearch4()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
 
-    </li>
-</ul> 
-<!-- ############################# END Call END ############################# -->
-
-<!-- ############################# START Missed Call START ############################# -->
-<div id="append_page5_1" style="display:none;">
-    <div class="timeline" style="height:24px"></div>
-    <ul class="list-group" style="margin:5px;">
-        <li class="list-group-item clickable" style="background:#dbdbdb;padding: 4px" onclick="loadPage5_2();">
-            <div class="note-flex-container">
-                <div class="note-left-missed-call">
-                    <div style="text-align: left;flex-grow: 1;">
-                        <img style="width: 25px;" src="/images/missedcall.png">
-                    </div>
+            
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search3" class="clickable">&ldquo;what happens if i ignore my student loans&rdquo;</u></h1>
+                    <div id="search3" class="collapse search-collapse">
+                        <h1>About 1,890,000 results (0.70 seconds)</h1>
+                    </div>                     
+                    <h2>11:20am</h2>
                 </div>
-
-                <div class="note-flex-column missed-incoming-name">
-                    <div style="text-align: left;flex-grow: 5">Missed Call</div> 
-                    <div style="text-align: left;flex-grow: 5;font-size: .8em !important;"> Mom</div>
-                </div>
-
-                <div class="note-flex-column">
-                    <div style="text-align: right;flex-grow: 2;" class="missed-call">
-                        8:57 AM             
-                    </div>  
-                </div>            
             </div>
-        </li>
-    </ul> 
-</div>
-<!-- ############################# END Missed Call END ############################# -->
-<!-- ############################# START Google Voice START ############################# -->
-<div id="append_page5_2" style="display:none;">
+            
+            <hr/>     
+        </div> 
 
-    <div class="timeline" style="height:36px"></div>
-    <div class="stamp">9<span>:</span>47<span>:</span>11 AM</div>
+        <!-- second search -->
+        <div id="second-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn3" onclick="loadSearch3()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search2" class="clickable">If You're Having Trouble | Navient</h3></h1>
+
+                    <div id="search2" class="collapse search-collapse">
+                        <h4>navient.com</h4>
+                    </div>
+
+                    <h2>11:17am</h2>
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+        <!-- first search -->
+        <div id="first-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn2" onclick="loadSearch2()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search1" class="clickable">Navient | Student Loan Repayment Plan | Account Summary</h3></h1>
+
+                    <div id="search1" class="collapse search-collapse">
+                        <h4>navient.com</h4>
+                    </div>
+
+                    <h2>11:13am</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div>   
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_1()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ############################# END Google Search END ############################# -->
+<!-- ############################# START Instagram START ############################# -->
+<div id="append_page6_1" style="display:none;">
+    <div class="timeline" style="height:162px"></div>
+    <div class="stamp">11<span>:</span>40<span>:</span>51 AM</div>
     <div class="timeline" style="height:7px"></div>
 
+    <html>
     <div class="appContainer">
-      <a><img src="/images/icons/gvoice.png" class="app" data-toggle="modal" data-target="#voice" data-backdrop="true" data-keyboard="true"></a>
-      <p class="appName">Voice</p>
-    </div>
+        <a><img src="/images/icons/instagram.png" class="app" data-toggle="modal" data-target="#insta" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Instagram</p>
+    </div>  
 
     <!-- Modal -->
-    <div id="voice" class="modal fade" role="dialog"  tabindex='-1'>
+    <div id="insta" class="modal fade" role="dialog"  tabindex='-1'>
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
 
           <div class="modal-body">
-
-            <div class="voice-header disable-mouse">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <h1>Voicemail</h1>
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="insta-header">
+                <i class="fa fa-angle-left" aria-hidden="true" data-dismiss="modal" onclick="loadPage4_1()"></i>
+                <h1>stacybear212<i class="fa fa-ellipsis-h" aria-hidden="true"></i></h1>
             </div>
-            <div class="clickable" data-toggle="collapse" data-target="#voicemail1">
-                <div class="search-flex-container">
-                    <div class="search-flex-left"><img src="/images/ppl/mom.jpg" class="voice-img"></div>
-                    <div class="search-flex-right">
-                        <div class="fitbit-bold">Mom <h2>9:47 AM</h2></div>
-                        <div class="fitbit-sub"><i class="fa fa-envelope-square" aria-hidden="true"></i>1 new voicemail</div>  
+
+                <div class="insta-container">
+                    <div class="insta-item-photo">
+                        <img src="/images/insta/stacy-circle.png">
                     </div>
-                </div>
-                <hr/>   
-            </div>
 
-            <div id="voicemail1" class="collapse">
-                <audio controls id="myAudio">
-                  <source src="/src/alarm.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-                <br/>
-                ^voicemail in progress
-            </div>      
+                    <!-- instagram stats container -->
+                    <div class="insta-item-stats-container">
+                        <div class="insta-item-stats-items">
+                            <h1>457</h1>
+                        </div>
+                        <div class="insta-item-stats-items">
+                            <h2>post</h2>
+                        </div>  
+
+                    </div>
+
+                    <div class="insta-item-stats-container">
+                        <div class="insta-item-stats-items">
+                            <h1>791</h1>
+                        </div>
+                        <div class="insta-item-stats-items">
+                            <h2>followers</h2>
+                        </div>                                       
+                    </div>
+
+                    <div class="insta-item-stats-container">
+                        <div class="insta-item-stats-items">
+                            <h1>210</h1>
+                        </div>
+                        <div class="insta-item-stats-items">
+                            <h2>following</h2>
+                        </div>                                       
+                    </div>  
+                    <br/>                          
+                </div>
+                <div class="insta-item-stats-container follow">
+                    <div class="insta-item-stats-items-2">
+                        <img src="/images/insta/insta-following.jpg">
+                    </div>  
+                </div>  
+                <div class="insta-info"><b>Stacy Liu</b></div>
+                <div class="insta-info">San Diego Living</div>
+                <div style="padding:8px"></div>
+                <img src="/images/insta/insta-top.jpg" class="fitInModal">
+
+                <div class="insta-thumb">
+                    <img src="/images/insta/insta6.jpg" data-toggle="modal" data-target="#insta1" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta5.jpg" data-toggle="modal" data-target="#insta2" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta4.jpg" data-toggle="modal" data-target="#insta3" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta2.jpg" data-toggle="modal" data-target="#insta4" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta3.jpg" data-toggle="modal" data-target="#insta5" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta1.jpg" data-toggle="modal" data-target="#insta6" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta10.jpg" data-toggle="modal" data-target="#insta7" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta8.jpg" data-toggle="modal" data-target="#insta8" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/insta/insta7.jpg" data-toggle="modal" data-target="#insta9" data-backdrop="true" data-keyboard="true" class="clickable">
+                </div>
+
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage5_3();"">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_2()">Close</button>
           </div>
         </div>
       </div>
-    </div>  
+    </div>
+    <!-- photo 1 -->
+    <div class="insta-fitInModal">
+        <div id="insta1" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
 
-</div>
-<!-- ############################# END Google Voice END ############################# -->
+            <!-- Modal content-->
+            <div class="modal-content">
 
-<div id="append_page5_3" style="display:none;">
-    <div style="padding-top:50px;"></div>
-    <button class="next-button" id="page6">
-        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
-    </button>
-    <div style="padding-bottom:50px;"></div>
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        North Park Community Park <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta6.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>36 likes</strong><br/>
+                    <strong>stacybear212</strong> Beautiful day for some Coke Zero and cards. <img class="emoji" src="/images/emoji/sun.png"> <u>#coke #cocacola #cokezero #cards</u><br/>
+                    <h1>16 MINUTES AGO</h1>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 2 -->
+    <div class="insta-fitInModal">
+        <div id="insta2" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Mango Studio <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta5.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>96 likes</strong><br/>
+                    <strong>stacybear212</strong> Mango Studio just opened next to my office. Delish! <img class="emoji" src="/images/emoji/pray.png"><img class="emoji" src="/images/emoji/hand.png"> <u>#mangostudio #mango #smoothie #breakfastforchampions</u><br/>
+                    <h1>45 MINUTES AGO</h1>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 3 -->
+    <div class="insta-fitInModal">
+        <div id="insta3" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        World Market <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta4.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>116 likes</strong><br/>
+                    <strong>stacybear212</strong> OMG, World Market has Fritz-Kola in stock!!! <u>#fritzkola #worldmarket #berlin #germany #cola #coke</u><br/>
+                    <h1>1 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 4 -->
+    <div class="insta-fitInModal">
+        <div id="insta4" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Forever 21 <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta2.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>76 likes</strong><br/>
+                    <strong>stacybear212</strong> So cute! Huge sale at Forever 21!! <u>#forever21 #mirrors #shopping #fashion</u><br/>
+                    <h1>1 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 5 -->
+    <div class="insta-fitInModal">
+        <div id="insta5" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Whole Foods <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta3.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>121 likes</strong><br/>
+                    <strong>stacybear212</strong> My skin has been glowing ever since I started drinking this juice. The best! <img class="emoji" src="/images/emoji/delish.png"> <u>#marksandspencer #morningjuice #pineapple #watermelon #aloe #juice #healthiswealth</u><br/>
+                    <h1>1 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 6 -->
+    <div class="insta-fitInModal">
+        <div id="insta6" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        M&M's World - Las Vegas <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta1.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>168 likes</strong><br/>
+                    <strong>stacybear212</strong> Ahhh, bring me back. I love M&Ms! <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#mmsworld #mms #chocolate #vegas #lasvegas</u><br/>
+                    <h1>1 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 7 -->
+    <div class="insta-fitInModal">
+        <div id="insta7" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Target <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta10.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>98 likes</strong><br/>
+                    <strong>stacybear212</strong> My spirit animal  <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#minions #despicableme #gru #universalstudios #illumination #cute #spiritanimal</u><br/>
+                    <h1>1 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 8 -->
+    <div class="insta-fitInModal">
+        <div id="insta8" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Starbucks <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta8.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>98 likes</strong><br/>
+                    <strong>stacybear212</strong> No better way to start my morning. I love my gold card! <img class="emoji" src="/images/emoji/coffee.png"> <u>#starbucks #goldcard #short #small #coffee #javaholic #mondaymorning</u><br/>
+                    <h1>2 HOUR AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 9 -->
+    <div class="insta-fitInModal">
+        <div id="insta9" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
+                    <div class="insta-name">
+                        <strong>stacybear212</strong><br/>
+                        Balboa Park <strong style="color:#b2b2b2">></strong>
+                    </div>
+                </div>
+                <img src="/images/insta/insta7.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>197 likes</strong><br/>
+                    <strong>stacybear212</strong> Stroll in the park with Walt. <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#valentinesday #valentines #balboapark #sundayfunday</u><br/>Thanks <u>@wallywalt28</u>!<br/>
+                    <h1>ONE DAY AGO</h1>            
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 </div>
+<!-- ############################# END Instagram END ############################# -->
+
+<div id="append_page6_2" style="display:none;">
+</div>
+
