@@ -168,6 +168,13 @@ $("#div1" ).on( "click", "#page6", function() {
 	scrollToBottom();
 });
 
+// ############################# Page 6 #############################
+$("#div1" ).on( "click", "#page7", function() {
+	console.log($(this));
+	$("#div1").load('page7');
+	scrollToBottom();
+});
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {
