@@ -608,7 +608,7 @@ function loadPage4_4() {
     <div class="stamp">10<span>:</span>39<span>:</span>45 AM</div>
     <div class="timeline" style="height:7px"></div>
 
-    <a class="no-decorations clickable" data-toggle="modal" data-target="#fitbit" data-backdrop="true" data-keyboard="true">
+    <a class="no-decorations clickable" data-toggle="modal" data-target="#fitbit" data-backdrop="true" data-keyboard="true" onclick="ga('send', 'event', 'Fitbit-Notification', 'click', 'Fitbit');">
       <ul class="list-group" style="margin:5px;">
           <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
               <div class="note-flex-container">
@@ -661,7 +661,7 @@ function loadPage4_4() {
             <div class="search-flex-container">
                 <div class="search-flex-left"><img src="/images/fitbit-bpm.png" class="fitbit-img"></div>
                 <div class="search-flex-right">
-                    <div class="fitbit-bold">118 <h1>bpm</h1> <button data-toggle="modal" data-target="#fitbit-breathe" data-backdrop="true" data-keyboard="true"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button></div>
+                    <div class="fitbit-bold">118 <h1>bpm</h1> <button data-toggle="modal" data-target="#fitbit-breathe" data-backdrop="true" data-keyboard="true" onclick="ga('send', 'event', 'Synced-Breathing-Button', 'click', 'Fitbit');"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></button></div>
                     <div class="fitbit-sub">100 bpm resting</div>            
                 </div>
             </div>

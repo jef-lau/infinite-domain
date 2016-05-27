@@ -7,6 +7,7 @@ function loadPage5_1() {
 
 function loadPage5_2() { 
     $("#append_page5_2").delay(50).fadeIn();
+    $("#voice-btn").remove();
     scrollToBottom();      
 } 
 
@@ -57,28 +58,35 @@ function loadPage5_3() {
 <!-- ############################# START Missed Call START ############################# -->
 <div id="append_page5_1" style="display:none;">
     <div class="timeline" style="height:24px"></div>
-    <ul class="list-group" style="margin:5px;">
-        <li class="list-group-item clickable" style="background:#dbdbdb;padding: 4px" onclick="loadPage5_2();">
-            <div class="note-flex-container">
-                <div class="note-left-missed-call">
-                    <div style="text-align: left;flex-grow: 1;">
-                        <img style="width: 25px;" src="/images/missedcall.png">
+
+    <a onclick="loadPage5_2(); ga('send', 'event', 'Missed-Call', 'click', 'Voicemail');" class="no-decorations">
+        <ul class="list-group" style="margin:5px;">
+
+            <li class="list-group-item clickable" style="background:#dbdbdb;padding: 4px">
+                <div class="note-flex-container">
+                    <div class="note-left-missed-call">
+                        <div style="text-align: left;flex-grow: 1;">
+                            <img style="width: 25px;" src="/images/missedcall.png">
+                        </div>
                     </div>
-                </div>
 
-                <div class="note-flex-column missed-incoming-name">
-                    <div style="text-align: left;flex-grow: 5">Missed Call</div> 
-                    <div style="text-align: left;flex-grow: 5;font-size: .8em !important;"> Mom</div>
-                </div>
+                    <div class="note-flex-column missed-incoming-name">
+                        <div style="text-align: left;flex-grow: 5">Missed Call</div> 
+                        <div style="text-align: left;flex-grow: 5;font-size: .8em !important;"> Mom</div>
+                    </div>
 
-                <div class="note-flex-column">
-                    <div style="text-align: right;flex-grow: 2;" class="missed-call">
-                        10:52 AM             
-                    </div>  
-                </div>            
-            </div>
-        </li>
-    </ul> 
+                    <div class="note-flex-column">
+                        <div style="text-align: right;flex-grow: 2;" class="missed-call">
+                            10:52 AM             
+                        </div>  
+                    </div>            
+                </div>
+            </li>
+
+        </ul> 
+    </a>
+
+    <!-- <div class="refresh"><button class="buttonRefresh" id="voice-btn" onclick="loadPage5_2()"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></button></div> -->
 </div>
 <!-- ############################# END Missed Call END ############################# -->
 <!-- ############################# START Google Voice START ############################# -->
@@ -89,7 +97,7 @@ function loadPage5_3() {
     <div class="timeline" style="height:7px"></div>
 
     <div class="appContainer">
-      <a><img src="/images/icons/gvoice.png" class="app" data-toggle="modal" data-target="#voice" data-backdrop="true" data-keyboard="true"></a>
+      <a><img src="/images/icons/gvoice.png" class="app" data-toggle="modal" data-target="#voice" data-backdrop="true" data-keyboard="true" onclick="ga('send', 'event', 'Voice-Icon', 'click', 'Voicemail');"></a>
       <p class="appName">Voice</p>
     </div>
 
