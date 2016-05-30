@@ -1,2 +1,159 @@
 <!doctype html>
-page 7
+<script>
+
+    // google search
+    function loadSearch1() {
+        $("#first-search").delay(10).fadeIn();
+        $("#search-btn1").remove();
+    }
+
+    function loadSearch2() {
+        $("#second-search").delay(10).fadeIn();
+        $("#search-btn2").remove();
+    }
+
+    function loadSearch3() {
+        $("#3-search").delay(10).fadeIn();
+        $("#search-btn3").remove();
+    }    
+
+    // load pages
+    function loadPage7_1() { 
+        $("#append_page7_1").delay(100).fadeIn();
+        scrollToBottom();      
+    } 
+</script>   
+
+<!-- ############################# START Venmo START ############################# -->
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+<div class="timeline" style="height:48px"></div>
+<div class="stamp">12<span>:</span>50<span>:</span>35 PM</div>
+<div class="timeline" style="height:7px"></div>
+
+<a class="no-decorations">
+  <ul class="list-group" style="margin:5px;">
+      <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+          <div class="note-flex-container">
+            <div class="note-left-missed-call">
+              <div style="text-align: left;flex-grow: 1;">
+                <img style="width: 50px;" src="/images/icons/venmo.png">
+              </div>
+            </div>
+
+              <div class="mint-left">
+                <div style="font-size: .9em"><strong>Ben Adams</strong> charged <strong>you</strong> for<br/>
+                "the good shiiit <img class="emoji" src="/images/emoji/sun.png"><img class="emoji" src="/images/emoji/leaf.png">"</div>
+                <button type="button" class="btn btn-success" style="width:100%" onclick="loadPage7_1()">Pay <strong>$20</strong></button>
+              </div>
+
+              <div class="mint-right">
+                  12:50 PM
+              </div>            
+          </div>
+      </li>
+  </ul> 
+</a>
+
+<!-- ############################# END Venmo END ############################# -->
+<!-- ############################# START Google Search START ############################# -->
+
+<div id="append_page7_1" style="display:none;">
+    <div class="timeline" style="height:78px"></div>
+    <div class="stamp">1<span>:</span>03<span>:</span>28 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Google</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="search" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+            <!-- div class to introduce app -->
+            <div class="search-header">
+                <h1>Web & App Activity</h1>
+                <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
+            </div>
+            <div style="padding-top:15px;"></div>
+            <img src="/images/search-card.jpg" style="padding:5px;width:95%">
+            <div style="padding-bottom:15px;"></div>  
+
+            <div class="refresh"><button class="buttonRefresh" id="search-btn1" onclick="loadSearch1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+
+            <!-- third search -->
+            <div id="3-search" style="display:none;">            
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Searched for <u data-toggle="collapse" data-target="#search3" class="clickable">&ldquo;heartwarming movies like little miss sunshine&rdquo;</u></h1>
+                        <div id="search3" class="collapse search-collapse">
+                            <h1>About 199,000 results (0.71 seconds)</h1>
+                        </div>                     
+                        <h2>1:08pm</h2>
+                    </div>
+                </div>
+                
+                <hr/>     
+            </div> 
+
+            <!-- second search -->
+            <div id="second-search" style="display:none;">
+                <div class="refresh"><button class="buttonRefresh" id="search-btn3" onclick="loadSearch3()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Visited <h3 data-toggle="collapse" data-target="#search2" class="clickable">Millennials turning to cartoons to escape the harsh realities of life</h3></h1>
+
+                        <div id="search2" class="collapse search-collapse">
+                            <h4>avclub.com</h4>
+                        </div>
+
+                        <h2>1:05pm</h2>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+
+            <!-- first search -->
+            <div id="first-search" style="display:none;">
+                <div class="refresh"><button class="buttonRefresh" id="search-btn2" onclick="loadSearch2()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Searched for <u data-toggle="collapse" data-target="#search1" class="clickable">&ldquo;tv show recommendations&rdquo;</u></h1>
+                        <div id="search1" class="collapse search-collapse">
+                            <h1>About 4,820,000 results (0.60 seconds)</h1>
+                        </div>                     
+                        <h2>1:03pm</h2>
+                    </div>
+                </div>
+                <hr/>     
+            </div>   
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_1()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- ############################# END Google Search END ############################# -->

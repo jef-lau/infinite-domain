@@ -1641,3 +1641,64 @@ body
     text-align: left;
     color:#B0B1B1;
 }
+
+/* ############################# Netflix #############################*/
+#netflix .modal-body {
+    width: 100%;
+    padding: 0;
+    min-height:60vh; 
+}
+
+.netflix-header{
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    background: #1b1b1b;
+    border-bottom: 1px solid #353535;
+}
+
+.netflix-header img {
+    height: 25px;
+}
+
+#netflix .fa-bars {
+    float: left;
+    padding-left: 15px;
+    padding-top: 6px;
+    font-size: 1.4em;
+    color: #e6e6e6;
+
+}
+
+#netflix .fa-search {
+    float:right;
+    padding-right: 15px;
+    padding-top: 6px;
+    font-size: 1.4em;
+    color: #e6e6e6;
+}
+
+.netflix-body {
+    background-color: #1b1b1b;
+    padding-bottom: 50px;
+}
+
+.netflix-body h1{
+    color: #e6e6e6;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+    padding: 5px;
+    padding-left: 7px;
+}
+
+.netflix-thumb {
+    width: 100%;
+}
+
+.netflix-thumb img {
+    width: 31.5%;
+    align: left;
+    padding: 5px;
+
+}
