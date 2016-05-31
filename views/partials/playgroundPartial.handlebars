@@ -1,7 +1,194 @@
-<!-- ############################# START Netflix START ############################# -->
+<!doctype html>
+<script>
 
-    <div class="timeline" style="height:162px"></div>
-    <div class="stamp">11<span>:</span>40<span>:</span>51 AM</div>
+    // google search
+    function loadSearch1() {
+        $("#first-search").delay(10).fadeIn();
+        $("#search-btn1").remove();
+    }
+
+    function loadSearch2() {
+        $("#second-search").delay(10).fadeIn();
+        $("#search-btn2").remove();
+    }
+
+    function loadSearch3() {
+        $("#3-search").delay(10).fadeIn();
+        $("#search-btn3").remove();
+    }   
+
+    // sms response
+    function loadSMS1() {
+        $(".smsrefresh1").remove();
+        $("#sms01").delay(10).fadeIn();
+        scrollToBottom();
+        $("#sms02").delay(1000).fadeIn();
+        scrollToBottom();
+        $("#sms03").delay(3000).fadeIn();
+        scrollToBottom();
+    }
+
+    function loadSMS4() {
+        $(".smsrefresh2").remove();
+        $("#sms04").delay(10).fadeIn();
+        scrollToBottom();
+        $("#sms05").delay(2000).fadeIn();
+        scrollToBottom();
+    }    
+
+    // load pages
+    function loadPage7_1() { 
+        $("#append_page7_1").delay(100).fadeIn();
+        scrollToBottom();      
+    } 
+    function loadPage7_2() { 
+        $("#append_page7_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }     
+    function loadPage7_3() { 
+        $("#append_page7_3").delay(100).fadeIn();
+        scrollToBottom();      
+    }   
+    function loadPage7_4() { 
+        $("#append_page7_4").delay(100).fadeIn();
+        scrollToBottom();      
+    }        
+</script>   
+
+<!-- ############################# START Venmo START ############################# -->
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+<div class="timeline" style="height:48px"></div>
+<div class="stamp">12<span>:</span>50<span>:</span>35 PM</div>
+<div class="timeline" style="height:7px"></div>
+
+<a class="no-decorations">
+  <ul class="list-group" style="margin:5px;">
+      <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+          <div class="note-flex-container">
+            <div class="note-left-missed-call">
+              <div style="text-align: left;flex-grow: 1;">
+                <img style="width: 50px;" src="/images/icons/venmo.png">
+              </div>
+            </div>
+
+              <div class="venmo-notif">
+                <div style="font-size: .9em"><strong>Ben Adams</strong> charged you for &ldquo;the good stuff <img class="emoji" src="/images/emoji/sun.png"><img class="emoji" src="/images/emoji/leaf.png">&rdquo;</div>
+                <button type="button" class="btn btn-success" style="width:100%" onclick="loadPage7_1()">Complete Payment <strong>$20</strong></button>
+              </div>
+
+          
+          </div>
+      </li>
+  </ul> 
+</a>
+
+<!-- ############################# END Venmo END ############################# -->
+<!-- ############################# START Google Search START ############################# -->
+
+<div id="append_page7_1" style="display:none;">
+    <div class="timeline" style="height:78px"></div>
+    <div class="stamp">1<span>:</span>03<span>:</span>28 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Google</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="search" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+            <!-- div class to introduce app -->
+            <div class="search-header">
+                <h1>Web & App Activity</h1>
+                <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
+            </div>
+            <div style="padding-top:15px;"></div>
+            <img src="/images/search-card.jpg" style="padding:5px;width:95%">
+            <div style="padding-bottom:15px;"></div>  
+
+            <div class="refresh"><button class="buttonRefresh" id="search-btn1" onclick="loadSearch1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+
+            <!-- third search -->
+            <div id="3-search" style="display:none;">            
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Searched for <u data-toggle="collapse" data-target="#search3" class="clickable">&ldquo;heartwarming movies like little miss sunshine&rdquo;</u></h1>
+                        <div id="search3" class="collapse search-collapse">
+                            <h1>About 199,000 results (0.71 seconds)</h1>
+                        </div>                     
+                        <h2>1:08pm</h2>
+                    </div>
+                </div>
+                
+                <hr/>     
+            </div> 
+
+            <!-- second search -->
+            <div id="second-search" style="display:none;">
+                <div class="refresh"><button class="buttonRefresh" id="search-btn3" onclick="loadSearch3()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Visited <h3 data-toggle="collapse" data-target="#search2" class="clickable">Millennials turning to cartoons to escape the harsh realities of life</h3></h1>
+
+                        <div id="search2" class="collapse search-collapse">
+                            <h4>avclub.com</h4>
+                        </div>
+
+                        <h2>1:05pm</h2>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+
+            <!-- first search -->
+            <div id="first-search" style="display:none;">
+                <div class="refresh"><button class="buttonRefresh" id="search-btn2" onclick="loadSearch2()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+                <div class="search-flex-container">
+                    <div class="search-flex-left"><input type="checkbox"></div>
+                    <div class="search-flex-right">
+                        <h1>Searched for <u data-toggle="collapse" data-target="#search1" class="clickable">&ldquo;tv show recommendations&rdquo;</u></h1>
+                        <div id="search1" class="collapse search-collapse">
+                            <h1>About 4,820,000 results (0.60 seconds)</h1>
+                        </div>                     
+                        <h2>1:03pm</h2>
+                    </div>
+                </div>
+                <hr/>     
+            </div>   
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_2()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- ############################# END Google Search END ############################# -->
+<!-- ############################# START Netflix START ############################# -->
+<div id="append_page7_2" style="display:none;">
+    <div class="timeline" style="height:60px"></div>
+    <div class="stamp">1<span>:</span>13<span>:</span>49 PM</div>
     <div class="timeline" style="height:7px"></div>
 
     <html>
@@ -27,48 +214,44 @@
                 
 
                 <div class="netflix-thumb">
-                    <img src="/images/insta/insta6.jpg" data-toggle="modal" data-target="#insta1" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta5.jpg" data-toggle="modal" data-target="#insta2" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta4.jpg" data-toggle="modal" data-target="#insta3" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta2.jpg" data-toggle="modal" data-target="#insta4" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta3.jpg" data-toggle="modal" data-target="#insta5" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta1.jpg" data-toggle="modal" data-target="#insta6" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta10.jpg" data-toggle="modal" data-target="#insta7" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta8.jpg" data-toggle="modal" data-target="#insta8" data-backdrop="true" data-keyboard="true" class="clickable">
-                    <img src="/images/insta/insta7.jpg" data-toggle="modal" data-target="#insta9" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/bojack.jpg" data-toggle="modal" data-target="#netflix1" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/rickandmorty.jpg" data-toggle="modal" data-target="#netflix2" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/bobsburgers.jpg" data-toggle="modal" data-target="#netflix3" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/the-office.jpg" data-toggle="modal" data-target="#netflix4" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/thelionking.jpg" data-toggle="modal" data-target="#netflix5" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/gameofthrones.jpg" data-toggle="modal" data-target="#netflix6" data-backdrop="true" data-keyboard="true" class="clickable">
                 </div>
             </div>
 
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_2()">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_3()">Close</button>
           </div>
         </div>
       </div>
     </div>
     <!-- photo 1 -->
     <div class="insta-fitInModal">
-        <div id="insta1" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix1" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        North Park Community Park <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta6.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>36 likes</strong><br/>
-                    <strong>stacybear212</strong> Beautiful day for some Coke Zero and cards. <img class="emoji" src="/images/emoji/sun.png"> <u>#coke #cocacola #cokezero #cards</u><br/>
-                    <h1>16 MINUTES AGO</h1>
+
+                <img src="/images/netflix/bojack-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;2 Seasons</h1>
+                    <h2>A humanoid horse, BoJack Horseman -- lost in a sea of self-loathing and booze -- decides it's time for a comeback.</h2>
+                    <h1>
+                        Cast: Will Arnett, Aaron Paul, Amy Sedaris<br/>
+                        Creator: Raphael Bob-Waksberg
+                    </h1>                    
+
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -82,26 +265,26 @@
     </div>
     <!-- photo 2 -->
     <div class="insta-fitInModal">
-        <div id="insta2" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix2" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Mango Studio <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta5.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>96 likes</strong><br/>
-                    <strong>stacybear212</strong> Mango Studio just opened next to my office. Delish! <img class="emoji" src="/images/emoji/pray.png"><img class="emoji" src="/images/emoji/hand.png"> <u>#mangostudio #mango #smoothie #breakfastforchampions</u><br/>
-                    <h1>45 MINUTES AGO</h1>
+
+                <img src="/images/netflix/rickandmorty-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;2 Seasons</h1>
+                    <h2>Rick is a mad scientist who drags his grandson, Morty, on crazy sci-fi adventures.</h2>
+                    <h1>
+                        Cast: Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke<br/>
+                        Creator: Justin Roiland, Dan Harmon
+                    </h1>                
+                    
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -115,26 +298,25 @@
     </div>
     <!-- photo 3 -->
     <div class="insta-fitInModal">
-        <div id="insta3" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix3" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        World Market <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta4.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>116 likes</strong><br/>
-                    <strong>stacybear212</strong> OMG, World Market has Fritz-Kola in stock!!! <u>#fritzkola #worldmarket #berlin #germany #cola #coke</u><br/>
-                    <h1>1 HOUR AGO</h1>            
+
+                <img src="/images/netflix/bobsburgers-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;&nbsp;TV-PG&nbsp;&nbsp;&nbsp;&nbsp;6 Seasons</h1>
+                    <h2>Bob Belcher is a third-generation restaurateur who runs Bob's Burgers with his loving wife and their three children.</h2>
+                    <h1>
+                        Cast: H. Jon Benjamin, Dan Mintz, Eugene Mirman, Larry Murphy, John Roberts, Kristen Schaal<br/>
+                        Creator: Loren Bouchard
+                    </h1>
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -148,26 +330,24 @@
     </div>
     <!-- photo 4 -->
     <div class="insta-fitInModal">
-        <div id="insta4" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix4" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Forever 21 <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta2.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>76 likes</strong><br/>
-                    <strong>stacybear212</strong> So cute! Huge sale at Forever 21!! <u>#forever21 #mirrors #shopping #fashion</u><br/>
-                    <h1>1 HOUR AGO</h1>            
+                <img src="/images/netflix/theoffice-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2005&nbsp;&nbsp;&nbsp;&nbsp;TV-PG&nbsp;&nbsp;&nbsp;&nbsp;9 Seasons</h1>
+                    <h2>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</h2>
+                    <h1>
+                        Cast: Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer, B. J. Novak, Ed Helms<br/>
+                        Creator: Ricky Gervais, Stephen Merchant
+                    </h1>
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -181,26 +361,24 @@
     </div>
     <!-- photo 5 -->
     <div class="insta-fitInModal">
-        <div id="insta5" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix5" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Whole Foods <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta3.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>121 likes</strong><br/>
-                    <strong>stacybear212</strong> My skin has been glowing ever since I started drinking this juice. The best! <img class="emoji" src="/images/emoji/delish.png"> <u>#marksandspencer #morningjuice #pineapple #watermelon #aloe #juice #healthiswealth</u><br/>
-                    <h1>1 HOUR AGO</h1>            
+                <img src="/images/netflix/thelionking-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;1h 28m</h1>
+                    <h2>Embark on an extraordinary coming-of-age adventure as Simba, a lion cub who cannot wait to be king, searches for his destiny in the great "Circle of Life."</h2>
+                    <h1>
+                        Cast: Matthew Broderick, James Earl Jones, Jeremy Irons, Jonathan Taylor Thomas<br/>
+                        Director: Roger Allers, Rob Minkoff
+                    </h1>
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -214,26 +392,25 @@
     </div>
     <!-- photo 6 -->
     <div class="insta-fitInModal">
-        <div id="insta6" class="modal fade" role="dialog"  tabindex='-1'>
+        <div id="netflix6" class="modal fade" role="dialog"  tabindex='-1'>
           <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
 
               <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        M&M's World - Las Vegas <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta1.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>168 likes</strong><br/>
-                    <strong>stacybear212</strong> Ahhh, bring me back. I love M&Ms! <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#mmsworld #mms #chocolate #vegas #lasvegas</u><br/>
-                    <h1>1 HOUR AGO</h1>            
+                <img src="/images/netflix/gameofthrones-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;6 Seasons</h1>
+                    <h2>An American fantasy drama television series created by David Benioff and D. B. Weiss.</h2>
+                    <h1>
+                        Not available on Netflix.<br/><br/>
+                        Cast: Emilia Clarke, Kit Harington, Maisie Williams, Lena Headey, Peter Dinklage, Natalie Dormer, Sophie Turner<br/>
+                        Creator: David Benioff, D. B. Weiss
+                    </h1>
+                    <div style="padding:100px"></div>
                 </div>
 
 
@@ -245,104 +422,90 @@
           </div>
         </div>
     </div>
-    <!-- photo 7 -->
-    <div class="insta-fitInModal">
-        <div id="insta7" class="modal fade" role="dialog"  tabindex='-1'>
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Target <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta10.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>98 likes</strong><br/>
-                    <strong>stacybear212</strong> My spirit animal  <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#minions #despicableme #gru #universalstudios #illumination #cute #spiritanimal</u><br/>
-                    <h1>1 HOUR AGO</h1>            
-                </div>
-
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- photo 8 -->
-    <div class="insta-fitInModal">
-        <div id="insta8" class="modal fade" role="dialog"  tabindex='-1'>
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Starbucks <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta8.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>98 likes</strong><br/>
-                    <strong>stacybear212</strong> No better way to start my morning. I love my gold card! <img class="emoji" src="/images/emoji/coffee.png"> <u>#starbucks #goldcard #short #small #coffee #javaholic #mondaymorning</u><br/>
-                    <h1>2 HOUR AGO</h1>            
-                </div>
-
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- photo 9 -->
-    <div class="insta-fitInModal">
-        <div id="insta9" class="modal fade" role="dialog"  tabindex='-1'>
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-
-              <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/stacy-circle.png"></div>
-                    <div class="insta-name">
-                        <strong>stacybear212</strong><br/>
-                        Balboa Park <strong style="color:#b2b2b2">></strong>
-                    </div>
-                </div>
-                <img src="/images/insta/insta7.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <strong>197 likes</strong><br/>
-                    <strong>stacybear212</strong> Stroll in the park with Walt. <img class="emoji" src="/images/emoji/heartemoji.png"> <u>#valentinesday #valentines #balboapark #sundayfunday</u><br/>Thanks <u>@wallywalt28</u>!<br/>
-                    <h1>1 DAY AGO</h1>            
-                </div>
-
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
+</div>
 <!-- ############################# END Netflix END ############################# -->
+<!-- ############################# START Texts Stacy START ############################# -->
+<div id="append_page7_3" style="display:none;">
+    <div class="timeline" style="height:864px"></div>
+    <div class="stamp">3<span>:</span>37<span>:</span>15 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+        <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+        <p class="appName">SMS</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="txtHeader">
+                <i class="fa fa-comments"></i> <img class="txt-ico" src="/images/ppl/stacy.jpg">Stacy<img class="emoji" src="/images/emoji/heartemoji.png">
+            </div>
+            <div class="textContainer">                   
+            
+                <div id="sms01" style="display:none;">
+                    <div class="sent">
+                        <p>Hey, sorry about earlier.
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms02" style="display:none;">
+                    <div class="sent">
+                        <p>Do you want to get dinner tonight and discuss this?
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms03" style="display:none;">
+                    <div class="sent">
+                        <p>I’m sorry about everything.
+                            <div class="time">3:38 AM</div>
+                        </p>
+                    </div>
+                    <button class="buttonRefresh smsrefresh2" onclick="loadSMS4()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                </div>   
+
+                <div id="sms04" style="display:none;">
+                    <div class="sent">
+                        <p>Cmon stacy. I need you.
+                            <div class="time">3:46 PM</div>
+                        </p>
+                    </div>
+                </div>   
+
+                <div id="sms05" style="display:none;">
+                    <div class="sent">
+                        <p>I can’t go on without you.
+                            <div class="time">3:47 PM</div>
+                        </p>
+                    </div>
+                </div>                                        
+
+                <button class="buttonRefresh smsrefresh1" onclick="loadSMS1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>                        
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_4()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>        
+</div>
+<!-- ############################# END Texts Stacy END ############################# -->
+
+<div id="append_page7_4" style="display:none;">
+    <div style="padding-top:50px;"></div>
+    <button class="next-button" id="page8">
+        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
+    </button>
+    <div style="padding-bottom:50px;"></div>
+</div>

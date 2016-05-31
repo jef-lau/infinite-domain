@@ -168,10 +168,17 @@ $("#div1" ).on( "click", "#page6", function() {
 	scrollToBottom();
 });
 
-// ############################# Page 6 #############################
+// ############################# Page 7 #############################
 $("#div1" ).on( "click", "#page7", function() {
 	console.log($(this));
 	$("#div1").load('page7');
+	scrollToBottom();
+});
+
+// ############################# Page 8 #############################
+$("#div1" ).on( "click", "#page8", function() {
+	console.log($(this));
+	$("#div1").load('page8');
 	scrollToBottom();
 });
 

@@ -15,6 +15,25 @@
     function loadSearch3() {
         $("#3-search").delay(10).fadeIn();
         $("#search-btn3").remove();
+    }   
+
+    // sms response
+    function loadSMS1() {
+        $(".smsrefresh1").remove();
+        $("#sms01").delay(10).fadeIn();
+        scrollToBottom();
+        $("#sms02").delay(1000).fadeIn();
+        scrollToBottom();
+        $("#sms03").delay(3000).fadeIn();
+        scrollToBottom();
+    }
+
+    function loadSMS4() {
+        $(".smsrefresh2").remove();
+        $("#sms04").delay(10).fadeIn();
+        scrollToBottom();
+        $("#sms05").delay(2000).fadeIn();
+        scrollToBottom();
     }    
 
     // load pages
@@ -22,6 +41,18 @@
         $("#append_page7_1").delay(100).fadeIn();
         scrollToBottom();      
     } 
+    function loadPage7_2() { 
+        $("#append_page7_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }     
+    function loadPage7_3() { 
+        $("#append_page7_3").delay(100).fadeIn();
+        scrollToBottom();      
+    }   
+    function loadPage7_4() { 
+        $("#append_page7_4").delay(100).fadeIn();
+        scrollToBottom();      
+    }        
 </script>   
 
 <!-- ############################# START Venmo START ############################# -->
@@ -43,15 +74,12 @@
               </div>
             </div>
 
-              <div class="mint-left">
-                <div style="font-size: .9em"><strong>Ben Adams</strong> charged <strong>you</strong> for<br/>
-                "the good shiiit <img class="emoji" src="/images/emoji/sun.png"><img class="emoji" src="/images/emoji/leaf.png">"</div>
-                <button type="button" class="btn btn-success" style="width:100%" onclick="loadPage7_1()">Pay <strong>$20</strong></button>
+              <div class="venmo-notif">
+                <div style="font-size: .9em"><strong>Ben Adams</strong> charged you for &ldquo;the good stuff <img class="emoji" src="/images/emoji/sun.png"><img class="emoji" src="/images/emoji/leaf.png">&rdquo;</div>
+                <button type="button" class="btn btn-success" style="width:100%" onclick="loadPage7_1()">Complete Payment <strong>$20</strong></button>
               </div>
 
-              <div class="mint-right">
-                  12:50 PM
-              </div>            
+          
           </div>
       </li>
   </ul> 
@@ -149,7 +177,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_1()">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_2()">Close</button>
           </div>
         </div>
       </div>
@@ -157,3 +185,327 @@
 </div>
 
 <!-- ############################# END Google Search END ############################# -->
+<!-- ############################# START Netflix START ############################# -->
+<div id="append_page7_2" style="display:none;">
+    <div class="timeline" style="height:60px"></div>
+    <div class="stamp">1<span>:</span>13<span>:</span>49 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/netflix.png" class="app" data-toggle="modal" data-target="#netflix" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Netflix</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="netflix" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="netflix-header disable-mouse">
+                <i class="fa fa-bars" aria-hidden="true"></i><img src="/images/netflix/netflix-logo.png"><i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            
+            <div class="netflix-body">
+                <h1>Recently Watched</h1>
+                
+
+                <div class="netflix-thumb">
+                    <img src="/images/netflix/bojack.jpg" data-toggle="modal" data-target="#netflix1" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/rickandmorty.jpg" data-toggle="modal" data-target="#netflix2" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/bobsburgers.jpg" data-toggle="modal" data-target="#netflix3" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/the-office.jpg" data-toggle="modal" data-target="#netflix4" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/thelionking.jpg" data-toggle="modal" data-target="#netflix5" data-backdrop="true" data-keyboard="true" class="clickable">
+                    <img src="/images/netflix/gameofthrones.jpg" data-toggle="modal" data-target="#netflix6" data-backdrop="true" data-keyboard="true" class="clickable">
+                </div>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_3()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- photo 1 -->
+    <div class="insta-fitInModal">
+        <div id="netflix1" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+
+                <img src="/images/netflix/bojack-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;2 Seasons</h1>
+                    <h2>A humanoid horse, BoJack Horseman -- lost in a sea of self-loathing and booze -- decides it's time for a comeback.</h2>
+                    <h1>
+                        Cast: Will Arnett, Aaron Paul, Amy Sedaris<br/>
+                        Creator: Raphael Bob-Waksberg
+                    </h1>                    
+
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 2 -->
+    <div class="insta-fitInModal">
+        <div id="netflix2" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+
+                <img src="/images/netflix/rickandmorty-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;2 Seasons</h1>
+                    <h2>Rick is a mad scientist who drags his grandson, Morty, on crazy sci-fi adventures.</h2>
+                    <h1>
+                        Cast: Justin Roiland, Chris Parnell, Spencer Grammer, Sarah Chalke<br/>
+                        Creator: Justin Roiland, Dan Harmon
+                    </h1>                
+                    
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 3 -->
+    <div class="insta-fitInModal">
+        <div id="netflix3" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+
+                <img src="/images/netflix/bobsburgers-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;&nbsp;TV-PG&nbsp;&nbsp;&nbsp;&nbsp;6 Seasons</h1>
+                    <h2>Bob Belcher is a third-generation restaurateur who runs Bob's Burgers with his loving wife and their three children.</h2>
+                    <h1>
+                        Cast: H. Jon Benjamin, Dan Mintz, Eugene Mirman, Larry Murphy, John Roberts, Kristen Schaal<br/>
+                        Creator: Loren Bouchard
+                    </h1>
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 4 -->
+    <div class="insta-fitInModal">
+        <div id="netflix4" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img src="/images/netflix/theoffice-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2005&nbsp;&nbsp;&nbsp;&nbsp;TV-PG&nbsp;&nbsp;&nbsp;&nbsp;9 Seasons</h1>
+                    <h2>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</h2>
+                    <h1>
+                        Cast: Steve Carell, Rainn Wilson, John Krasinski, Jenna Fischer, B. J. Novak, Ed Helms<br/>
+                        Creator: Ricky Gervais, Stephen Merchant
+                    </h1>
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 5 -->
+    <div class="insta-fitInModal">
+        <div id="netflix5" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img src="/images/netflix/thelionking-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2014&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;1h 28m</h1>
+                    <h2>Embark on an extraordinary coming-of-age adventure as Simba, a lion cub who cannot wait to be king, searches for his destiny in the great "Circle of Life."</h2>
+                    <h1>
+                        Cast: Matthew Broderick, James Earl Jones, Jeremy Irons, Jonathan Taylor Thomas<br/>
+                        Director: Roger Allers, Rob Minkoff
+                    </h1>
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- photo 6 -->
+    <div class="insta-fitInModal">
+        <div id="netflix6" class="modal fade" role="dialog"  tabindex='-1'>
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <img src="/images/netflix/gameofthrones-header.jpg" class="fitInModal">
+
+                <div class="netflix-info">
+                    
+                    <h1><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;&nbsp;&nbsp;TV-MA&nbsp;&nbsp;&nbsp;&nbsp;6 Seasons</h1>
+                    <h2>An American fantasy drama television series created by David Benioff and D. B. Weiss.</h2>
+                    <h1>
+                        Not available on Netflix.<br/><br/>
+                        Cast: Emilia Clarke, Kit Harington, Maisie Williams, Lena Headey, Peter Dinklage, Natalie Dormer, Sophie Turner<br/>
+                        Creator: David Benioff, D. B. Weiss
+                    </h1>
+                    <div style="padding:100px"></div>
+                </div>
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<!-- ############################# END Netflix END ############################# -->
+<!-- ############################# START Texts Stacy START ############################# -->
+<div id="append_page7_3" style="display:none;">
+    <div class="timeline" style="height:864px"></div>
+    <div class="stamp">3<span>:</span>37<span>:</span>15 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+        <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+        <p class="appName">SMS</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="txtHeader">
+                <i class="fa fa-comments"></i> <img class="txt-ico" src="/images/ppl/stacy.jpg">Stacy<img class="emoji" src="/images/emoji/heartemoji.png">
+            </div>
+            <div class="textContainer">                   
+            
+                <div id="sms01" style="display:none;">
+                    <div class="sent">
+                        <p>Hey, sorry about earlier.
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms02" style="display:none;">
+                    <div class="sent">
+                        <p>Do you want to get dinner tonight and discuss this?
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms03" style="display:none;">
+                    <div class="sent">
+                        <p>I’m sorry about everything.
+                            <div class="time">3:38 AM</div>
+                        </p>
+                    </div>
+                    <button class="buttonRefresh smsrefresh2" onclick="loadSMS4()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                </div>   
+
+                <div id="sms04" style="display:none;">
+                    <div class="sent">
+                        <p>Cmon stacy. I need you.
+                            <div class="time">3:46 PM</div>
+                        </p>
+                    </div>
+                </div>   
+
+                <div id="sms05" style="display:none;">
+                    <div class="sent">
+                        <p>I can’t go on without you.
+                            <div class="time">3:47 PM</div>
+                        </p>
+                    </div>
+                </div>                                        
+
+                <button class="buttonRefresh smsrefresh1" onclick="loadSMS1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>                        
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage7_4()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>        
+</div>
+<!-- ############################# END Texts Stacy END ############################# -->
+
+<div id="append_page7_4" style="display:none;">
+    <div style="padding-top:50px;"></div>
+    <button class="next-button" id="page8">
+        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
+    </button>
+    <div style="padding-bottom:50px;"></div>
+</div>
