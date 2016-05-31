@@ -1,10 +1,53 @@
 <!doctype html>
 <script>
+
+    // load instagram likes
+    function loadInsta() {
+        $("#insta01").delay(1000).fadeIn();
+        scrollToBottom();
+        $("#insta02").delay(2000).fadeIn();
+        scrollToBottom();
+        $("#insta03").delay(3000).fadeIn();
+        scrollToBottom();
+        $("#insta04").delay(4000).fadeIn();
+        scrollToBottom();
+        $("#insta05").delay(5000).fadeIn();
+        scrollToBottom();      
+        $("#insta06").delay(6000).fadeIn();
+        scrollToBottom();            
+    }
+
+    function loadInsta2() {
+        $("#insta07").delay(100).fadeIn();
+        scrollToBottom();
+    }
+
+    function loadInsta3() {
+        $("#insta08").delay(100).fadeIn();
+        scrollToBottom();
+    }
+
+    function loadInsta4() {
+        $("#insta09").delay(100).fadeIn();
+        scrollToBottom();
+    }
+         
+    function startChat() { 
+        setTimeout(function(){
+            window.location.href = "./MIICWwIBAAKBg";
+            // $("#background").load("partone");
+        }, 300);
+    }          
+
     // load pages
     function loadPage8_1() { 
         $("#append_page8_1").delay(100).fadeIn();
         scrollToBottom();      
     }
+    function loadPage8_2() { 
+        $("#append_page8_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }    
 </script>
 
 <!-- ############################# START Gallery START ############################# -->
@@ -342,10 +385,274 @@
                 </div>          
           </div>  
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage8_2()">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadInsta()">Close</button>
           </div>
         </div>
       </div>
     </div>
 </div>
 <!-- ############################# END Instagram END ############################# -->
+<div id="insta01" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+
+<div id="insta02" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>ben_adams</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+
+<div id="insta03" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>christine_the_rapper</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+
+<div id="insta04" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>earlofthetea</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+
+<div id="insta05" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>superevans69</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+
+<div id="insta06" style="display:none;">
+    <div class="timeline" style="height:12px"></div>
+    <div class="stamp">4<span>:</span>13<span>:</span>31 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <a class="no-decorations clickable" onclick="loadInsta2()">
+      <ul class="list-group" style="margin:5px;">
+          <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+              <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                  <div style="text-align: left;flex-grow: 1;">
+                    <img style="width: 50px;" src="/images/icons/instagram.png">
+                  </div>
+                </div>
+
+                  <div class="mint-left">
+                    <div style="font-size: .9em"><strong>ben_adams</strong> commented:</div>
+                    <div style="text-align: left;font-size: .8em !important;">ooh kill em <img class="emoji" src="/images/emoji/grinemoji.png"></div>
+                  </div>
+
+                  <div class="mint-right">
+                      4:13 PM
+                  </div>            
+              </div>
+          </li>
+      </ul> 
+    </a>
+</div>    
+
+<div id="insta07" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+    <div class="stamp">4<span>:</span>13<span>:</span>58 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <a class="no-decorations clickable" onclick="loadInsta3()">
+      <ul class="list-group" style="margin:5px;">
+          <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+              <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                  <div style="text-align: left;flex-grow: 1;">
+                    <img style="width: 50px;" src="/images/icons/instagram.png">
+                  </div>
+                </div>
+
+                  <div class="mint-left">
+                    <div style="font-size: .9em"><strong>tylerwashere</strong> commented:</div>
+                    <div style="text-align: left;font-size: .8em !important;">gayyyy</div>
+                  </div>
+
+                  <div class="mint-right">
+                      4:13 PM
+                  </div>            
+              </div>
+          </li>
+      </ul> 
+    </a>  
+</div>      
+
+<div id="insta08" style="display:none;">
+    <div class="timeline" style="height:12px"></div>
+    <div class="stamp">4<span>:</span>15<span>:</span>01 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <a class="no-decorations clickable" onclick="loadInsta4()">
+      <ul class="list-group" style="margin:5px;">
+          <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+              <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                  <div style="text-align: left;flex-grow: 1;">
+                    <img style="width: 50px;" src="/images/icons/instagram.png">
+                  </div>
+                </div>
+
+                  <div class="mint-left">
+                    <div style="font-size: .9em"><strong>jamesc415</strong> commented:</div>
+                    <div style="text-align: left;font-size: .8em !important;">Whipped <img class="emoji" src="/images/emoji/skull.png"></div>
+                  </div>
+
+                  <div class="mint-right">
+                      4:15 PM
+                  </div>            
+              </div>
+          </li>
+      </ul> 
+    </a>    
+</div>    
+
+<div id="insta09" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+    <div class="stamp">4<span>:</span>16<span>:</span>52 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <a class="no-decorations clickable" onclick="loadPage8_2()">
+      <ul class="list-group" style="margin:5px;">
+          <li class="list-group-item" style="background:#dbdbdb;padding: 4px">
+              <div class="note-flex-container">
+                <div class="note-left-missed-call">
+                  <div style="text-align: left;flex-grow: 1;">
+                    <img style="width: 50px;" src="/images/icons/instagram.png">
+                  </div>
+                </div>
+
+                  <div class="mint-left">
+                    <div style="font-size: .9em"><strong>rebeccaxoxo92</strong> commented:</div>
+                    <div style="text-align: left;font-size: .8em !important;">lol <strong>@jamesc415</strong></div>
+                  </div>
+
+                  <div class="mint-right">
+                      4:16 PM
+                  </div>            
+              </div>
+          </li>
+      </ul> 
+    </a>   
+</div>    
+
+<!-- ############################# START Quest Begins START ############################# -->
+<div id="append_page8_2" style="display:none;">
+    <div class="timeline" style="height:36px"></div>
+    <div class="stamp">4<span>:</span>21<span>:</span>43 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+      <a><img src="/images/icons/gmail.png" class="app" data-toggle="modal" data-target="#gmail3" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Gmail</p>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="gmail3" class="modal fade gmail" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <img src="/images/gmail-header.jpg" class="fitInModal disable-mouse">
+
+                <!-- autoresponse email -->
+                <div class="clickable gmailButton anon-email" data-toggle="collapse" data-target="#inbox1">
+                    <hr/>
+                    <div class="gmail-flex-container">
+                        <div class="gmail-checkbox"><input type="checkbox" value=""></div>
+
+                        <div class="gmail-flex-item gmailHeader" style="text-align: left" id="anon">Let's talk</div>
+                        <div class="gmail-flex-item-right gmailTime">3:02 pm</div>  
+                    </div>  
+                    <div class="gmail-flex-container">
+                        <div class="gmail-flex-item gmailSubtext">https://infinitedoma.in/MIGeMA0GCSqGSIb3DQEB ...</div>                                         
+                        <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
+                    </div>  
+                    <hr/>
+                </div>
+
+                <div id="inbox1" class="collapse">
+                    <div class="gmailBody">
+                        {{>gmailAnon}}
+
+                    </div>
+                </div>              
+
+                <!-- autoresponse email -->
+                <div class="clickable gmailButton autoresponse-email" data-toggle="collapse" data-target="#inbox2">
+                    <hr/>
+                    <div class="gmail-flex-container">
+                        <div class="gmail-checkbox"><input type="checkbox" value=""></div>
+
+                        <div class="gmail-flex-item gmailHeader removeBold" style="text-align: left" id="autoresponse">[Automated Response] RE: Coffee?</div>
+                        <div class="gmail-flex-item-right gmailTime">8:40 am</div>  
+                    </div>  
+                    <div class="gmail-flex-container">
+                        <div class="gmail-flex-item gmailSubtext">Hello, Thank you for contacting ZenTech. We regret to i...</div>
+                        <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
+                    </div>  
+                    <hr/>
+                </div>
+
+                <div id="inbox2" class="collapse">
+                    <div class="gmailBody">
+                        {{>gmailAuto}}
+
+                    </div>
+                </div>  
+
+                <!-- fired email -->
+                <div class="clickable gmailButton" data-toggle="collapse" data-target="#inbox3">
+                    <hr/>
+                    <div class="gmail-flex-container">
+                        <div class="gmail-checkbox"><input type="checkbox" value=""></div>
+
+                        <div class="gmail-flex-item gmailHeader removeBold" style="text-align: left" >ZenTech Termination Notice</div>
+                        <div class="gmail-flex-item-right gmailTime">7:49 am</div>  
+                    </div>  
+                    <div class="gmail-flex-container">
+                        <div class="gmail-flex-item gmailSubtext">Hello Walter, As discussed last Friday, this email confirms...</div>
+                        <div class="gmail-flex-item-right gmailHeart"><i class="fa fa-star-o" aria-hidden="true"></i></div> 
+                    </div>  
+                    <hr/>
+                </div>
+
+                <div id="inbox3" class="collapse">
+                    <div class="gmailBody">
+                        {{>gmailFired}}
+
+                    </div>
+                </div>                                
+
+            </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" value="true">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+ 
+<script>
+$(document).ready(function(){
+    unBold();
+});
+
+function unBold() {
+    $(".anon-email").click(function() {
+        $('#anon').addClass('removeBold');
+        unBold();
+    });     
+}
+
+</script> 
+<!-- ############################# END Quest Begins END ############################# -->
