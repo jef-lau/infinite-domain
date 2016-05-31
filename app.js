@@ -64,6 +64,8 @@ app.get('/page6', routes.page6)
 app.get('/page7', routes.page7)
 app.get('/page8', routes.page8)
 
+
+app.get('/toc', routes.toc)
 // Quest
 app.get('/MIICWwIBAAKBg', routes.quest2_1)
 app.get('/quest3_1', routes.quest3_1)

@@ -500,28 +500,11 @@ body
   }
 
 /* ############################# Gallery App #############################*/
-#galleryImgs .modal-body {
+#gallery .modal-body {
     width: 100%;
     padding: 0;
 }
 
-.galleryIco {
-    text-align:center;
-}
-
-.galleryIco img {
-    display: inline;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-}
-
-.galleryPadding img {
-    padding: 10px;
-}
 
 .galleryHeader{
     text-align: left;
@@ -533,15 +516,74 @@ body
     font-size: 1.3em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 200;
+    font-weight: 100;
     line-height: 20px; 
     font-family: "Ubuntu", sans-serif;
+}
+
+.galleryHeader .fa-search {
+    padding: 5px;
+    font-size: 1.6em;
+    float:right;
 }
 
 .galleryHeader img{
     height: 40px;
     padding-right: 5px;
     padding-left: 10px;
+}
+
+.gallery-body {
+    background-color: #e0e0e0;
+    padding-bottom: 50px;
+}
+
+.gallery-body h1{
+    font-family: "Ubuntu", sans-serif;
+    color: #8e8e8e;
+    margin: 0;
+    font-size: .8em;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.gallery-thumb {
+    width: 100%;
+}
+
+.gallery-thumb img {
+    width: 31.5%;
+    align: left;
+    padding: 5px;
+}
+
+.gallery-zoom {
+    font-family: "Ubuntu", sans-serif;
+    text-align: left;
+    color: #262626;  
+    padding-left: 15px;
+    background-color: #e0e0e0;
+    /*height: auto;*/
+}
+
+.gallery-zoom h1 {
+    color: #2B2B2B;
+    margin: 0;
+    font-size: .8em;
+    line-height: 1.3em;
+    font-weight: 100;
+    padding: 15px;
+}
+
+.gallery-zoom h2 {
+    color: #e6e6e6;
+    margin: 0;
+    font-size: 1em;
+    float: left;
+    font-weight: 100;
+    line-height: 1.3em;
 }
 
 /* ############################# Gmail App #############################*/
