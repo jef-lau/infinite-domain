@@ -126,6 +126,11 @@
     font-family: 'Source Code Pro', sans-serif;
 }
 
+.disconnected {
+    color: #6d6d6d;
+    text-align: center;
+}
+
 .secureText #decrypt{
   animation: blink 1s infinite;
 }
@@ -767,6 +772,7 @@ body
 }
 
 .search-flex-right h1{
+    color: #000;
     display: inline;
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -1444,6 +1450,13 @@ body
 
 #myAudio {
     width: 97%;
+}
+
+#transcribe-vm {
+    padding: 5px;
+    border: 1px solid #DADADA;
+    margin: 15px;
+    text-align: left;
 }
 
 /* ############################# Instagram #############################*/
