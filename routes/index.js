@@ -128,6 +128,10 @@ exports.page8 = function(req, res){
    //some methods
    res.render('page8', { title: 'Express' });
 };
+exports.page10 = function(req, res){
+   //some methods
+   res.render('page10', { title: 'Express' });
+};
 
 
 

@@ -182,6 +182,13 @@ $("#div1" ).on( "click", "#page8", function() {
 	scrollToBottom();
 });
 
+// ############################# Page 10 #############################
+$("#div1" ).on( "click", "#page10", function() {
+	console.log($(this));
+	$("#div1").load('page10');
+	scrollToBottom();
+});
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {
