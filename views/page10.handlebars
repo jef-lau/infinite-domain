@@ -1,1 +1,426 @@
-page10
+<!doctype html>
+
+<script>
+
+    // google search
+    function loadSearch1() {
+        $("#first-search").delay(10).fadeIn();
+        $("#search-btn1").remove();
+    }
+
+    function loadSearch2() {
+        $("#second-search").delay(10).fadeIn();
+        $("#search-btn2").remove();
+    }
+
+    function loadSearch3() {
+        $("#3-search").delay(10).fadeIn();
+        $("#search-btn3").remove();
+    } 
+
+    function loadSearch4() {
+        $("#search-btn4").remove();
+        $("#4-search").delay(10).fadeIn();
+    } 
+    function loadSearch5() {
+        $("#search-btn5").remove();
+        $("#5-search").delay(10).fadeIn(); 
+    }
+
+    function loadSearch6() {
+        $("#search-btn6").remove();    
+        $("#6-search").delay(10).fadeIn();
+    }
+
+    function loadSearch7() {
+        $("#search-btn7").remove();    
+        $("#7-search").delay(10).fadeIn();
+    }
+       
+    function loadSearch8() {
+        $("#search-btn8").remove();
+        $("#8-search").delay(10).fadeIn();
+    }       
+
+    function loadSearch9() {
+        $("#search-btn9").remove();
+        $("#9-search").delay(10).fadeIn();
+    }       
+
+    // delete accounts
+    function deactivateFB() {
+        alert("Sorry Walt, I can't have you doing that. You have over 700 friends on Facebook.");
+    }
+    function deleteInsta() {
+        alert("You have 538 followers. Do you know how valuable your network is?");
+    }
+    function deleteGoogle() {
+        alert("I'm sorry Walt. I’m afraid I can't let you do that.");
+    } 
+
+    // load pages
+    function loadPage10_1() { 
+        $("#append_page10_1").delay(100).fadeIn();
+        scrollToBottom();      
+    }    
+
+    function loadPage10_2() { 
+        $("#append_page10_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }         
+
+    function loadPage10_3() { 
+        $("#append_page10_3").delay(100).fadeIn();
+        scrollToBottom();      
+    }     
+
+    function loadPage9_4() { 
+        $("#append_page10_4").delay(100).fadeIn();
+        scrollToBottom();      
+    } 
+
+</script>
+<!-- ############################# START Google Search START ############################# -->
+
+
+<div class="timeline" style="height:18px"></div>
+<div class="stamp">5<span>:</span>09<span>:</span>30 PM</div>
+<div class="timeline" style="height:7px"></div>
+
+<div class="appContainer">
+    <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search" data-backdrop="true" data-keyboard="true"></a>
+    <p class="appName">Google</p>
+</div>  
+
+<!-- Modal -->
+<div id="search" class="modal fade" role="dialog"  tabindex='-1'>
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body">
+
+        <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+        <!-- div class to introduce app -->
+        <div class="search-header">
+            <h1>Web & App Activity</h1>
+            <h2>Check out your past searches and the content you've browsed in Chrome and other apps</h2>
+        </div>
+        <div style="padding-top:15px;"></div>
+        <img src="/images/search-card.jpg" style="padding:5px;width:95%">
+        <div style="padding-bottom:15px;"></div>  
+
+        <div class="refresh"><button class="buttonRefresh" id="search-btn1" onclick="loadSearch1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+        <!-- ninth search -->
+        <div id="9-search" style="display:none;"> 
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search9" class="clickable">&ldquo;just leave me alone&rdquo;</u></h1>
+                    <div id="search9" class="collapse search-collapse">
+                        <h1>About 8,950,000 results (0.52 seconds)</h1>
+                    </div>                     
+                    <h2>5:11pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- eighth search -->
+        <div id="8-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn9" onclick="loadSearch9()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search8" class="clickable">&ldquo;fuck all of you&rdquo;</u></h1>
+                    <div id="search8" class="collapse search-collapse">
+                        <h1>About 113,000,000 results (0.55 seconds)</h1>
+                    </div>                     
+                    <h2>5:11pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- seven search -->
+        <div id="7-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn8" onclick="loadSearch8()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search7" class="clickable">&ldquo;fuck you if you’re reading this&rdquo;</u></h1>
+                    <div id="search7" class="collapse search-collapse">
+                        <h1>About 69,100,000 results (0.60 seconds)</h1>
+                    </div>                     
+                    <h2>5:11pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- six search -->
+        <div id="6-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn7" onclick="loadSearch7()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search6" class="clickable">&ldquo;fuck infinite domain&rdquo;</u></h1>
+                    <div id="search6" class="collapse search-collapse">
+                        <h1>About 3,590,000 results (0.74 seconds)</h1>
+                    </div>                     
+                    <h2>5:11pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- five search -->
+        <div id="5-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn6" onclick="loadSearch6()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Searched for <u data-toggle="collapse" data-target="#search5" class="clickable">&ldquo;fuck you&rdquo;</u></h1>
+                    <div id="search5" class="collapse search-collapse">
+                        <h1>About 42,800,000 results (0.43 seconds)</h1>
+                    </div>                     
+                    <h2>5:11pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- fourth search -->
+        <div id="4-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn5" onclick="loadSearch5()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>        
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search4" class="clickable">Tinder | log_2015-12-25 | WALT110 | Infinite Domain</h3></h1>
+
+                    <div id="search4" class="collapse search-collapse">
+                        <h4>infinitedoma.in</h4>
+                    </div>
+
+                    <h2>5:10pm</h2>
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- third search -->
+        <div id="3-search" style="display:none;"> 
+            <div class="refresh"><button class="buttonRefresh" id="search-btn4" onclick="loadSearch4()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search3" class="clickable">Bank of America | log_2012-10-07 | WALT110 | Infinite Domain</h3></h1>
+
+                    <div id="search3" class="collapse search-collapse">
+                        <h4>infinitedoma.in</h4>
+                    </div>
+
+                    <h2>5:10pm</h2>                
+                </div>
+            </div>
+            
+            <hr/>     
+        </div> 
+
+        <!-- second search -->
+        <div id="second-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn3" onclick="loadSearch3()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search2" class="clickable">Snapchat | log_2011-02-22 | WALT110 | Infinite Domain</h3></h1>
+
+                    <div id="search2" class="collapse search-collapse">
+                        <h4>infinitedoma.in</h4>
+                    </div>
+
+                    <h2>5:09pm</h2>
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+        <!-- first search -->
+        <div id="first-search" style="display:none;">
+            <div class="refresh"><button class="buttonRefresh" id="search-btn2" onclick="loadSearch2()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button></div>
+
+            <div class="search-flex-container">
+                <div class="search-flex-left"><input type="checkbox"></div>
+                <div class="search-flex-right">
+                    <h1>Visited <h3 data-toggle="collapse" data-target="#search1" class="clickable">Infinite Domain | WALT110</h3></h1>
+
+                    <div id="search1" class="collapse search-collapse">
+                        <h4>infinitedoma.in</h4>
+                    </div>
+
+                    <h2>5:09pm</h2>
+                </div>
+            </div>
+            <hr/>     
+        </div>   
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage10_1()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ############################# END Google Search END ############################# -->
+<!-- ############################# START Facebook START ############################# -->
+<div id="append_page10_1" style="display:none;">
+    <div class="timeline" style="height:24px"></div>
+    <div class="stamp">5<span>:</span>13<span>:</span>12 PM</div>
+    <div class="timeline" style="height:7px"></div>
+    <div class="appContainer">
+      <a><img src="/images/icons/facebook.png" class="app" data-toggle="modal" data-target="#facebook" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Facebook</p>
+    </div>
+
+    <!-- Modal -->
+    <div id="facebook" class="modal fade " role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <img src="/images/fb-header.jpg" class="fitInModal disable-mouse">
+            <div class="fb-container">
+                <div style="padding:4px"></div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1><strong>Account</strong></h1>
+                        <h2><a onclick="deactivateFB()" class="clickable">Deactivate</a></h2>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage10_2()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>    
+<!-- ############################# END Facebook END ############################# -->
+
+<!-- ############################# START Instagram START ############################# -->
+<div id="append_page10_2" style="display:none;">
+    <div class="timeline" style="height:24px"></div>
+    <div class="stamp">5<span>:</span>13<span>:</span>57 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/instagram.png" class="app" data-toggle="modal" data-target="#insta" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Instagram</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="insta" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="insta-header">
+                <i class="fa fa-angle-left" aria-hidden="true" data-dismiss="modal" onclick="loadPage4_1()"></i>
+                <h1><img src="/images/instagram-text-logo.png" style="height:30px"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></h1>
+            </div>
+            <div class="insta-delete">
+                <h1><strong>Delete Your Account</strong></h1>
+                Hi <strong>wallywalt28</strong>,<br/><br/>
+
+                We're sorry to hear you'd like to delete your account.<br/><br/>
+
+                If you're concerned about the changes to our Terms of Service, we've clarified some of the issues that people have asked us about.<br/><br/>
+
+                If you're just looking to take a break, you can always temporarily disable your Instagram account instead<br/>
+                <hr/>
+
+                <a onclick="deleteInsta()"><b class="clickable" style="float:right">Delete Account</b></a>
+            </div>
+
+  
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage10_3()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- ############################# END Instagram END ############################# -->
+<!-- ############################# START Google Search START ############################# -->
+<div id="append_page10_3" style="display:none;">
+    <div class="timeline" style="height:24px"></div>
+    <div class="stamp">5<span>:</span>14<span>:</span>38 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/google.png" class="app" data-toggle="modal" data-target="#search-2" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Google</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="search-2" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body" style="background:#FBFBFB">
+
+                <img src="/images/search-header.jpg" class="fitInModal disable-mouse">
+                <div class="search-delete">
+                    <h1>Delete your account or services</h1>
+                    <h2>If you are no longer interested in using specific Google services like Gmail or Google+, you can delete them here. You can even delete your entire Google Account.</h2>
+                </div>
+                <div class="panel panel-default">
+                    <img src="/images/google-delete.png" class="fitInModal disable-mouse">
+                    
+                    <a onclick="deleteGoogle()">
+                        <div class="panel-body clickable">
+                            <h3 class="no-decorations">Delete Google Account and data</h3>
+                        </div>
+                    </a>
+                </div>     
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage10_4()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- ############################# END Google Search END ############################# -->
