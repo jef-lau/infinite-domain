@@ -521,7 +521,7 @@ body
     font-size: 1.3em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 20px; 
     font-family: "Ubuntu", sans-serif;
 }
@@ -548,7 +548,7 @@ body
     color: #8e8e8e;
     margin: 0;
     font-size: .8em;
-    font-weight: 100;
+    font-weight: 200;
     text-align: center;
     padding: 10px;
 
@@ -578,7 +578,7 @@ body
     margin: 0;
     font-size: .8em;
     line-height: 1.3em;
-    font-weight: 100;
+    font-weight: 200;
     padding: 15px;
 }
 
@@ -587,7 +587,7 @@ body
     margin: 0;
     font-size: 1em;
     float: left;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.3em;
 }
 
@@ -648,7 +648,7 @@ body
     font-size: 1em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 30px;
     text-align: left; 
     color:#9b9b9b;      
@@ -753,7 +753,7 @@ body
 .search-header h2{
     font-family: 'Roboto', sans-serif;
     font-size: .9em;
-    font-weight: 100;
+    font-weight: 200;
     color: #FFF; 
     text-align: left;
     line-height: 120%;
@@ -915,7 +915,7 @@ body
     font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 20px; 
     box-shadow: 0px 1px 5px #888888;   
     border-style: solid;
@@ -1023,7 +1023,7 @@ body
     font-size: 1.3em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 20px; 
 }
 
@@ -1093,7 +1093,7 @@ body
     font-size: 1.6em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 20px; 
     box-shadow: 0px 1px 5px #888888;   
     border-style: solid;
@@ -1139,7 +1139,7 @@ body
     font-size: 1.3em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 20px; 
     border-bottom: 1px solid;
     border-color: #D4D4D4;
@@ -1392,7 +1392,7 @@ body
 .fitbit-bold {
     font-family: 'Montserrat', sans-serif;
     color: #475261;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 1.3em;
     padding-top:4px;
     margin: 0;    
@@ -1473,7 +1473,7 @@ body
 .fitbit-bold h2 {
     font-family: 'Montserrat', sans-serif;
     color: #475261;
-    font-weight: 100;
+    font-weight: 200;
     font-size: .8em;
     padding-top:4px;
     text-align: right;
@@ -1851,7 +1851,7 @@ body
     font-size: .8em;
     line-height: 1.3em;
     float: left;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .netflix-info h2 {
@@ -1859,7 +1859,7 @@ body
     margin: 0;
     font-size: 1em;
     float: left;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1.3em;
 }
 
