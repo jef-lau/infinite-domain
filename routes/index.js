@@ -144,11 +144,23 @@ exports.page11_3 = function(req, res){
    //some methods
    res.render('page11_3', { title: 'Express' });
 };
+// ############################# scannning #############################
 exports.page12 = function(req, res){
    //some methods
    res.render('page12', { title: 'Express' });
 };
-
+exports.page13 = function(req, res){
+   //some methods
+   res.render('page13', { title: 'Express' });
+};
+exports.page14 = function(req, res){
+   //some methods
+   res.render('page14', { title: 'Express' });
+};
+exports.page15 = function(req, res){
+   //some methods
+   res.render('page15', { title: 'Express' });
+};
 
 exports.toc = function(req, res){
    //some methods

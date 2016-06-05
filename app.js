@@ -68,6 +68,9 @@ app.get('/page11', routes.page11)
 app.get('/jBsERfdprfIv', routes.page11_2)
 app.get('/page11_3', routes.page11_3)
 app.get('/3DhiWCtCiJqTo', routes.page12)
+app.get('/page13', routes.page13)
+app.get('/page14', routes.page14)
+app.get('/page15', routes.page15)
 
 
 app.get('/toc', routes.toc)

@@ -201,6 +201,23 @@ $("#div1" ).on( "click", "#page11_3", function() {
 	scrollToBottom();
 });
 
+// ############################# Scan #############################
+$("#div1" ).on( "click", "#scan-button", function() {
+	console.log($( this ));
+	$("#div1").load("page13");  
+});
+
+function scanStart()  {
+	console.log($( this ));
+	$("#div1").load("page14");  
+}
+
+// ############################# Page 15 #############################
+$("#div1" ).on( "click", "#page15", function() {
+	console.log($(this));
+	$("#div1").load('page15');
+	scrollToBottom();
+});
 // ############################# Fetches #############################
 
 function loadFetch1()  {

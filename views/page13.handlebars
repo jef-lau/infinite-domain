@@ -1,0 +1,46 @@
+<!doctype html>
+    <div style="padding-top: 30vh"></div>
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom"></i><br/>
+    <div style="padding-top: 5px">
+        <div id="content-1">Waiting to start</div>
+        <div id="content-3">Transmitting scan</div>
+        <div id="content-5">Processing scan</div> 
+        <div id="content-6">Processing scan</div> 
+    </div><br/>
+    <div class="col-xs-12 col-sm-12 progress-container">
+        <div class="progress progress-striped active" >
+            <div class="progress-bar progress-bar-success" style="width:0%" id="pb"></div>
+        </div>
+    </div>
+
+    <script>
+        // loop thru strings
+        var divs = $('div[id^="content-"]').hide(),
+            i = 0;
+
+        (function cycle() { 
+
+            divs.eq(i).fadeIn(300)
+                      .delay(800)
+                      .fadeOut(300, cycle);
+
+            i = ++i % divs.length;
+
+        })();   
+
+        // change progress bar to black
+        $('#pb').css({
+            'background-image': 'none',
+            'background-color': 'black'
+        }); 
+        $(".progress-bar").animate({
+            width: "100%"
+        }, 5000);
+
+        // load fetch1 page in 5 seconds    
+        $(function(){
+            setTimeout(scanStart,5000);//5000 = 5 seconds load time
+        });
+    </script>
+
+</html>
