@@ -1122,6 +1122,10 @@ body
     width: 100%;
 }
 
+.buttonRefresh90width {
+    /*margin: 15px;*/
+    width: 90%;
+}
 /* ############################# Facebook Messenger #############################*/
 .messenger .modal-body {
     width: 100%;
@@ -1695,6 +1699,17 @@ body
     width: 100%;
     height: 180px;
     background-image: url("/images/fb-cover.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /*background: #000;*/
+    
+}
+
+.walt-cover-photo {
+    padding: 5px;
+    width: 100%;
+    height: 180px;
+    background-image: url("/images/fb-cover-walt.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     /*background: #000;*/

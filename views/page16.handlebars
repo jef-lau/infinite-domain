@@ -1,4 +1,376 @@
 <!doctype html>
 
+<script>
+    function loadSMS1() {
+        $(".smsrefresh1").remove();
+        $("#sms01").delay(10).fadeIn();
+        scrollToBottom();
+        $("#sms02").delay(1000).fadeIn();
+        scrollToBottom();
+        $("#sms03").delay(2000).fadeIn();
+        scrollToBottom();
+    }
 
-</html>
+    // load apps
+    function loadPage16_1() { 
+        $("#append_page16_1").delay(100).fadeIn();
+        scrollToBottom();      
+    }  
+    function loadPage16_2() { 
+        $("#append_page16_2").delay(100).fadeIn();
+        scrollToBottom();      
+    }  
+    function loadPage16_3() { 
+        $("#append_page16_3").delay(100).fadeIn();
+        scrollToBottom();      
+    }   
+    function loadPage16_4() { 
+        $("#append_page16_4").delay(100).fadeIn();
+        scrollToBottom();      
+    }           
+    function bombardApps() {
+
+    }       
+</script>
+<!-- ############################# START Alarm START ############################# -->
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:50px"></div>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+          <div class="note-left">
+            <div style="text-align: left;flex-grow: 1;"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></div>
+          </div>
+            <div class="note-flex-column">
+              <div style="text-align: left;flex-grow: 2" ><b>Wake Up!</b></div> 
+              <div style="text-align: left;"><button type="button" class="btn btn-danger" style="padding-right:40px;padding-left:40px" onclick="loadPage16_1()">Dismiss</button></div>
+            </div>
+            <div class="note-flex-column">
+              <div style="text-align: right;flex-grow: 2"><font color="#00000">7:30 AM</font></div>  
+              <div style="text-align: right;"><button type="button" class="btn btn-default disabled" style="padding-right:40px;padding-left:40px">Snooze</button></div>
+            </div>
+        </div>
+    </li>
+</ul> 
+<!-- ############################# END Alarm END ############################# -->
+
+<!-- ############################# START Facebook START ############################# -->
+
+<!-- ############################# END Facebook END ############################# -->
+
+
+
+
+<!-- ############################# START Instagram START ############################# -->
+<div id="append_page16_2" style="display:none;">
+    <div class="timeline" style="height:48px"></div>
+    <div class="stamp">4<span>:</span>11<span>:</span>06 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/instagram.png" class="app" data-toggle="modal" data-target="#insta" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Instagram</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="insta" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
+                    <div class="insta-name">
+                        <div style="padding-top:15px"></div>
+                        <strong>wallywalt28</strong><br/>
+                        
+                    </div>
+                </div>
+                <img src="/images/insta/jeff-insta.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
+                    <strong>wallywalt28</strong> Thinking of you... <u>@stacybear212</u><br/>
+                    <h1>1 MINUTE AGO</h1>
+                </div>          
+          </div>  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage16_3()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- ############################# END Instagram END ############################# -->
+<!-- ############################# START Texts Stacy START ############################# -->
+<div id="append_page16_3" style="display:none;">
+    <div class="timeline" style="height:864px"></div>
+    <div class="stamp">3<span>:</span>37<span>:</span>15 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+        <a><img src="/images/icons/text.png" class="app" data-toggle="modal" data-target="#text" data-backdrop="true" data-keyboard="true" id="sms"></a>
+        <p class="appName">SMS</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="text" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+            <div class="txtHeader">
+                <i class="fa fa-comments"></i> <img class="txt-ico" src="/images/ppl/stacy.jpg">Stacy<img class="emoji" src="/images/emoji/heartemoji.png">
+            </div>
+            <div class="textContainer">                   
+            
+                <div id="sms01" style="display:none;">
+                    <div class="sent">
+                        <p>Hey, sorry about earlier. I'm watching Bob's Burgers and thinking of you, haha.
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms02" style="display:none;">
+                    <div class="sent">
+                        <p>Do you want to get dinner tonight?
+                            <div class="time">3:37 PM</div>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="sms03" style="display:none;">
+                    <div class="sent">
+                        <p>I’m sorry about everything.
+                            <div class="time">3:38 AM</div>
+                        </p>
+                    </div>
+                    <!-- <button class="buttonRefresh smsrefresh2" onclick="loadSMS4()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button> -->
+                </div>                                        
+
+                <button class="buttonRefresh smsrefresh1" onclick="loadSMS1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>                        
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage16_4()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>        
+</div>
+<!-- ############################# END Texts Mom END ############################# -->
+<!-- ############################# START Twitter START ############################# -->
+<div id="append_page16_4" style="display:none;">
+    <div class="timeline" style="height:48px"></div>
+    <div class="stamp">4<span>:</span>11<span>:</span>06 PM</div>
+    <div class="timeline" style="height:7px"></div>
+
+    <html>
+    <div class="appContainer">
+        <a><img src="/images/icons/twitter.png" class="app" data-toggle="modal" data-target="#twitter" data-backdrop="true" data-keyboard="true"></a>
+        <p class="appName">Twitter</p>
+    </div>  
+
+    <!-- Modal -->
+    <div id="twitter" class="modal fade" role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+                <div class="insta-view-header">
+                    <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
+                    <div class="insta-name">
+                        <div style="padding-top:15px"></div>
+                        <strong>wallywalt28</strong><br/>
+                        
+                    </div>
+                </div>
+                <img src="/images/insta/jeff-insta.jpg" class="fitInModal">
+                <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                <div class="insta-likes">
+                    <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
+                    <strong>wallywalt28</strong> Thinking of you... <u>@stacybear212</u><br/>
+                    <h1>1 MINUTE AGO</h1>
+                </div>          
+          </div>  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="bombardApps()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- ############################# END Twitter END ############################# -->
+
+<!-- snapchat -->
+<div id="bombard01" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>   
+</div>
+<!-- facebook likes x5 -->
+<div id="bombard02" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard03" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard04" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard05" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard06" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<!-- vine -->
+<div id="bombard07" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- instagram likes x3 -->
+<div id="bombard08" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard09" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<div id="bombard10" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
+<!-- linkedin -->
+<div id="bombard11" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- google plus -->
+<div id="bombard12" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- twitter retweet x4 -->
+<div id="bombard13" style="display:none;">
+</div>
+<div id="bombard14" style="display:none;">
+</div>
+<div id="bombard15" style="display:none;">
+</div>
+<div id="bombard16" style="display:none;">
+</div>
+<!-- facebook like x1 -->
+<div id="bombard17" style="display:none;">
+</div>
+<!-- youtube -->
+<div id="bombard18" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- facebook like x5 -->
+<div id="bombard19" style="display:none;">
+</div>
+<div id="bombard20" style="display:none;">
+</div>
+<div id="bombard21" style="display:none;">
+</div>
+<div id="bombard22" style="display:none;">
+</div>
+<div id="bombard23" style="display:none;">
+</div>
+<!-- instagram -->
+<div id="bombard24" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- vine likes -->
+<div id="bombard25" style="display:none;">
+</div>
+<div id="bombard26" style="display:none;">
+</div>
+<div id="bombard27" style="display:none;">
+</div>
+<div id="bombard28" style="display:none;">
+</div>
+<div id="bombard29" style="display:none;">
+</div>
+<!-- facebook -->
+<div id="bombard30" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- instagram likes x3 -->
+<div id="bombard31" style="display:none;">
+</div>
+<div id="bombard32" style="display:none;">
+</div>
+<div id="bombard33" style="display:none;">
+</div>
+<!-- facebook like x3 -->
+<div id="bombard34" style="display:none;">
+</div>
+<div id="bombard35" style="display:none;">
+</div>
+<div id="bombard36" style="display:none;">
+</div>
+<!-- twitter -->
+<div id="bombard37" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- yahoo -->
+<div id="bombard38" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- kik -->
+<div id="bombard39" style="display:none;">
+    <div class="appContainer">
+      <img src="/images/icons/facebook.png" >
+      <p class="appName">Facebook</p>
+    </div>
+</div>
+<!-- facebook like -->
+<div id="bombard40" style="display:none;">
+</div>
