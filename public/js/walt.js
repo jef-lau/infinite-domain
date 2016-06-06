@@ -216,8 +216,14 @@ function scanStart()  {
 $("#div1" ).on( "click", "#page15", function() {
 	console.log($(this));
 	$("#div1").load('page15');
-	scrollToBottom();
 });
+
+// ############################# Page 16 #############################
+$("#div1" ).on( "click", "#page16", function() {
+	console.log($(this));
+	$("#div1").load('page16');
+});
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {
@@ -273,6 +279,13 @@ function scrollToBottom(){
 		$('div').animate({ scrollTop: 1E10}, 10);
     	// $('div').animate({scrollTop: 1E10});
     }, 300);
+}
+
+function scrollToTop(){
+	setTimeout(function(){
+		$('div').animate({ scrollTop: 0}, 10);
+    	// $('div').animate({scrollTop: 1E10});
+    }, 10);
 }
 
 function sScrollToBottom(num){

@@ -1,235 +1,122 @@
 <!doctype html>
 <script>
-    $(document).ready(function(){
-        $("#i0").delay(50).fadeIn();
-        $("#i1").delay(200).fadeIn();
-        $("#i2").delay(400).fadeIn();
-        $("#i3").delay(600).fadeIn();
-        $("#i4").delay(800).fadeIn();
-        $("#i5").delay(1000).fadeIn();
-        $("#i6").delay(1200).fadeIn();  
-        $("#i7").delay(1400).fadeIn();
-        $("#i8").delay(1600).fadeIn();
-        $("#i9").delay(1800).fadeIn();
-        scrollToBottom();    
 
-        $("#3d1").delay(1800).fadeIn();
 
-        $("#i10").delay(2000).fadeIn();
-        $("#i11").delay(2200).fadeIn();
-        $("#i12").delay(2400).fadeIn();
-        $("#i13").delay(2600).fadeIn();
-        $("#i14").delay(2800).fadeIn();
-        $("#i15").delay(3000).fadeIn();
-        $("#i16").delay(3200).fadeIn();  
-        $("#i17").delay(3400).fadeIn();
-        $("#i18").delay(3600).fadeIn();
-        $("#i19").delay(3800).fadeIn();
-        scrollToBottom();    
-
-        $("#i20").delay(4000).fadeIn();
-        $("#i21").delay(4200).fadeIn();
-        $("#i22").delay(4400).fadeIn();
-        $("#i23").delay(4600).fadeIn();
-        $("#i24").delay(4700).fadeIn();
-        $("#i25").delay(4800).fadeIn();
-        $("#i26").delay(5000).fadeIn();  
-        $("#i27").delay(5200).fadeIn();
-        $("#i28").delay(5400).fadeIn();
-        $("#i29").delay(5600).fadeIn();
-        scrollToBottom();     
-
-        $("#3d2").delay(5800).fadeIn();
-
-        $("#i30").delay(6000).fadeIn();
-        $("#i31").delay(6200).fadeIn();
-        $("#i32").delay(6400).fadeIn();
-        $("#i33").delay(6600).fadeIn();
-        $("#i34").delay(6800).fadeIn();
-        $("#i35").delay(7000).fadeIn();
-        $("#i36").delay(7200).fadeIn();  
-        $("#i37").delay(7400).fadeIn();
-        $("#i38").delay(7600).fadeIn();
-        $("#i39").delay(7800).fadeIn(); 
-        scrollToBottom();    
-        
-        $("#i40").delay(8000).fadeIn();
-        $("#i41").delay(8200).fadeIn();
-        $("#i42").delay(8400).fadeIn();
-        $("#i43").delay(8600).fadeIn();
-        $("#i44").delay(8800).fadeIn();
-        $("#i45").delay(9000).fadeIn();
-        $("#i46").delay(9200).fadeIn();  
-        $("#i47").delay(9400).fadeIn();
-        $("#i48").delay(9600).fadeIn();
-        $("#i49").delay(9800).fadeIn(); 
-        scrollToBottom();    
-
-        $("#3d3").delay(10000).fadeIn();
-
-        $("#i50").delay(10200).fadeIn();
-        $("#i51").delay(10400).fadeIn();
-        $("#i52").delay(10600).fadeIn();
-        $("#i53").delay(10800).fadeIn();
-        $("#i54").delay(11000).fadeIn();
-        $("#i55").delay(11200).fadeIn();
-        $("#i56").delay(11400).fadeIn();  
-        $("#i57").delay(11600).fadeIn();
-        $("#i58").delay(11800).fadeIn();
-        $("#i59").delay(12000).fadeIn(); 
-        scrollToBottom();    
-
-        $("#i60").delay(12200).fadeIn();
-        $("#i61").delay(12400).fadeIn();
-        $("#i62").delay(12600).fadeIn();
-        $("#i63").delay(12800).fadeIn();
-        $("#i64").delay(13000).fadeIn();
-        $("#i65").delay(13200).fadeIn();
-        $("#i66").delay(13400).fadeIn();  
-        $("#i67").delay(13600).fadeIn();
-        $("#i68").delay(13800).fadeIn();
-        $("#i69").delay(14000).fadeIn(); 
-        scrollToBottom();    
-
-        $("#i70").delay(14200).fadeIn();
-        $("#i71").delay(14400).fadeIn();
-        $("#i72").delay(14600).fadeIn();
-        $("#i73").delay(14800).fadeIn();
-        $("#i74").delay(15000).fadeIn();
-        $("#i75").delay(15200).fadeIn();
-        $("#i76").delay(15400).fadeIn();  
-        $("#i77").delay(15600).fadeIn();
-        $("#i78").delay(15800).fadeIn();
-        $("#i79").delay(16000).fadeIn(); 
-        scrollToBottom();    
-
-        $("#i80").delay(16200).fadeIn();
-        $("#i81").delay(16400).fadeIn();
-        $("#i82").delay(16600).fadeIn();
-        $("#i83").delay(16800).fadeIn();
-        $("#i84").delay(17000).fadeIn();
-    });
+    // load apps
+    function loadPage16_1() { 
+        $("#append_page16_1").delay(100).fadeIn();
+        scrollToBottom();      
+    }     
 </script>
+<!-- ############################# START Alarm START ############################# -->
+<img src="/images/circle.png" id="circle">
+<div class="timeline" style="height:50px"></div>
+<ul class="list-group" style="margin:5px;">
+    <li class="list-group-item">
+        <div class="note-flex-container">
+          <div class="note-left">
+            <div style="text-align: left;flex-grow: 1;"><i class="fa fa-clock-o fa-4x" aria-hidden="true"></i></div>
+          </div>
+            <div class="note-flex-column">
+              <div style="text-align: left;flex-grow: 2" ><b><div class="blink-text">Wake Up!</div></b></div> 
+              <div style="text-align: left;"><button type="button" class="btn btn-danger" style="padding-right:40px;padding-left:40px" onclick="loadPage16_1()">Dismiss</button></div>
+            </div>
+            <div class="note-flex-column">
+              <div style="text-align: right;flex-grow: 2"><font color="#00000">7:30 AM</font></div>  
+              <div style="text-align: right;"><button type="button" class="btn btn-default disabled" style="padding-right:40px;padding-left:40px">Snooze</button></div>
+            </div>
+        </div>
+    </li>
+</ul> 
+<!-- ############################# END Alarm END ############################# -->
 
-<div style="position: relative; left: 0; top: 0;">
 
-    <div id="3d1" style="display:none;">
-        <img src="/images/scan/3d1.gif" style="position: absolute; top: 0; left: 0;"/>
+<!-- ############################# START Facebook START ############################# -->
+<div id="append_page16_1" style="display:none;">
+    <div class="timeline" style="height:24px"></div>
+    <div class="stamp">7<span>:</span>30<span>:</span>00 AM</div>
+    <div class="timeline" style="height:7px"></div>
+    
+    <div class="appContainer">
+      <a><img src="/images/icons/facebook.png" class="app" data-toggle="modal" data-target="#facebook" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Facebook</p>
     </div>
 
-    <div id="3d2" style="display:none;">
-        <img src="/images/scan/3d2.gif" style="position: absolute; top: 300px; right: 0;"/>
-    </div>    
-
-    <div id="3d3" style="display:none;">
-        <img src="/images/scan/3d3.gif" style="position: absolute; top: 600px; right: 50px;"/>
-    </div>        
 
 
-    <div id="i0" style="display:none;"><img src="/images/scan/waltscan01.jpg" class="scan-image" /></div>
-    <div id="i2" style="display:none;"><img src="/images/scan/waltscan02.jpg" class="scan-image" /></div>
-    <div id="i3" style="display:none;"><img src="/images/scan/waltscan03.jpg" class="scan-image" /></div>
-    <div id="i4" style="display:none;"><img src="/images/scan/waltscan04.jpg" class="scan-image" /></div>
-    <div id="i5" style="display:none;"><img src="/images/scan/waltscan05.jpg" class="scan-image" /></div>
-    <div id="i6" style="display:none;"><img src="/images/scan/waltscan06.jpg" class="scan-image" /></div>
-    <div id="i7" style="display:none;"><img src="/images/scan/waltscan07.jpg" class="scan-image" /></div>
-    <div id="i8" style="display:none;"><img src="/images/scan/waltscan08.jpg" class="scan-image" /></div>
-    <div id="i9" style="display:none;"><img src="/images/scan/waltscan09.jpg" class="scan-image" /></div>
+    <!-- Modal -->
+    <div id="facebook" class="modal fade " role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
 
-    <div id="i10" style="display:none;"><img src="/images/scan/waltscan010.jpg" class="scan-image" /></div>
-    <div id="i11" style="display:none;"><img src="/images/scan/waltscan011.jpg" class="scan-image" /></div>
-    <div id="i12" style="display:none;"><img src="/images/scan/waltscan012.jpg" class="scan-image" /></div>
-    <div id="i13" style="display:none;"><img src="/images/scan/waltscan013.jpg" class="scan-image" /></div>
-    <div id="i14" style="display:none;"><img src="/images/scan/waltscan014.jpg" class="scan-image" /></div>
-    <div id="i15" style="display:none;"><img src="/images/scan/waltscan015.jpg" class="scan-image" /></div>
-    <div id="i16" style="display:none;"><img src="/images/scan/waltscan016.jpg" class="scan-image" /></div>
-    <div id="i17" style="display:none;"><img src="/images/scan/waltscan017.jpg" class="scan-image" /></div>
-    <div id="i18" style="display:none;"><img src="/images/scan/waltscan018.jpg" class="scan-image" /></div>
-    <div id="i19" style="display:none;"><img src="/images/scan/waltscan019.jpg" class="scan-image" /></div>
+        <!-- Modal content-->
+        <div class="modal-content">
 
-    <div id="i20" style="display:none;"><img src="/images/scan/waltscan020.jpg" class="scan-image" /></div>
-    <div id="i21" style="display:none;"><img src="/images/scan/waltscan021.jpg" class="scan-image" /></div>
-    <div id="i22" style="display:none;"><img src="/images/scan/waltscan022.jpg" class="scan-image" /></div>
-    <div id="i23" style="display:none;"><img src="/images/scan/waltscan023.jpg" class="scan-image" /></div>
-    <div id="i24" style="display:none;"><img src="/images/scan/waltscan024.jpg" class="scan-image" /></div>
-    <div id="i25" style="display:none;"><img src="/images/scan/waltscan025.jpg" class="scan-image" /></div>
-    <div id="i26" style="display:none;"><img src="/images/scan/waltscan026.jpg" class="scan-image" /></div>
-    <div id="i27" style="display:none;"><img src="/images/scan/waltscan027.jpg" class="scan-image" /></div>
-    <div id="i28" style="display:none;"><img src="/images/scan/waltscan028.jpg" class="scan-image" /></div>
-    <div id="i29" style="display:none;"><img src="/images/scan/waltscan029.jpg" class="scan-image" /></div>
+          <div class="modal-body">
 
-    <div id="i30" style="display:none;"><img src="/images/scan/waltscan030.jpg" class="scan-image" /></div>
-    <div id="i31" style="display:none;"><img src="/images/scan/waltscan031.jpg" class="scan-image" /></div>
-    <div id="i32" style="display:none;"><img src="/images/scan/waltscan032.jpg" class="scan-image" /></div>
-    <div id="i33" style="display:none;"><img src="/images/scan/waltscan033.jpg" class="scan-image" /></div>
-    <div id="i34" style="display:none;"><img src="/images/scan/waltscan034.jpg" class="scan-image" /></div>
-    <div id="i35" style="display:none;"><img src="/images/scan/waltscan035.jpg" class="scan-image" /></div>
-    <div id="i36" style="display:none;"><img src="/images/scan/waltscan036.jpg" class="scan-image" /></div>
-    <div id="i37" style="display:none;"><img src="/images/scan/waltscan037.jpg" class="scan-image" /></div>
-    <div id="i38" style="display:none;"><img src="/images/scan/waltscan038.jpg" class="scan-image" /></div>
-    <div id="i39" style="display:none;"><img src="/images/scan/waltscan039.jpg" class="scan-image" /></div>
+            <img src="/images/fb-header.jpg" class="fitInModal disable-mouse">
+            <div class="cover-photo"></div>
+            <div class="move-up">
+              <img src="/images/fb-profile.jpg" style="width:130px"><br/>
+              <div class="fb-name">Stacy Liu</div>
+              <img src="/images/fb-stat.jpg" class="fitInModal disable-mouse">
 
-    <div id="i40" style="display:none;"><img src="/images/scan/waltscan040.jpg" class="scan-image" /></div>
-    <div id="i41" style="display:none;"><img src="/images/scan/waltscan041.jpg" class="scan-image" /></div>
-    <div id="i42" style="display:none;"><img src="/images/scan/waltscan042.jpg" class="scan-image" /></div>
-    <div id="i43" style="display:none;"><img src="/images/scan/waltscan043.jpg" class="scan-image" /></div>
-    <div id="i44" style="display:none;"><img src="/images/scan/waltscan044.jpg" class="scan-image" /></div>
-    <div id="i45" style="display:none;"><img src="/images/scan/waltscan045.jpg" class="scan-image" /></div>
-    <div id="i46" style="display:none;"><img src="/images/scan/waltscan046.jpg" class="scan-image" /></div>
-    <div id="i47" style="display:none;"><img src="/images/scan/waltscan047.jpg" class="scan-image" /></div>
-    <div id="i48" style="display:none;"><img src="/images/scan/waltscan048.jpg" class="scan-image" /></div>
-    <div id="i49" style="display:none;"><img src="/images/scan/waltscan049.jpg" class="scan-image" /></div>
+              <div style="padding: 5px;padding-top:15px;"></div>
 
-    <div id="i50" style="display:none;"><img src="/images/scan/waltscan050.jpg" class="scan-image" /></div>
-    <div id="i51" style="display:none;"><img src="/images/scan/waltscan051.jpg" class="scan-image" /></div>
-    <div id="i52" style="display:none;"><img src="/images/scan/waltscan052.jpg" class="scan-image" /></div>
-    <div id="i53" style="display:none;"><img src="/images/scan/waltscan053.jpg" class="scan-image" /></div>
-    <div id="i54" style="display:none;"><img src="/images/scan/waltscan054.jpg" class="scan-image" /></div>
-    <div id="i55" style="display:none;"><img src="/images/scan/waltscan055.jpg" class="scan-image" /></div>
-    <div id="i56" style="display:none;"><img src="/images/scan/waltscan056.jpg" class="scan-image" /></div>
-    <div id="i57" style="display:none;"><img src="/images/scan/waltscan057.jpg" class="scan-image" /></div>
-    <div id="i58" style="display:none;"><img src="/images/scan/waltscan058.jpg" class="scan-image" /></div>
-    <div id="i59" style="display:none;"><img src="/images/scan/waltscan059.jpg" class="scan-image" /></div>
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                  SEO Specialist
+                </div>
+              </div>
 
-    <div id="i60" style="display:none;"><img src="/images/scan/waltscan060.jpg" class="scan-image" /></div>
-    <div id="i61" style="display:none;"><img src="/images/scan/waltscan061.jpg" class="scan-image" /></div>
-    <div id="i62" style="display:none;"><img src="/images/scan/waltscan062.jpg" class="scan-image" /></div>
-    <div id="i63" style="display:none;"><img src="/images/scan/waltscan063.jpg" class="scan-image" /></div>
-    <div id="i64" style="display:none;"><img src="/images/scan/waltscan064.jpg" class="scan-image" /></div>
-    <div id="i65" style="display:none;"><img src="/images/scan/waltscan065.jpg" class="scan-image" /></div>
-    <div id="i66" style="display:none;"><img src="/images/scan/waltscan066.jpg" class="scan-image" /></div>
-    <div id="i67" style="display:none;"><img src="/images/scan/waltscan067.jpg" class="scan-image" /></div>
-    <div id="i68" style="display:none;"><img src="/images/scan/waltscan068.jpg" class="scan-image" /></div>
-    <div id="i69" style="display:none;"><img src="/images/scan/waltscan069.jpg" class="scan-image" /></div>
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                  Studied Political Science at University of California, San Diego
+                </div>
+              </div>
 
-    <div id="i70" style="display:none;"><img src="/images/scan/waltscan070.jpg" class="scan-image" /></div>
-    <div id="i71" style="display:none;"><img src="/images/scan/waltscan071.jpg" class="scan-image" /></div>
-    <div id="i72" style="display:none;"><img src="/images/scan/waltscan072.jpg" class="scan-image" /></div>
-    <div id="i73" style="display:none;"><img src="/images/scan/waltscan073.jpg" class="scan-image" /></div>
-    <div id="i74" style="display:none;"><img src="/images/scan/waltscan074.jpg" class="scan-image" /></div>
-    <div id="i75" style="display:none;"><img src="/images/scan/waltscan075.jpg" class="scan-image" /></div>
-    <div id="i76" style="display:none;"><img src="/images/scan/waltscan076.jpg" class="scan-image" /></div>
-    <div id="i77" style="display:none;"><img src="/images/scan/waltscan077.jpg" class="scan-image" /></div>
-    <div id="i78" style="display:none;"><img src="/images/scan/waltscan078.jpg" class="scan-image" /></div>
-    <div id="i79" style="display:none;"><img src="/images/scan/waltscan079.jpg" class="scan-image" /></div>
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                  Lives in San Diego, California
+                </div>
+              </div>   
 
-    <div id="i80" style="display:none;"><img src="/images/scan/waltscan080.jpg" class="scan-image" /></div>
-    <div id="i81" style="display:none;"><img src="/images/scan/waltscan081.jpg" class="scan-image" /></div>
-    <div id="i82" style="display:none;"><img src="/images/scan/waltscan082.jpg" class="scan-image" /></div>
-    <div id="i83" style="display:none;"><img src="/images/scan/waltscan083.jpg" class="scan-image" /></div>
+              <div style="padding: 5px;padding-top:15px;"></div>                 
 
+              <img src="/images/fb-menu.jpg" class="fitInModal disable-mouse">
+
+              <div class="fb-body">
+                <div class="fb-status-flex-container">
+                    <div style="width:20%">
+                        <img src="/images/fb-profile.jpg" style="width:65px">
+                    </div>
+                    <div style="width:80%">
+                        <strong style="color:#3B5998">Stacy Liu</strong> went from being "in a relationship" to "single."<br/>
+                        <i class="fa fa-heart" aria-hidden="true" style="color: #DA5F5F"></i> 22 minutes ago • <font color="#8189A5">Like</font> • <font color="#8189A5">Comment</font>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage6_3()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </div>
+<!-- ############################# END Facebook END ############################# -->
 
-<div id="i84" style="display:none;">
-    <div style="padding-top:50px;"></div>
-    <button class="next-button" id="page15">
-        <div class="blink"><span><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></span></div>
-    </button>
-    <div style="padding-bottom:50px;"></div>
 </div>
-
-
-
-
-</html>
