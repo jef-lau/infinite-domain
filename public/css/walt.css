@@ -103,6 +103,10 @@
     animation: blink 1s infinite;
 }
 
+.blink-text-2s {
+    animation: blink 2s infinite;
+}
+
 /* ############################# Secure Chat Display #############################*/
 .secureDisplay {
     max-width:400px;
@@ -1123,7 +1127,7 @@ body
 }
 
 .buttonRefresh90width {
-    /*margin: 15px;*/
+    margin: 15px;
     width: 90%;
 }
 /* ############################# Facebook Messenger #############################*/
@@ -1745,6 +1749,11 @@ body
     background-color: #E9EBEE;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.fb-body-nopad {
+    background-color: #E9EBEE;
+    padding: 10px;
 }
 
 .fb-status-flex-container {

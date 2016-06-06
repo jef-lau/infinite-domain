@@ -165,6 +165,10 @@ exports.page16 = function(req, res){
    //some methods
    res.render('page16', { title: 'Express' });
 };
+exports.page17 = function(req, res){
+   //some methods
+   res.render('page17', { title: 'Express' });
+};
 
 exports.toc = function(req, res){
    //some methods

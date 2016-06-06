@@ -224,6 +224,12 @@ $("#div1" ).on( "click", "#page16", function() {
 	$("#div1").load('page16');
 });
 
+// ############################# Page 16 #############################//
+function theEnd()  {
+	console.log($( this ));
+	$("#div1").load("page17");  
+}
+
 // ############################# Fetches #############################
 
 function loadFetch1()  {

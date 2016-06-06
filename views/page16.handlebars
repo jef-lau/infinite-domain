@@ -1,15 +1,119 @@
 <!doctype html>
 
 <script>
+	// loading facebook statuses
+	function loadStatus1() {
+	  $("#fbrefresh1").remove();
+	  $("#status1").delay(10).fadeIn();
+	  $("#status2").delay(500).fadeIn();
+	  scrollToBottom();  
+	}
+	function loadStatus2() {
+	  $("#fbrefresh2").remove();
+	  $("#status3").delay(10).fadeIn();
+	  $("#status4").delay(500).fadeIn();    
+	  scrollToBottom();
+	}
+	function loadStatus3() {
+	  $("#fbrefresh3").remove();
+	  $("#status5").delay(10).fadeIn();  
+	  scrollToBottom();
+	}
+
+	// loading instagram
+    function loadInsta1() {
+        $("#instagram_post").remove();
+        // load thinking
+        $("#think-instagram").delay(100).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#think-instagram').remove();
+        }, 3000);
+
+        $("#load-instagram").delay(3500).fadeIn();
+        scrollToBottom(); 
+
+        $("#2nd-selfie").delay(4500).fadeIn();
+        scrollToBottom(); 
+    }   
+
+    function loadInsta2() {
+        $("#instagram_post2").remove();
+        // load thinking
+        $("#think-instagram2").delay(100).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#think-instagram2').remove();
+        }, 3000);
+
+        $("#load-instagram2").delay(3500).fadeIn();
+        scrollToBottom(); 
+    }  
+
+	// loading sms
     function loadSMS1() {
         $(".smsrefresh1").remove();
         $("#sms01").delay(10).fadeIn();
         scrollToBottom();
         $("#sms02").delay(1000).fadeIn();
         scrollToBottom();
-        $("#sms03").delay(2000).fadeIn();
-        scrollToBottom();
     }
+
+    function loadSMS2() {
+        $(".smsrefresh2").remove();
+
+        // first response
+        $("#sms03_1").delay(10).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#sms03_1').remove();
+        }, 1500);
+
+        $("#sms03").delay(1500).fadeIn();
+        scrollToBottom();   
+
+        // second response
+        $("#sms04_1").delay(2000).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#sms04_1').remove();
+        }, 3500);          
+
+        $("#sms04").delay(3500).fadeIn();
+        scrollToBottom();
+
+        // third response
+        $("#sms05_1").delay(4000).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#sms05_1').remove();
+        }, 5500);
+
+        $("#sms05").delay(6000).fadeIn();
+        scrollToBottom();    
+
+        $("#sms05_2").delay(6500).fadeIn();
+        scrollToBottom();
+    }   
+
+    function loadSMS3() {
+        $(".smsrefresh3").remove();
+        // fourth response
+        $("#sms06_1").delay(100).fadeIn();
+        scrollToBottom();
+
+        setTimeout(function() {
+          $('#sms06_1').remove();
+        }, 3000);
+
+        $("#sms06").delay(3500).fadeIn();
+        scrollToBottom();          
+    }  	  
 
     // load apps
     function loadPage16_1() { 
@@ -23,15 +127,98 @@
     function loadPage16_3() { 
         $("#append_page16_3").delay(100).fadeIn();
         scrollToBottom();      
-    }   
-    function loadPage16_4() { 
-        $("#append_page16_4").delay(100).fadeIn();
-        scrollToBottom();      
-    }           
-    function bombardApps() {
-
     }       
+
+    var basetime = 250;
+
+    function bombardApps() {
+    	$("#bombard01").delay(basetime).fadeIn();
+        setTimeout(scrollToBottom,basetime);
+        $("#bombard02").delay(basetime*2).fadeIn();
+        setTimeout(scrollToBottom,basetime*2);
+        $("#bombard03").delay(basetime*3).fadeIn();
+        setTimeout(scrollToBottom,basetime*3);
+        $("#bombard04").delay(basetime*4).fadeIn();
+        setTimeout(scrollToBottom,basetime*4);
+    	$("#bombard05").delay(basetime*5).fadeIn();
+        setTimeout(scrollToBottom,basetime*5);
+        $("#bombard06").delay(basetime*6).fadeIn();
+        setTimeout(scrollToBottom,basetime*6);
+        $("#bombard07").delay(basetime*7).fadeIn();
+        setTimeout(scrollToBottom,basetime*7);
+        $("#bombard08").delay(basetime*8).fadeIn();
+        setTimeout(scrollToBottom,basetime*8);
+        $("#bombard09").delay(basetime*9).fadeIn();
+        setTimeout(scrollToBottom,basetime*9);
+        $("#bombard10").delay(basetime*10).fadeIn();
+        setTimeout(scrollToBottom,basetime*10);
+
+    	$("#bombard11").delay(basetime*11).fadeIn();
+        setTimeout(scrollToBottom,basetime*11);
+        $("#bombard12").delay(basetime*12).fadeIn();
+        setTimeout(scrollToBottom,basetime*12);
+        $("#bombard13").delay(basetime*13).fadeIn();
+        setTimeout(scrollToBottom,basetime*13);
+        $("#bombard14").delay(basetime*14).fadeIn();
+        setTimeout(scrollToBottom,basetime*14);
+    	$("#bombard15").delay(basetime*15).fadeIn();
+    	setTimeout(scrollToBottom,basetime*15);
+        $("#bombard16").delay(basetime*16).fadeIn();
+        setTimeout(scrollToBottom,basetime*16);
+        $("#bombard17").delay(basetime*17).fadeIn();
+        setTimeout(scrollToBottom,basetime*17);
+        $("#bombard18").delay(basetime*18).fadeIn();
+        setTimeout(scrollToBottom,basetime*18);
+        $("#bombard19").delay(basetime*19).fadeIn();
+        setTimeout(scrollToBottom,basetime*19);
+        $("#bombard20").delay(basetime*20).fadeIn();
+        setTimeout(scrollToBottom,basetime*20);
+
+    	$("#bombard21").delay(basetime*21).fadeIn();
+        setTimeout(scrollToBottom,basetime*21);
+        $("#bombard22").delay(basetime*22).fadeIn();
+        setTimeout(scrollToBottom,basetime*22);
+        $("#bombard23").delay(basetime*23).fadeIn();
+        setTimeout(scrollToBottom,basetime*23);
+        $("#bombard24").delay(basetime*24).fadeIn();
+        setTimeout(scrollToBottom,basetime*24);
+    	$("#bombard25").delay(basetime*25).fadeIn();
+        setTimeout(scrollToBottom,basetime*25);
+        $("#bombard26").delay(basetime*26).fadeIn();
+        setTimeout(scrollToBottom,basetime*26);
+        $("#bombard27").delay(basetime*27).fadeIn();
+        setTimeout(scrollToBottom,basetime*27);
+        $("#bombard28").delay(basetime*28).fadeIn();
+        setTimeout(scrollToBottom,basetime*28);
+        $("#bombard29").delay(basetime*29).fadeIn();
+        setTimeout(scrollToBottom,basetime*29);
+        $("#bombard30").delay(basetime*30).fadeIn();
+        setTimeout(scrollToBottom,basetime*30);
+
+    	$("#bombard31").delay(basetime*31).fadeIn();
+        setTimeout(scrollToBottom,basetime*31);
+        $("#bombard32").delay(basetime*32).fadeIn();
+        setTimeout(scrollToBottom,basetime*32);
+        $("#bombard33").delay(basetime*33).fadeIn();
+        setTimeout(scrollToBottom,basetime*33);
+        $("#bombard34").delay(basetime*34).fadeIn();
+        setTimeout(scrollToBottom,basetime*34);
+    	$("#bombard35").delay(basetime*35).fadeIn();
+        setTimeout(scrollToBottom,basetime*35);
+        $("#bombard36").delay(basetime*36).fadeIn();
+        setTimeout(scrollToBottom,basetime*36);
+        $("#bombard37").delay(basetime*37).fadeIn();
+        setTimeout(scrollToBottom,basetime*37);
+        $("#bombard38").delay(basetime*38).fadeIn();
+        setTimeout(scrollToBottom,basetime*38);
+        $("#bombard39").delay(basetime*39).fadeIn();
+        setTimeout(scrollToBottom,basetime*39);
+        $("#bombard40").delay(basetime*40).fadeIn();
+		setTimeout(scrollToBottom,basetime*40);
+		setTimeout(theEnd,basetime*40);
+	}
 </script>
+
 <!-- ############################# START Alarm START ############################# -->
 <img src="/images/circle.png" id="circle">
 <div class="timeline" style="height:50px"></div>
@@ -52,19 +239,144 @@
         </div>
     </li>
 </ul> 
+<!-- change bombardApps() to  -->
 <!-- ############################# END Alarm END ############################# -->
 
 <!-- ############################# START Facebook START ############################# -->
+<div id="append_page16_1" style="display:none;">
+	<div class="timeline" style="height:24px"></div>
+    <div class="stamp">7<span>:</span>30<span>:</span>00 AM</div>
+    <div class="timeline" style="height:7px"></div>
 
+    <div class="appContainer">
+      <a><img src="/images/icons/facebook.png" class="app" data-toggle="modal" data-target="#facebook" data-backdrop="true" data-keyboard="true"></a>
+      <p class="appName">Facebook</p>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div id="facebook" class="modal fade " role="dialog"  tabindex='-1'>
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+          <div class="modal-body">
+
+            <img src="/images/fb-header.jpg" class="fitInModal disable-mouse">
+            <div class="walt-cover-photo"></div>
+            <div class="move-up">
+              <img src="/images/fb-profile-walt.jpg" style="width:130px"><br/>
+              <div class="fb-name">Walt Lee</div>
+              <img src="/images/fb-stat-walt.jpg" class="fitInModal disable-mouse">
+
+              <div style="padding: 5px;padding-top:15px;"></div>
+
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                  Worked at ZenTech Digital Solutions
+                </div>
+              </div>
+
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                	Studied Communications at University of California, San Diego
+                </div>
+              </div>
+
+              <div class="fetch-flex-container">
+                <div class="fb-flex-item">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="fb-flex-item2">
+                  Lives in San Diego, California
+                </div>
+              </div>   
+
+              <div style="padding: 5px;padding-top:15px;"></div>                 
+
+              <img src="/images/fb-menu.jpg" class="fitInModal disable-mouse">
+
+              <button class="buttonRefresh90width" id="fbrefresh1" onclick="loadStatus1()">Generate Status</button>
+
+                
+                    <div class="fb-body-nopad">
+
+                        <div id="status5" style="display:none;">
+                          <div class="fb-status-flex-container" style="padding-bottom:10px">
+                              <div style="width:20%">
+                                  <img src="/images/fb-profile-walt.jpg" style="width:65px">
+                              </div>
+                              <div style="width:80%">
+                                  <strong style="color:#3B5998">Walt Lee</strong> at <span style="color:#3B5998"><i class="fa fa-map-marker" aria-hidden="true"></i> Starbucks</span><br/>                              
+                                  <span style="color:#000">Feeling the energy. Ready to start my day! <img class="emoji" src="/images/emoji/smileemoji.png"></span><br/>
+                                  <i class="fa fa-users" aria-hidden="true" style="color: #A2A7AF"></i> just now • <font color="#8189A5">Like</font> • <font color="#8189A5">Comment</font>
+                              </div>
+                          </div>
+                          <div style="padding-bottom:10px"></div>
+                        </div>
+
+                        <div id="status4" style="display:none;">
+                            <button class="buttonRefresh90width" id="fbrefresh3" onclick="loadStatus3()">Generate Status</button>
+                        </div>                    
+
+                        <div id="status3" style="display:none;">
+                          <div class="fb-status-flex-container" style="padding-bottom:10px">
+                              <div style="width:20%">
+                                  <img src="/images/fb-profile-walt.jpg" style="width:65px">
+                              </div>
+                              <div style="width:80%">
+                                  <strong style="color:#3B5998">Walt Lee</strong> at <span style="color:#3B5998"><i class="fa fa-map-marker" aria-hidden="true"></i> Starbucks</span><br/>                                    
+                                  <span style="color:#000">I wonder who invented coffee. Also, try the sumatra. My favorite full-bodied beans here</span><br/>
+                                  <i class="fa fa-users" aria-hidden="true" style="color: #A2A7AF"></i> just now • <font color="#8189A5">Like</font> • <font color="#8189A5">Comment</font>
+                              </div>
+                          </div> 
+                          <div style="padding-bottom:10px"></div>   
+                        </div>                      
+
+                        <div id="status2" style="display:none;">
+                            <button class="buttonRefresh90width" id="fbrefresh2" onclick="loadStatus2()">Generate Status</button>
+                        </div>                      
+
+                        <div id="status1" style="display:none;">
+                          <div class="fb-status-flex-container">
+                              <div style="width:20%">
+                                  <img src="/images/fb-profile-walt.jpg" style="width:65px">
+                              </div>
+                              <div style="width:80%">
+                                  <strong style="color:#3B5998">Walt Lee</strong> at <span style="color:#3B5998"><i class="fa fa-map-marker" aria-hidden="true"></i> Starbucks</span><br/>
+                                  <span style="color:#000">Wish it was frappuccino happy hr already...</span><br/>
+                                  <i class="fa fa-users" aria-hidden="true" style="color: #A2A7AF"></i> just now • <font color="#8189A5">Like</font> • <font color="#8189A5">Comment</font>
+                              </div>
+                          </div>
+                          <div style="padding-bottom:10px"></div>
+                        </div>
+
+                    </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage16_2()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
 <!-- ############################# END Facebook END ############################# -->
-
-
-
 
 <!-- ############################# START Instagram START ############################# -->
 <div id="append_page16_2" style="display:none;">
-    <div class="timeline" style="height:48px"></div>
-    <div class="stamp">4<span>:</span>11<span>:</span>06 PM</div>
+    <div class="timeline" style="height:60px"></div>
+    <div class="stamp">7<span>:</span>40<span>:</span>00 AM</div>
     <div class="timeline" style="height:7px"></div>
 
     <html>
@@ -81,34 +393,76 @@
         <div class="modal-content">
 
           <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
-                    <div class="insta-name">
-                        <div style="padding-top:15px"></div>
-                        <strong>wallywalt28</strong><br/>
-                        
-                    </div>
+                <div style="padding:15px" id="instagram_post">
+                    <button class="buttonRefresh" onclick="loadInsta1()">Generate Image</button>
                 </div>
-                <img src="/images/insta/jeff-insta.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
-                    <strong>wallywalt28</strong> Thinking of you... <u>@stacybear212</u><br/>
-                    <h1>1 MINUTE AGO</h1>
-                </div>          
+
+                <div id="think-instagram" style="display:none;">
+                    <div class="blink-text-2s" style="padding-top:15px">constructing image...</div>
+                </div>               
+
+                <div id="load-instagram" style="display:none;">
+                    <div class="insta-view-header">
+                        <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
+                        <div class="insta-name">
+                            <!-- <div style="padding-top:15px"></div> -->
+                            <strong>wallywalt28</strong><br/>
+                            Westfield UTC - Warby Parker <strong style="color:#b2b2b2"></strong>                   
+                        </div>
+                    </div>
+                    <img src="/images/insta/jeff-warby.jpg" class="fitInModal">
+                    <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                    <div class="insta-likes">
+                        <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
+                        <strong>wallywalt28</strong> Should I keep these <u>@warbyparker</u> lenses? They have a 30-day, no-questions-asked return policy. <u>#warbyparker #utc #glasses #icansee #warbyhometryon</u><br/>
+                        <h1>1 MINUTE AGO</h1>
+                    </div> 
+                </div> 
+
+                <!-- second selfie -->
+                <div id="2nd-selfie" style="display:none;">
+                    <div style="padding:15px">
+                        <button class="buttonRefresh" id="instagram_post2" onclick="loadInsta2()">Generate Image</button>
+                    </div>       
+                </div> 
+
+                <div id="think-instagram2" style="display:none;">
+                    <div class="blink-text-2s">constructing image...</div>
+                </div>               
+
+                <div id="load-instagram2" style="display:none;">
+                    <div class="insta-view-header">
+                        <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
+                        <div class="insta-name">
+                            <div style="padding-top:15px"></div>
+                            <strong>wallywalt28</strong><br/>
+                            
+                        </div>
+                    </div>
+                    <img src="/images/insta/jeff-prime.jpg" class="fitInModal">
+                    <img src="/images/insta/insta-like.jpg" class="fitInModal">
+                    <div class="insta-likes">
+                        <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
+                        <strong>wallywalt28</strong> Just placed my first <u>@amazonprimenow</u> order just for the hell of it and to test out how fast the service really was. They delivered on time and the delivery agent was nice as hell!<br/>
+						<u>#amazonprimenow #blessed #thankyoujeffbezos #miracleshappen #specialdelivery</u><br/>
+                        <h1>1 MINUTE AGO</h1>
+                    </div> 
+                </div> 
+
+
           </div>  
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage16_3()">Close</button>
           </div>
         </div>
       </div>
-    </div>
+    </div>    
 </div>
 <!-- ############################# END Instagram END ############################# -->
-<!-- ############################# START Texts Stacy START ############################# -->
+<!-- ############################# START Texts Mom START ############################# -->
 <div id="append_page16_3" style="display:none;">
-    <div class="timeline" style="height:864px"></div>
-    <div class="stamp">3<span>:</span>37<span>:</span>15 PM</div>
+    <div class="timeline" style="height:42px"></div>
+    <div class="stamp">7<span>:</span>47<span>:</span>27 AM</div>
     <div class="timeline" style="height:7px"></div>
 
     <div class="appContainer">
@@ -125,252 +479,339 @@
 
           <div class="modal-body">
             <div class="txtHeader">
-                <i class="fa fa-comments"></i> <img class="txt-ico" src="/images/ppl/stacy.jpg">Stacy<img class="emoji" src="/images/emoji/heartemoji.png">
+                <i class="fa fa-comments"></i> <img class="txt-ico" src="/images/ppl/mom.jpg">Mom
             </div>
             <div class="textContainer">                   
             
                 <div id="sms01" style="display:none;">
-                    <div class="sent">
-                        <p>Hey, sorry about earlier. I'm watching Bob's Burgers and thinking of you, haha.
-                            <div class="time">3:37 PM</div>
+                    <div class="received">
+                        <p>Did you get my voicemail yesterday?
+                            <div class="time">7:47 AM</div>
                         </p>
                     </div>
                 </div>
 
                 <div id="sms02" style="display:none;">
-                    <div class="sent">
-                        <p>Do you want to get dinner tonight?
-                            <div class="time">3:37 PM</div>
-                        </p>
-                    </div>
+                    <button class="buttonRefresh smsrefresh2" onclick="loadSMS2()">Generate Response</button>
+                </div>
+
+                <div id="sms03_1" style="display:none;">
+                    <div class="blink-text-2s">thinking...</div>
                 </div>
 
                 <div id="sms03" style="display:none;">
                     <div class="sent">
-                        <p>I’m sorry about everything.
-                            <div class="time">3:38 AM</div>
+                        <p>Hi Mom
+                            <div class="time">7:48 AM</div>
                         </p>
                     </div>
-                    <!-- <button class="buttonRefresh smsrefresh2" onclick="loadSMS4()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button> -->
-                </div>                                        
+                </div>  
+
+                <div id="sms04_1" style="display:none;">
+                    <div class="blink-text-2s">thinking...</div>
+                </div>                
+
+                <div id="sms04" style="display:none;">
+                    <div class="sent">
+                        <p>I don't think I can help you out anymore. 
+                            <div class="time">7:48 AM</div>
+                        </p>
+                    </div>
+                </div>  
+
+                <div id="sms05_1" style="display:none;">
+                    <div class="blink-text-2s">thinking...</div>
+                </div>                
+
+                <div id="sms05" style="display:none;">
+                    <div class="sent">
+                        <p>I'm know dad's gone but I can't be held responsible for your finances.
+                            <div class="time">7:48 AM</div>
+                        </p>
+                    </div>
+                </div>  
+
+                <div id="sms05_2" style="display:none;">
+                    <button class="buttonRefresh smsrefresh3" onclick="loadSMS3()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                </div>
+
+                <div id="sms06_1" style="display:none;">
+                    <div class="blink-text-2s">thinking...</div>
+                </div>                
+
+                <div id="sms06" style="display:none;">
+                    <div class="sent">
+                        <p>I can't be bailing you out all the time.
+                            <div class="time">7:48 AM</div>
+                        </p>
+                    </div>
+                </div>                                                                                        
 
                 <button class="buttonRefresh smsrefresh1" onclick="loadSMS1()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>                        
             </div>
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="loadPage16_4()">Close</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="bombardApps()">Close</button>
           </div>
         </div>
       </div>
     </div>        
 </div>
 <!-- ############################# END Texts Mom END ############################# -->
-<!-- ############################# START Twitter START ############################# -->
-<div id="append_page16_4" style="display:none;">
-    <div class="timeline" style="height:48px"></div>
-    <div class="stamp">4<span>:</span>11<span>:</span>06 PM</div>
-    <div class="timeline" style="height:7px"></div>
 
-    <html>
-    <div class="appContainer">
-        <a><img src="/images/icons/twitter.png" class="app" data-toggle="modal" data-target="#twitter" data-backdrop="true" data-keyboard="true"></a>
-        <p class="appName">Twitter</p>
-    </div>  
-
-    <!-- Modal -->
-    <div id="twitter" class="modal fade" role="dialog"  tabindex='-1'>
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-
-          <div class="modal-body">
-                <div class="insta-view-header">
-                    <div class="insta-view-item-photo"><img src="/images/insta/jeff-circle.png"></div>
-                    <div class="insta-name">
-                        <div style="padding-top:15px"></div>
-                        <strong>wallywalt28</strong><br/>
-                        
-                    </div>
-                </div>
-                <img src="/images/insta/jeff-insta.jpg" class="fitInModal">
-                <img src="/images/insta/insta-like.jpg" class="fitInModal">
-                <div class="insta-likes">
-                    <i class="fa fa-heart" aria-hidden="true"></i> <u>Be the first to like this.</u><br/>
-                    <strong>wallywalt28</strong> Thinking of you... <u>@stacybear212</u><br/>
-                    <h1>1 MINUTE AGO</h1>
-                </div>          
-          </div>  
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal" onclick="bombardApps()">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-<!-- ############################# END Twitter END ############################# -->
-
-<!-- snapchat -->
-<div id="bombard01" style="display:none;">
-    <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
-    </div>   
-</div>
 <!-- facebook likes x5 -->
+<div id="bombard01" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Karissa Carrillo</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
+</div>
 <div id="bombard02" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>Drew Toney</strong> likes your status update.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard03" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>Robert Stack</strong> likes your status update.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard04" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>Yue Fu</strong> likes your status update.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard05" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>Joanna Lachapelle</strong> likes your status update.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
+<!-- snapchat -->
 <div id="bombard06" style="display:none;">
-    <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
     <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+      <a><img src="/images/icons/snapchat.png" class="app"></a>
+      <p class="appName">Snapchat</p>
+    </div>  
 </div>
 <!-- vine -->
 <div id="bombard07" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/vine.png" class="app"></a>
+      <p class="appName">Vine</p>
     </div>
 </div>
 <!-- instagram likes x3 -->
 <div id="bombard08" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>natalie_boo07</strong> liked your photo.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard09" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>kiani.8.1990</strong> liked your photo.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard10" style="display:none;">
     <div class="timeline" style="height:6px"></div>
-        <div class="stamp"><strong>singfordana2</strong> liked your photo.</div>
+        <div class="stamp"><strong>erinrfbear</strong> liked your photo.</div>
     <div class="timeline" style="height:7px"></div>
 </div>
 <!-- linkedin -->
 <div id="bombard11" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/linkedin.png" class="app"></a>
+      <p class="appName">LinkedIn</p>
     </div>
 </div>
 <!-- google plus -->
 <div id="bombard12" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/gplus.png" class="app"></a>
+      <p class="appName">Google+</p>
     </div>
 </div>
 <!-- twitter retweet x4 -->
 <div id="bombard13" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
+    <div class="appContainer">
+      <a><img src="/images/icons/twitter.png" class="app"></a>
+      <p class="appName">Twitter</p>
+    </div>
 </div>
 <div id="bombard14" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>D'Arcy Raymond</strong> liked your tweet.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard15" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Ira M. Lavergne</strong> retweeted your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard16" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Paul P. Hixon</strong> retweeted your tweet.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <!-- facebook like x1 -->
 <div id="bombard17" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Charlie O'Donnell</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <!-- youtube -->
 <div id="bombard18" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/youtube.png" class="app"></a>
+      <p class="appName">YouTube</p>
     </div>
 </div>
 <!-- facebook like x5 -->
 <div id="bombard19" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Nilce Archuleta</strong> likes your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard20" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Ben Adams</strong> likes your comment.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard21" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Dana Song</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard22" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Adrian Thompson</strong> likes your post.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard23" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Todd Holmes</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
-<!-- instagram -->
+<!-- whatsapp -->
 <div id="bombard24" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/whatsapp.png" class="app"></a>
+      <p class="appName">WhatsApp</p>
     </div>
 </div>
 <!-- vine likes -->
 <div id="bombard25" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>tinavargova</strong> liked your vine.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard26" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>thorxrider27</strong> liked your vine.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard27" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>jasminelakes</strong> liked your video upload.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard28" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Elizabeth Turner</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard29" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>nardine_harrab</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
-<!-- facebook -->
+<!-- tinder -->
 <div id="bombard30" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/tinder.png" class="app"></a>
+      <p class="appName">Tinder</p>
     </div>
 </div>
 <!-- instagram likes x3 -->
 <div id="bombard31" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>nina_jujuba29</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard32" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>cate_llanos</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard33" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>emanuelmedina05</strong> liked your photo.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <!-- facebook like x3 -->
 <div id="bombard34" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Marquetta Wells</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard35" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Tony Banks</strong> likes your comment.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
 <div id="bombard36" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Alex Baek</strong> likes your post.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
-<!-- twitter -->
+<!-- tumblr -->
 <div id="bombard37" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/tumblr.png" class="app"></a>
+      <p class="appName">Tumblr</p>
     </div>
 </div>
 <!-- yahoo -->
 <div id="bombard38" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/yahoo.png" class="app"></a>
+      <p class="appName">Yahoo</p>
     </div>
+
 </div>
 <!-- kik -->
 <div id="bombard39" style="display:none;">
+    <div class="timeline" style="height:7px"></div>
+
     <div class="appContainer">
-      <img src="/images/icons/facebook.png" >
-      <p class="appName">Facebook</p>
+      <a><img src="/images/icons/kik.png" class="app"></a>
+      <p class="appName">kik</p>
     </div>
 </div>
 <!-- facebook like -->
 <div id="bombard40" style="display:none;">
+    <div class="timeline" style="height:6px"></div>
+        <div class="stamp"><strong>Jeff Lau</strong> likes your status update.</div>
+    <div class="timeline" style="height:7px"></div>
 </div>
+
+<div style="padding:50px;"></div>
