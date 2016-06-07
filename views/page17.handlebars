@@ -5,8 +5,13 @@
 
 	$(document).ready(function(){
 	    $("#name").delay(3000).fadeIn();
-	    $("#creator").delay(5000).fadeIn();    
-	});   
+	    $("#creator").delay(5000).fadeIn(); 
+	    $("#restart").delay(10000).fadeIn();    
+	});  
+
+	function goBackHome() {
+		window.location.href = "./";
+	} 
 </script>
 <div style="padding-top:10vh"></div>
 
@@ -21,4 +26,12 @@
 	<div class="jeff">
 		CREATED BY JEFF LAU
 	</div>
+</div>
+
+<div id="restart" style="display:none;">
+	<div style="padding-top:50px"></div>
+    <a class="start-button clickable" onclick="goBackHome()">
+        <i class="fa fa-refresh" aria-hidden="true" style="font-size:1em;"></i>
+    </a>  
+    <div style="padding-bottom: 50px"></div>             
 </div>
