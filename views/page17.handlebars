@@ -1,6 +1,24 @@
 <!doctype html>
 <script>
-  document.getElementById("div1").style.backgroundColor = "#000";
-  document.getElementById("background").style.backgroundColor = "#000";
+	document.getElementById("div1").style.backgroundColor = "#000";
+	document.getElementById("background").style.backgroundColor = "#000";
+
+	$(document).ready(function(){
+	    $("#name").delay(3000).fadeIn();
+	    $("#creator").delay(5000).fadeIn();    
+	});   
 </script>
-the end
+<div style="padding-top:10vh"></div>
+
+<div id="name" style="display:none;">
+	<div class="end-name">
+		INFINITE<br/>
+		DOMAIN
+	</div>
+
+</div>
+<div id="creator" style="display:none;">
+	<div class="jeff">
+		CREATED BY JEFF LAU
+	</div>
+</div>

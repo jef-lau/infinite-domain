@@ -1990,3 +1990,26 @@ body
     text-align: center;
     font-family: 'Source Code Pro', sans-serif;
 }
+
+/* ############################# The End #############################*/
+.end-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 70px;   
+    text-align: center;
+    color: #FFF;
+}
+.jeff{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    line-height: 50px;   
+    text-align: right;
+    color: #FFF;
+    padding-right: 45px;
+}
