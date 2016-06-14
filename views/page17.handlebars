@@ -10,6 +10,11 @@
 	    $("#restart").delay(10000).fadeIn();    
 	});  
 
+	function openForm(){
+		$('#feedback-button').remove();
+		$("#displayform").delay(10).fadeIn(); 
+	}
+
 	function goBackHome() {
 		window.location.href = "./";
 	} 
@@ -32,25 +37,13 @@
 <div id="feedback" style="display:none;">
 	<div style="padding-top:50px"></div>
 	
-	<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#comment">Leave Feedback?</button>
-	<div style="padding-top:25px"></div>
+	<button type="button" class="btn btn-default" onclick="openForm()" id="feedback-button">Leave Feedback?</button>
 
-	<div id="comment" class="collapse">
-
-		<!-- Do not change the code! -->
-		<a id="foxyform_embed_link_789350"></a>
-		<script type="text/javascript">
-		(function(d, t){
-		   var g = d.createElement(t),
-		       s = d.getElementsByTagName(t)[0];
-		   g.src = "http://www.foxyform.com/js.php?id=789350&sec_hash=d547741cda9&width=350px";
-		   s.parentNode.insertBefore(g, s);
-		}(document, "script"));
-		</script>
-		<!-- Do not change the code! -->
-
-
+	<div id="displayform" style="display:none;">
+		<iframe width="100%" height="505" allowTransparency="true" frameborder="0" scrolling="no" style="border:none" src="http://www.emailmeform.com/builder/embed/eweciaf4SlndXM3f"><a href="http://www.emailmeform.com/builder/embed/eweciaf4SlndXM3f">Fill out form.</a></iframe>
 	</div>
+
+
 </div>
 
 <div id="restart" style="display:none;">
